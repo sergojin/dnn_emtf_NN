@@ -1,0 +1,9 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_370/myproject_mul_24smb6_U100/myproject_mul_24smb6_MulnS_10_U/buff1_reg/A[23]|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_370/myproject_mul_24smb6_U100/myproject_mul_24smb6_MulnS_10_U/buff1_reg/A[24]|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_370/myproject_mul_24smb6_U100/myproject_mul_24smb6_MulnS_10_U/buff1_reg/A[25]|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_370/myproject_mul_24smb6_U100/myproject_mul_24smb6_MulnS_10_U/buff1_reg/A[26]|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_370/myproject_mul_24smb6_U100/myproject_mul_24smb6_MulnS_10_U/buff1_reg/A[27]|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

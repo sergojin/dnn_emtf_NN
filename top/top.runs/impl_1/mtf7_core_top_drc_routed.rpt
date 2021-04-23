@@ -1,0 +1,164 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Apr 22 15:59:03 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : report_drc -file mtf7_core_top_drc_routed.rpt -pb mtf7_core_top_drc_routed.pb -rpx mtf7_core_top_drc_routed.rpx
+| Design       : mtf7_core_top
+| Device       : xc7vx690tffg1927-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 25
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| DPOP-1    | Warning  | PREG Output pipelining       | 2          |
+| DPOP-2    | Warning  | MREG Output pipelining       | 20         |
+| RTSTAT-10 | Warning  | No routable loads            | 1          |
+| REQP-31   | Advisory | enum_PREG_0_connects_CEP_GND | 2          |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_278/p_Val2_s_reg_59_reg output my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_278/p_Val2_s_reg_59_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_280/p_Val2_s_reg_59_reg output my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_280/p_Val2_s_reg_59_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_0_V_write_assig_fu_2418_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_0_V_write_assig_fu_2418_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_10_V_write_assi_fu_2599_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_10_V_write_assi_fu_2599_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_11_V_write_assi_fu_2608_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_11_V_write_assi_fu_2608_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_12_V_write_assi_fu_2617_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_12_V_write_assi_fu_2617_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_13_V_write_assi_fu_2626_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_13_V_write_assi_fu_2626_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_14_V_write_assi_fu_2635_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_14_V_write_assi_fu_2635_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_15_V_write_assi_fu_2644_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_15_V_write_assi_fu_2644_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_16_V_write_assi_fu_2653_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_16_V_write_assi_fu_2653_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_17_V_write_assi_fu_2662_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_17_V_write_assi_fu_2662_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_18_V_write_assi_fu_2671_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_18_V_write_assi_fu_2671_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_19_V_write_assi_fu_2676_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_19_V_write_assi_fu_2676_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_20_V_write_assi_fu_2681_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_20_V_write_assi_fu_2681_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_21_V_write_assi_fu_2686_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_21_V_write_assi_fu_2686_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_22_V_write_assi_fu_2691_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_22_V_write_assi_fu_2691_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_3_V_write_assig_fu_2507_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_3_V_write_assig_fu_2507_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_4_V_write_assig_fu_2516_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_4_V_write_assig_fu_2516_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_5_V_write_assig_fu_2525_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_5_V_write_assig_fu_2525_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_6_V_write_assig_fu_2534_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_6_V_write_assig_fu_2534_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_7_V_write_assig_fu_2543_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_7_V_write_assig_fu_2543_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_9_V_write_assig_fu_2590_p2 multiplier stage my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/res_9_V_write_assig_fu_2590_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+29 net(s) have no routable loads. The problem bus(es) and/or net(s) are imem/din_w[36], imem/din_w[37], imem/din_w[38], imem/din_w[39], imem/din_w[40], imem/din_w[41], imem/din_w[42], imem/din_w[43], imem/din_w[44], imem/din_w[45], imem/din_w[46], imem/din_w[47], imem/din_w[48], imem/din_w[49], imem/din_w[50] (the first 15 of 29 listed).
+Related violations: <none>
+
+REQP-31#1 Advisory
+enum_PREG_0_connects_CEP_GND  
+my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_278/p_Val2_s_reg_59_reg: When the DSP48E1 PREG attribute is set to 0, the CEP input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-31#2 Advisory
+enum_PREG_0_connects_CEP_GND  
+my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_404/grp_product_fu_280/p_Val2_s_reg_59_reg: When the DSP48E1 PREG attribute is set to 0, the CEP input pin should be tied to GND to save power.
+Related violations: <none>
+
+

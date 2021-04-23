@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ctoc_mmcm_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/ctoc_mmcm_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="blk_mem_gen_0_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/blk_mem_gen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="inject_mem_64_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/inject_mem_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="usrclk_mmcm_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/usrclk_mmcm_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ctoc_ififo_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/ctoc_ififo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ctoc_mmcm_in_synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/ctoc_mmcm_in_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ctoc_mmcm_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+		<Parent Id="inject_mem_64_synth_1"/>
+		<Parent Id="usrclk_mmcm_synth_1"/>
+		<Parent Id="ctoc_ififo_synth_1"/>
+		<Parent Id="ctoc_mmcm_in_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

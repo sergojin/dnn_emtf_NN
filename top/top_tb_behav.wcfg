@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+            <top_module name="txt_util" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="10000000001fs"></ZoomEndTime>
+      <Cursor1Time time="799180000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="266"></NameColumnWidth>
+      <ValueColumnWidth column_width="411"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wave_markers>
+      <marker label="" time="416815000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/res_V_ap_vld">
+      <obj_property name="ElementShortName">res_V_ap_vld</obj_property>
+      <obj_property name="ObjectShortName">res_V_ap_vld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/my_hls_label/res_V">
+      <obj_property name="ElementShortName">res_V[35:0]</obj_property>
+      <obj_property name="ObjectShortName">res_V[35:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/clk1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/my_hls_label/data_V">
+      <obj_property name="ElementShortName">data_V[1439:0]</obj_property>
+      <obj_property name="ObjectShortName">data_V[1439:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/data_V_ap_vld">
+      <obj_property name="ElementShortName">data_V_ap_vld</obj_property>
+      <obj_property name="ObjectShortName">data_V_ap_vld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe0">
+      <obj_property name="ElementShortName">probe0[0:0]</obj_property>
+      <obj_property name="ObjectShortName">probe0[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe1">
+      <obj_property name="ElementShortName">probe1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">probe1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe2">
+      <obj_property name="ElementShortName">probe2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe3">
+      <obj_property name="ElementShortName">probe3[0:0]</obj_property>
+      <obj_property name="ObjectShortName">probe3[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe4">
+      <obj_property name="ElementShortName">probe4[17:0]</obj_property>
+      <obj_property name="ObjectShortName">probe4[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe5">
+      <obj_property name="ElementShortName">probe5[17:0]</obj_property>
+      <obj_property name="ObjectShortName">probe5[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\flipflop(0)\/my_ila_label/probe6">
+      <obj_property name="ElementShortName">probe6[0:0]</obj_property>
+      <obj_property name="ObjectShortName">probe6[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/\flipflop(0)\/data_sel_sig">
+      <obj_property name="ElementShortName">data_sel_sig</obj_property>
+      <obj_property name="ObjectShortName">data_sel_sig</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/data_in_strobe">
+      <obj_property name="ElementShortName">data_in_strobe</obj_property>
+      <obj_property name="ObjectShortName">data_in_strobe</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/bram_address">
+      <obj_property name="ElementShortName">bram_address[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_address[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/data_valid">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/res_valid">
+      <obj_property name="ElementShortName">res_valid</obj_property>
+      <obj_property name="ObjectShortName">res_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/clk1">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_start">
+      <obj_property name="ElementShortName">ap_start</obj_property>
+      <obj_property name="ObjectShortName">ap_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_ready">
+      <obj_property name="ElementShortName">ap_ready</obj_property>
+      <obj_property name="ObjectShortName">ap_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_done">
+      <obj_property name="ElementShortName">ap_done</obj_property>
+      <obj_property name="ObjectShortName">ap_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/data_source_read_enable">
+      <obj_property name="ElementShortName">data_source_read_enable</obj_property>
+      <obj_property name="ObjectShortName">data_source_read_enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\data_source_gen(0)\/read_enable_shr">
+      <obj_property name="ElementShortName">read_enable_shr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">read_enable_shr[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_rst">
+      <obj_property name="ElementShortName">ap_rst</obj_property>
+      <obj_property name="ObjectShortName">ap_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_start">
+      <obj_property name="ElementShortName">ap_start</obj_property>
+      <obj_property name="ObjectShortName">ap_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_done">
+      <obj_property name="ElementShortName">ap_done</obj_property>
+      <obj_property name="ObjectShortName">ap_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_idle">
+      <obj_property name="ElementShortName">ap_idle</obj_property>
+      <obj_property name="ObjectShortName">ap_idle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/my_hls_label/ap_ready">
+      <obj_property name="ElementShortName">ap_ready</obj_property>
+      <obj_property name="ObjectShortName">ap_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/\flipflop(0)\/mode">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/reset_count">
+      <obj_property name="ElementShortName">reset_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\data_source_gen(0)\/read_enable_shr">
+      <obj_property name="ElementShortName">read_enable_shr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">read_enable_shr[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/\data_in_start_gen(0)\/read_enable_shr">
+      <obj_property name="ElementShortName">read_enable_shr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">read_enable_shr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/data_in_strobe">
+      <obj_property name="ElementShortName">data_in_strobe</obj_property>
+      <obj_property name="ObjectShortName">data_in_strobe</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/data_in_start">
+      <obj_property name="ElementShortName">data_in_start</obj_property>
+      <obj_property name="ObjectShortName">data_in_start</obj_property>
+   </wvobject>
+</wave_config>

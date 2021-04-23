@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="eleven2nine_lut_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201413">
+  <File Type="RDS-UTIL-PB" Name="eleven2nine_lut_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="eleven2nine_lut_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="eleven2nine_lut.vds"/>
+  <File Type="RDS-DCP" Name="eleven2nine_lut.dcp"/>
+  <File Type="PA-TCL" Name="eleven2nine_lut.tcl"/>
+  <File Type="REPORTS-TCL" Name="eleven2nine_lut_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/eleven2nine_lut">
+    <File Path="$PSRCDIR/sources_1/ip/eleven2nine_lut/eleven2nine_lut.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="eleven2nine_lut"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/eleven2nine_lut">
+    <File Path="$PSRCDIR/sources_1/ip/eleven2nine_lut/eleven2nine_lut.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="eleven2nine_lut"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

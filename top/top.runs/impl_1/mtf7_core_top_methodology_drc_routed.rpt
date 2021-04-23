@@ -1,0 +1,123 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Apr 22 15:59:18 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : report_methodology -file mtf7_core_top_methodology_drc_routed.rpt -pb mtf7_core_top_methodology_drc_routed.pb -rpx mtf7_core_top_methodology_drc_routed.rpx
+| Design       : mtf7_core_top
+| Device       : xc7vx690tffg1927-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 14
++-----------+----------+------------------------------------------------------+------------+
+| Rule      | Severity | Description                                          | Violations |
++-----------+----------+------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                         | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                        | 2          |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 2          |
+| XDCC-4    | Warning  | User Clock constraint overwritten with the same name | 3          |
+| XDCC-8    | Warning  | User Clock constraint overwritten on the same source | 3          |
++-----------+----------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell ctoc/data_out[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.wr_rst_reg1_reg/PRE, ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.wr_rst_reg2_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on core_phase_inc relative to clock(s) ext_clk_in
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on m_aresetn relative to clock(s) pcie_clk
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock CLK_OUT4_usrclk_mmcm is referenced by name inside timing constraint (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins usrclk_mmcm_/inst/mmcm_adv_inst/CLKOUT3]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock CLK_OUT4_usrclk_mmcm is referenced by name inside timing constraint (see constraint position 12 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins usrclk_mmcm_/inst/mmcm_adv_inst/CLKOUT3]
+Related violations: <none>
+
+XDCC-4#1 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 24.000 -name clk40_in_p [get_ports clk40_in_p] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 5))
+Previous: create_clock -period 24.000 -name clk40_in_p [get_ports clk40_in_p] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 7))
+Related violations: <none>
+
+XDCC-4#2 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 8.000 -name ext_clk_in [get_ports ext_clk_in] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 3))
+Previous: create_clock -period 8.000 -name ext_clk_in [get_ports ext_clk_in] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 5))
+Related violations: <none>
+
+XDCC-4#3 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 8.000 -name pcie_clk [get_ports pcie_clk] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 1))
+Previous: create_clock -period 8.000 -name pcie_clk [get_ports pcie_clk] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 3))
+Related violations: <none>
+
+XDCC-8#1 Warning
+User Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous user clock constraint defined on the same source.
+New: create_clock -period 24.000 -name clk40_in_p [get_ports clk40_in_p] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 5))
+Previous: create_clock -period 24.000 -name clk40_in_p [get_ports clk40_in_p] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 7))
+Related violations: <none>
+
+XDCC-8#2 Warning
+User Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous user clock constraint defined on the same source.
+New: create_clock -period 8.000 -name ext_clk_in [get_ports ext_clk_in] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 3))
+Previous: create_clock -period 8.000 -name ext_clk_in [get_ports ext_clk_in] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 5))
+Related violations: <none>
+
+XDCC-8#3 Warning
+User Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous user clock constraint defined on the same source.
+New: create_clock -period 8.000 -name pcie_clk [get_ports pcie_clk] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc (Line: 1))
+Previous: create_clock -period 8.000 -name pcie_clk [get_ports pcie_clk] (Source: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc (Line: 3))
+Related violations: <none>
+
+

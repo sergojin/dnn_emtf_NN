@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun 28 22:29:25 2020
+# Process ID: 63447
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/eleven2two_lut_synth_1
+# Command line: vivado -log eleven2two_lut.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eleven2two_lut.tcl
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/eleven2two_lut_synth_1/eleven2two_lut.vds
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/eleven2two_lut_synth_1/vivado.jou
+#-----------------------------------------------------------
+source eleven2two_lut.tcl -notrace
