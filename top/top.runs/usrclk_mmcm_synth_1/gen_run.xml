@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="usrclk_mmcm_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
-  <File Type="RDS-RDS" Name="usrclk_mmcm.vds"/>
   <File Type="RDS-DCP" Name="usrclk_mmcm.dcp"/>
   <File Type="PA-TCL" Name="usrclk_mmcm.tcl"/>
+  <File Type="RDS-RDS" Name="usrclk_mmcm.vds"/>
   <File Type="REPORTS-TCL" Name="usrclk_mmcm_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/usrclk_mmcm">
     <File Path="$PPRDIR/../hdl/emtf/usrclk_mmcm/usrclk_mmcm.xci">

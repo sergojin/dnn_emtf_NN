@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="blk_mem_gen_0_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
-  <File Type="RDS-RDS" Name="blk_mem_gen_0.vds"/>
   <File Type="RDS-DCP" Name="blk_mem_gen_0.dcp"/>
   <File Type="PA-TCL" Name="blk_mem_gen_0.tcl"/>
+  <File Type="RDS-RDS" Name="blk_mem_gen_0.vds"/>
   <File Type="REPORTS-TCL" Name="blk_mem_gen_0_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen_0">
     <File Path="$PPRDIR/../cgn/blk_mem_gen_0/blk_mem_gen_0.xci">

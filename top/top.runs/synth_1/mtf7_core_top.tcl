@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 8
 create_project -in_memory -part xc7vx690tffg1927-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -53,35 +54,35 @@ read_verilog -library xil_defaultlib -sv {
 }
 read_vhdl -library xil_defaultlib {
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11sfYi.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2_tanh_table4.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1_tanh_table7.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_13ns_36_4_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_15ns_37_4_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_7ns_18s_24_2_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_14ns_37_4_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/product.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11scud.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11sdEe.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24skbM.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_15ns_18s_24_2_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_s.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_8ns_18s_24_2_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_1.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_11ns_34_4_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_12ns_35_4_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_tanh_table1.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11sbkb.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24sncg.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24socq.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_16ns_18s_24_2_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_12ns_18s_24_2_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_2.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11sg8j.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24smb6.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11seOg.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_9ns_18s_24_2_0.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_13ns_18s_24_2_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_2.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24slbW.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_s.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11shbi.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_11sibs.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_1.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_muljbC.vhd
+  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_10ns_18s_24_2_0.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_3.vhd
 }
 read_ip -quiet /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm.xci

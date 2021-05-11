@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="eleven2two_lut_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593401362">
-  <File Type="RDS-UTIL-PB" Name="eleven2two_lut_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="eleven2two_lut_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="eleven2two_lut_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="eleven2two_lut.vds"/>
   <File Type="RDS-DCP" Name="eleven2two_lut.dcp"/>
   <File Type="PA-TCL" Name="eleven2two_lut.tcl"/>

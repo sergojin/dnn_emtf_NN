@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ctoc_mmcm_in_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
-  <File Type="RDS-RDS" Name="ctoc_mmcm_in.vds"/>
   <File Type="RDS-DCP" Name="ctoc_mmcm_in.dcp"/>
   <File Type="PA-TCL" Name="ctoc_mmcm_in.tcl"/>
+  <File Type="RDS-RDS" Name="ctoc_mmcm_in.vds"/>
   <File Type="REPORTS-TCL" Name="ctoc_mmcm_in_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ctoc_mmcm_in">
     <File Path="$PPRDIR/../hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in.xci">

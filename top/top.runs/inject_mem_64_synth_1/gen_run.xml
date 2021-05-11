@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="inject_mem_64_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
-  <File Type="RDS-RDS" Name="inject_mem_64.vds"/>
   <File Type="RDS-DCP" Name="inject_mem_64.dcp"/>
   <File Type="PA-TCL" Name="inject_mem_64.tcl"/>
+  <File Type="RDS-RDS" Name="inject_mem_64.vds"/>
   <File Type="REPORTS-TCL" Name="inject_mem_64_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/inject_mem_64">
     <File Path="$PPRDIR/../hdl/emtf/inject_mem_64/inject_mem_64.xci">
