@@ -222,3 +222,5 @@ Restored from archive | CPU: 6.760000 secs | Memory: 158.480865 MB |
 Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 10838.363 ; gain = 0.000 ; free physical = 48628 ; free virtual = 90777
 refresh_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 10845.375 ; gain = 74.145 ; free physical = 48612 ; free virtual = 90762
 open_report: Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 11067.477 ; gain = 161.070 ; free physical = 47980 ; free virtual = 90129
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 11 00:01:00 2021...
