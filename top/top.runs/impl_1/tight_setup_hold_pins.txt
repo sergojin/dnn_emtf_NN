@@ -37,8 +37,8 @@
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer11_out_9_V_reg_2726_reg[2]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                             my_test_algo/my_hls_label/layer11_out_19_V_reg_2776_reg[11]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                                my_test_algo/my_hls_label/layer3_out_6_V_reg_1886_reg[3]/D|
-|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer3_out_21_V_reg_1961_reg[8]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer3_out_2_V_reg_1866_reg[11]/D|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer3_out_21_V_reg_1961_reg[8]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                              my_test_algo/my_hls_label/layer11_out_3_V_reg_2696_reg[14]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer7_out_1_V_reg_2311_reg[11]/D|
 |     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer7_out_14_V_reg_2376_reg[5]/D|

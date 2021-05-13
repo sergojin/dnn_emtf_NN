@@ -1,0 +1,860 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 12 21:02:32 2021
+# Process ID: 90519
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1
+# Command line: vivado -log mtf7_core_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mtf7_core_top.tcl -notrace
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top.vdi
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source mtf7_core_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/Vivado/2019.1/data/ip'.
+Command: link_design -top mtf7_core_top -part xc7vx690tffg1927-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.dcp' for cell 'usrclk_mmcm_'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo.dcp' for cell 'ctoc/ctoc_ififo_'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in.dcp' for cell 'ctoc/ctoc_mmcm_in_'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm.dcp' for cell 'ctoc/ctoc_mmcm_out'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/inject_mem_64/inject_mem_64.dcp' for cell 'imem/im64_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sources_1/ip/eleven2two_lut/eleven2two_lut.dcp' for cell 'my_test_algo/my_11_2_lut'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sources_1/ip/eleven2nine_lut/eleven2nine_lut.dcp' for cell 'my_test_algo/my_11_9_lut'
+INFO: [Project 1-454] Reading design checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/cgn/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'my_test_algo/my_bram_label'
+INFO: [Netlist 29-17] Analyzing 10553 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_board.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_board.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_board.xdc] for cell 'usrclk_mmcm_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_board.xdc] for cell 'usrclk_mmcm_/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.xdc] for cell 'usrclk_mmcm_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.xdc] for cell 'usrclk_mmcm_/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo.xdc] for cell 'ctoc/ctoc_ififo_/U0'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo.xdc] for cell 'ctoc/ctoc_ififo_/U0'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in_board.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in_board.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc:60]
+INFO: [Timing 38-2] Deriving generated clocks [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc:60]
+get_clocks: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 3333.445 ; gain = 928.496 ; free physical = 36088 ; free virtual = 97407
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_impl.xdc]
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc]
+WARNING: [Constraints 18-619] A clock with name 'pcie_clk' already exists, overwriting the previous clock with the same name. [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc:1]
+WARNING: [Constraints 18-619] A clock with name 'ext_clk_in' already exists, overwriting the previous clock with the same name. [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc:3]
+WARNING: [Constraints 18-619] A clock with name 'clk40_in_p' already exists, overwriting the previous clock with the same name. [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc:5]
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc]
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_late.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_late.xdc] for cell 'ctoc/ctoc_mmcm_out/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_late.xdc] for cell 'usrclk_mmcm_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_late.xdc] for cell 'usrclk_mmcm_/inst'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo_clocks.xdc] for cell 'ctoc/ctoc_ififo_/U0'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo_clocks.xdc] for cell 'ctoc/ctoc_ififo_/U0'
+Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in_late.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in_late.xdc] for cell 'ctoc/ctoc_mmcm_in_/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3353.293 ; gain = 0.000 ; free physical = 36345 ; free virtual = 97665
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+19 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:04 . Memory (MB): peak = 3353.293 ; gain = 1846.523 ; free physical = 36341 ; free virtual = 97661
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2021.04' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3425.328 ; gain = 64.035 ; free physical = 36336 ; free virtual = 97655
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e5cc8e80
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:05 . Memory (MB): peak = 3425.328 ; gain = 0.000 ; free physical = 36116 ; free virtual = 97436
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 4 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16eb92cbe
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35914 ; free virtual = 97234
+INFO: [Opt 31-389] Phase Retarget created 42 cells and removed 71 cells
+INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: ebb07354
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35928 ; free virtual = 97248
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 29 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 105460378
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35892 ; free virtual = 97212
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 328 cells
+INFO: [Opt 31-1021] In phase Sweep, 583 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 105460378
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35883 ; free virtual = 97203
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 105460378
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35899 ; free virtual = 97219
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 105460378
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35900 ; free virtual = 97219
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 31 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              42  |              71  |                                             30  |
+|  Constant propagation         |               0  |               0  |                                             29  |
+|  Sweep                        |               0  |             328  |                                            583  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             31  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3449.312 ; gain = 0.000 ; free physical = 35900 ; free virtual = 97219
+Ending Logic Optimization Task | Checksum: 11e46904d
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 3449.312 ; gain = 0.004 ; free physical = 35903 ; free virtual = 97223
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.072 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for usr_access
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 110 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 75 newly gated: 12 Total Ports: 220
+Number of Flops added for Enable Generation: 56
+
+Ending PowerOpt Patch Enables Task | Checksum: 1aea2253b
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.81 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35699 ; free virtual = 97022
+Ending Power Optimization Task | Checksum: 1aea2253b
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:27 . Memory (MB): peak = 4330.016 ; gain = 880.703 ; free physical = 35820 ; free virtual = 97144
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: e605b63b
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35789 ; free virtual = 97113
+Ending Final Cleanup Task | Checksum: e605b63b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:14 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35800 ; free virtual = 97124
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35800 ; free virtual = 97124
+Ending Netlist Obfuscation Task | Checksum: e605b63b
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35800 ; free virtual = 97124
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:40 ; elapsed = 00:01:19 . Memory (MB): peak = 4330.016 ; gain = 976.723 ; free physical = 35801 ; free virtual = 97125
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35802 ; free virtual = 97126
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35787 ; free virtual = 97120
+INFO: [Common 17-1381] The checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 4330.016 ; gain = 0.000 ; free physical = 35788 ; free virtual = 97134
+INFO: [runtcl-4] Executing : report_drc -file mtf7_core_top_drc_opted.rpt -pb mtf7_core_top_drc_opted.pb -rpx mtf7_core_top_drc_opted.rpx
+Command: report_drc -file mtf7_core_top_drc_opted.rpt -pb mtf7_core_top_drc_opted.pb -rpx mtf7_core_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 4394.043 ; gain = 64.027 ; free physical = 35771 ; free virtual = 97118
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2021.04' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35791 ; free virtual = 97137
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: de2ac3d8
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35782 ; free virtual = 97128
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35769 ; free virtual = 97115
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 770b82c0
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35539 ; free virtual = 96889
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 7d93a5e2
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:29 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35406 ; free virtual = 96757
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 7d93a5e2
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:29 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35406 ; free virtual = 96757
+Phase 1 Placer Initialization | Checksum: 7d93a5e2
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:30 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35407 ; free virtual = 96758
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 8f418ba6
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:36 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35357 ; free virtual = 96709
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-76] Pass 1. Identified 6 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_n_0. Replicated 77 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_s_fu_464/ce. Replicated 8 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_2_fu_341/ap_ce_reg_reg_n_0. Replicated 53 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_1_fu_406/ce. Replicated 13 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_normalize_0_0_0_0_0_3_fu_574/ce. Replicated 9 times.
+INFO: [Physopt 32-232] Optimized 5 nets. Created 160 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 160 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.23 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35251 ; free virtual = 96604
+INFO: [Physopt 32-46] Identified 142 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__169_n_0. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_21_V_read_int_reg_reg[23]_rep__14_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_20_V_read_int_reg_reg[23]_rep__9_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_22_V_read_int_reg_reg[23]_rep__14_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_22_V_read_int_reg_reg[23]_rep__13_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_18_V_read_int_reg[9]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__102_n_0. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__135_n_0. Net driver my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__135 was replaced.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__127_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__134_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__88_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__167_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__66_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__141_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__132_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__69_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__7_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__174_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_19_V_read_int_reg[12]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__4_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__187_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__142_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__170_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__97_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_20_V_read_int_reg_reg[23]_rep__4_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__139_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__216_n_0. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__76_n_0. Net driver my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__76 was replaced.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__136_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__137_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__84_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__140_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__126_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__94_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__98_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__140_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__114_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__83_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__147_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_22_V_read_int_reg_reg[23]_rep__5_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__141_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__93_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__146_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__164_n_0. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__104_n_0. Replicated 1 times.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__276_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_22_V_read23_reg_2439788[4] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__86_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__79_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__123_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__143_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__192_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__49_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__80_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_27_V_read_3_reg_2439643[9] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__271_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__10_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__52_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_21_V_read_int_reg_reg[23]_rep__4_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_18_V_read_int_reg[8] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_22_V_read23_reg_2439788[10] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__64_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_19_V_read_int_reg[9] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_22_V_read23_reg_2439788[7] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_22_V_read23_reg_2439788[8] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__215_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__274_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__144_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__31_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__206_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__180_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__227_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/data_22_V_read23_reg_2439788[12] was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__55_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_18_V_read_int_reg_reg[23]_rep__10_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__54_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__145_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__193_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__101_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__11_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__235_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__81_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__56_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__57_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__210_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__165_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__130_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__129_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__74_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__208_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_rep__138_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/ap_ce_reg_reg_rep__212_n_0 was not replicated.
+INFO: [Physopt 32-571] Net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/data_20_V_read_int_reg_reg[23]_rep__14_n_0 was not replicated.
+INFO: [Physopt 32-232] Optimized 45 nets. Created 45 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 45 nets or cells. Created 45 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.21 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35232 ; free virtual = 96585
+INFO: [Physopt 32-457] Pass 1. Identified 34 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1999/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2090/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2418/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_1943/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2012/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2016/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1707/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2432/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1921/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1762/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2322/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1815/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1679/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_1956/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1837/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1789/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1791/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1787/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1988/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1985/r_V_reg_59_reg. No change.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2356/r_V_reg_59_reg. 21 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2299/r_V_reg_59_reg. 22 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1721/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2127/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2151/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1818/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1807/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1770/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2018/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_s_fu_280/grp_product_fu_2412/r_V_reg_59_reg. 21 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2020/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1991/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_2013/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_fu_440/grp_product_fu_302/r_V_reg_59_reg. No change.
+INFO: [Physopt 32-457] Pass 2. Identified 4 candidate cells for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 4 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1921/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1789/r_V_reg_59_reg. 25 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1707/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/grp_product_fu_1679/r_V_reg_59_reg. 24 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 36 nets or cells. Created 861 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35246 ; free virtual = 96599
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[61].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[51].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[55].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[43].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[41].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell my_test_algo/my_bram_label/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram. No change.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[58].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell my_test_algo/my_bram_label/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram. No change.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[42].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[62].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell my_test_algo/my_bram_label/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM36.ram. No change.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[59].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[56].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell imem/im64_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram. 7 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 50 nets or cells. Created 325 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35077 ; free virtual = 96432
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35079 ; free virtual = 96434
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35214 ; free virtual = 96569
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |          160  |              0  |                     5  |           0  |           1  |  00:00:25  |
+|  Critical Cell                 |           45  |              0  |                    45  |           0  |           1  |  00:00:14  |
+|  DSP Register                  |          861  |              0  |                    36  |           0  |           1  |  00:00:06  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |          325  |              0  |                    50  |           0  |           1  |  00:00:05  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |         1391  |              0  |                   136  |           0  |           6  |  00:00:49  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: d4f71d00
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:49 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35236 ; free virtual = 96592
+Phase 2.2 Global Placement Core | Checksum: 133dea4dd
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:03:00 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35110 ; free virtual = 96558
+Phase 2 Global Placement | Checksum: 133dea4dd
+
+Time (s): cpu = 00:06:39 ; elapsed = 00:03:00 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 35068 ; free virtual = 96521
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1302f027b
+
+Time (s): cpu = 00:07:09 ; elapsed = 00:03:10 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 34880 ; free virtual = 96548
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1566ea61a
+
+Time (s): cpu = 00:08:03 ; elapsed = 00:03:31 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33912 ; free virtual = 96420
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 11c7fb2b2
+
+Time (s): cpu = 00:08:07 ; elapsed = 00:03:32 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33937 ; free virtual = 96457
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: b7123038
+
+Time (s): cpu = 00:08:08 ; elapsed = 00:03:33 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33900 ; free virtual = 96455
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 5e6a0a8c
+
+Time (s): cpu = 00:08:51 ; elapsed = 00:03:50 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32819 ; free virtual = 96396
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 11670f47d
+
+Time (s): cpu = 00:09:21 ; elapsed = 00:04:17 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32844 ; free virtual = 96385
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: afc72d3c
+
+Time (s): cpu = 00:09:25 ; elapsed = 00:04:21 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32811 ; free virtual = 96380
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: b03b08b6
+
+Time (s): cpu = 00:09:27 ; elapsed = 00:04:23 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32812 ; free virtual = 96381
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1cb7d956c
+
+Time (s): cpu = 00:10:11 ; elapsed = 00:04:40 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33335 ; free virtual = 96835
+Phase 3 Detail Placement | Checksum: 1cb7d956c
+
+Time (s): cpu = 00:10:11 ; elapsed = 00:04:41 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33275 ; free virtual = 96775
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1441cf8d5
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net my_test_algo/my_hls_label/grp_dense_latency_0_0_0_1_fu_314/ap_ce_reg_reg_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1441cf8d5
+
+Time (s): cpu = 00:11:08 ; elapsed = 00:04:58 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33440 ; free virtual = 96956
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.042. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12f7358a6
+
+Time (s): cpu = 00:12:55 ; elapsed = 00:06:11 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33270 ; free virtual = 96898
+Phase 4.1 Post Commit Optimization | Checksum: 12f7358a6
+
+Time (s): cpu = 00:12:57 ; elapsed = 00:06:12 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32169 ; free virtual = 95797
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12f7358a6
+
+Time (s): cpu = 00:12:59 ; elapsed = 00:06:13 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32999 ; free virtual = 96628
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12f7358a6
+
+Time (s): cpu = 00:13:00 ; elapsed = 00:06:14 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32714 ; free virtual = 96343
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32694 ; free virtual = 96323
+Phase 4.4 Final Placement Cleanup | Checksum: 1a1eda232
+
+Time (s): cpu = 00:13:01 ; elapsed = 00:06:15 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32498 ; free virtual = 96132
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a1eda232
+
+Time (s): cpu = 00:13:02 ; elapsed = 00:06:16 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32957 ; free virtual = 96590
+Ending Placer Task | Checksum: cd28911d
+
+Time (s): cpu = 00:13:02 ; elapsed = 00:06:16 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32678 ; free virtual = 96311
+INFO: [Common 17-83] Releasing license: Implementation
+274 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:13:09 ; elapsed = 00:06:21 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32736 ; free virtual = 96369
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32668 ; free virtual = 96302
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32497 ; free virtual = 96319
+INFO: [Common 17-1381] The checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32008 ; free virtual = 95706
+INFO: [runtcl-4] Executing : report_io -file mtf7_core_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.37 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 31858 ; free virtual = 95556
+INFO: [runtcl-4] Executing : report_utilization -file mtf7_core_top_utilization_placed.rpt -pb mtf7_core_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file mtf7_core_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 33065 ; free virtual = 96765
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2021.04' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 52c5e093 ConstDB: 0 ShapeSum: 7a62b08a RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 167b67fbe
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:46 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32043 ; free virtual = 95871
+Post Restoration Checksum: NetGraph: ad1cf996 NumContArr: ba998628 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 167b67fbe
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:47 . Memory (MB): peak = 4394.043 ; gain = 0.000 ; free physical = 32234 ; free virtual = 96066
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 167b67fbe
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:48 . Memory (MB): peak = 4467.016 ; gain = 72.973 ; free physical = 32222 ; free virtual = 96057
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 167b67fbe
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:48 . Memory (MB): peak = 4467.020 ; gain = 72.977 ; free physical = 32282 ; free virtual = 96117
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 156696cb9
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:10 . Memory (MB): peak = 4661.598 ; gain = 267.555 ; free physical = 32016 ; free virtual = 95946
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.026 | TNS=-0.058 | WHS=-0.443 | THS=-941.373|
+
+Phase 2 Router Initialization | Checksum: 20363132f
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:15 . Memory (MB): peak = 4661.598 ; gain = 267.555 ; free physical = 32076 ; free virtual = 96049
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 130171
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 130171
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 180528b34
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:33 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 31892 ; free virtual = 96179
+INFO: [Route 35-580] Design has 103 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                              my_test_algo/my_hls_label/layer11_out_6_V_reg_2711_reg[18]/D|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                              my_test_algo/my_hls_label/layer3_out_25_V_reg_1981_reg[23]/D|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                              my_test_algo/my_hls_label/layer11_out_6_V_reg_2711_reg[19]/D|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                               my_test_algo/my_hls_label/layer3_out_1_V_reg_1861_reg[14]/D|
+|     CLK_OUT4_usrclk_mmcm |     CLK_OUT4_usrclk_mmcm |                                              my_test_algo/my_hls_label/layer11_out_6_V_reg_2711_reg[16]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3396
+ Number of Nodes with overlaps = 747
+ Number of Nodes with overlaps = 157
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.041 | TNS=-0.065 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2021d14c9
+
+Time (s): cpu = 00:07:40 ; elapsed = 00:02:56 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 28199 ; free virtual = 92486
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 850
+ Number of Nodes with overlaps = 143
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.039  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 27e875d60
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:03:22 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29980 ; free virtual = 94266
+Phase 4 Rip-up And Reroute | Checksum: 27e875d60
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:03:23 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29975 ; free virtual = 94261
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 27e875d60
+
+Time (s): cpu = 00:08:30 ; elapsed = 00:03:23 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29959 ; free virtual = 94246
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 27e875d60
+
+Time (s): cpu = 00:08:30 ; elapsed = 00:03:24 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29951 ; free virtual = 94238
+Phase 5 Delay and Skew Optimization | Checksum: 27e875d60
+
+Time (s): cpu = 00:08:30 ; elapsed = 00:03:24 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29949 ; free virtual = 94235
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1b435084b
+
+Time (s): cpu = 00:08:40 ; elapsed = 00:03:27 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29862 ; free virtual = 94149
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.052  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a4f45be7
+
+Time (s): cpu = 00:08:40 ; elapsed = 00:03:27 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29850 ; free virtual = 94136
+Phase 6 Post Hold Fix | Checksum: 1a4f45be7
+
+Time (s): cpu = 00:08:41 ; elapsed = 00:03:27 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29842 ; free virtual = 94128
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 12.2861 %
+  Global Horizontal Routing Utilization  = 10.2373 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1b8ef1382
+
+Time (s): cpu = 00:08:42 ; elapsed = 00:03:28 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29799 ; free virtual = 94086
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b8ef1382
+
+Time (s): cpu = 00:08:42 ; elapsed = 00:03:29 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29752 ; free virtual = 94038
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 22685a0f1
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:03:35 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29653 ; free virtual = 93939
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.052  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 22685a0f1
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:03:36 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29660 ; free virtual = 93946
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:03:36 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29852 ; free virtual = 94138
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+294 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:08:59 ; elapsed = 00:03:40 . Memory (MB): peak = 4721.434 ; gain = 327.391 ; free physical = 29852 ; free virtual = 94139
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4721.434 ; gain = 0.000 ; free physical = 29852 ; free virtual = 94138
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 4721.434 ; gain = 0.000 ; free physical = 29821 ; free virtual = 94334
+INFO: [Common 17-1381] The checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 4721.438 ; gain = 0.004 ; free physical = 29774 ; free virtual = 94113
+INFO: [runtcl-4] Executing : report_drc -file mtf7_core_top_drc_routed.rpt -pb mtf7_core_top_drc_routed.pb -rpx mtf7_core_top_drc_routed.rpx
+Command: report_drc -file mtf7_core_top_drc_routed.rpt -pb mtf7_core_top_drc_routed.pb -rpx mtf7_core_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:37 ; elapsed = 00:00:14 . Memory (MB): peak = 4793.465 ; gain = 72.027 ; free physical = 29743 ; free virtual = 94085
+INFO: [runtcl-4] Executing : report_methodology -file mtf7_core_top_methodology_drc_routed.rpt -pb mtf7_core_top_methodology_drc_routed.pb -rpx mtf7_core_top_methodology_drc_routed.rpx
+Command: report_methodology -file mtf7_core_top_methodology_drc_routed.rpt -pb mtf7_core_top_methodology_drc_routed.pb -rpx mtf7_core_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:59 ; elapsed = 00:00:16 . Memory (MB): peak = 4818.449 ; gain = 24.984 ; free physical = 29680 ; free virtual = 94022
+INFO: [runtcl-4] Executing : report_power -file mtf7_core_top_power_routed.rpt -pb mtf7_core_top_power_summary_routed.pb -rpx mtf7_core_top_power_routed.rpx
+Command: report_power -file mtf7_core_top_power_routed.rpt -pb mtf7_core_top_power_summary_routed.pb -rpx mtf7_core_top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for usr_access
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+307 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 4818.449 ; gain = 0.000 ; free physical = 29579 ; free virtual = 93932
+INFO: [runtcl-4] Executing : report_route_status -file mtf7_core_top_route_status.rpt -pb mtf7_core_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file mtf7_core_top_timing_summary_routed.rpt -pb mtf7_core_top_timing_summary_routed.pb -rpx mtf7_core_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file mtf7_core_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file mtf7_core_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file mtf7_core_top_bus_skew_routed.rpt -pb mtf7_core_top_bus_skew_routed.pb -rpx mtf7_core_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed May 12 21:17:16 2021...

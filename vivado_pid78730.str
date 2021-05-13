@@ -1,0 +1,417 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 78730
+License: Customer
+
+Current time: 	Wed May 12 20:41:20 CDT 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-957.21.3.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: localhost:10.0
+Screen size: 1440x878
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/data/Xilinx/Vivado/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/data/Xilinx/Vivado/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sergo
+User home directory: /home/sergo
+User working directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /data/Xilinx/Vivado/Vivado
+HDI_APPROOT: /data/Xilinx/Vivado/Vivado/2019.1
+RDI_DATADIR: /data/Xilinx/Vivado/Vivado/2019.1/data
+RDI_BINDIR: /data/Xilinx/Vivado/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/sergo/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/sergo/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/sergo/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/data/Xilinx/Vivado/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.log
+Vivado journal file location: 	/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-78730-correlator2.fnal.gov
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /data/Xilinx/Vivado/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx-lic
+XILINX_DSP: /data/Xilinx/Vivado/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /data/Xilinx/Vivado/Vivado/2019.1
+XILINX_SDK: /data/Xilinx/Vivado/SDK/2019.1
+XILINX_VIVADO: /data/Xilinx/Vivado/Vivado/2019.1
+XILINX_VIVADO_HLS: /data/Xilinx/Vivado/Vivado/2019.1
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,173 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1577 ms.
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1014 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 764ms to process. Increasing delay to 4000 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr", 0); // q (O, cl)
+// [GUI Memory]: 110 MB (+112434kb) [00:00:16]
+// [Engine Memory]: 5,183 MB (+5283252kb) [00:00:16]
+// Opening Vivado Project: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3106 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,193 MB. GUI used memory: 43 MB. Current time: 5/12/21, 8:41:24 PM CDT
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+776kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  5815 ms.
+// Tcl Message: open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 6772.434 ; gain = 180.137 ; free physical = 39663 ; free virtual = 99749 
+// Project name: top; location: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top; part: xc7vx690tffg1927-2
+// Elapsed time: 18 seconds
+dismissDialog("Open Project"); // by (cl)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1092ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1092 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,405 MB. GUI used memory: 61 MB. Current time: 5/12/21, 8:41:43 PM CDT
+// a (cl): Critical Messages: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2287 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1849ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1849 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3021 ms.
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  2421 ms.
+floatFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az (aK, cl)
+// PAResourceOtoP.PAViews_SOURCES: Sources: float view
+// WARNING: HEventQueue.dispatchEvent() is taking  1066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1115 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1350 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+// Elapsed time: 11 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, aM)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tanh_2_tanh_table4.vhd]", 15, false); // B (F, aM)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, normalize_0_0_0_0_0_3.vhd]", 44, false, true, false, false, false, false); // B (F, aM) - Shift Key
+// WARNING: HEventQueue.dispatchEvent() is taking  3166 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, normalize_0_0_0_0_0_3.vhd]", 44, false, false, false, false, true, false); // B (F, aM) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (aM): Remove Sources: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2268 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'c' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1623 ms.
+dismissDialog("Remove Sources"); // aE (aM)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2_tanh_table4.vhd] -no_script -reset -force -quiet 
+// aE (aM): Remove Sources: addNotify
+// by (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1_tanh_table7.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_13ns_36_4_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_15ns_37_4_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_7ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_14ns_37_4_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/product.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_15ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_s.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_8ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_1.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_11ns_34_4_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_12ns_35_4_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_tanh_table1.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_16ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_12ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_2.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_9ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_13ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_2.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_s.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_1.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_10ns_18s_24_2_0.vhd] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_3.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Remove Sources"); // by (aE)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1176ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1177 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2211 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,440 MB. GUI used memory: 66 MB. Current time: 5/12/21, 8:42:49 PM CDT
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1438ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1439 ms.
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, aM)
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, aM)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (aM): Add Sources: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2668 ms.
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// WARNING: HEventQueue.dispatchEvent() is taking  3169 ms.
+// [Engine Memory]: 5,442 MB (+68kb) [00:02:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// Elapsed time: 21 seconds
+String[] filenames31467 = {"/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_1.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_2.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_s.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_10ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_12ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_13ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_15ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_16ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_11ns_34_4_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_12ns_35_4_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_13ns_36_4_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_14ns_37_4_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_15ns_37_4_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_7ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_8ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_9ns_18s_24_2_0.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_1.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_2.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_3.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_s.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/product.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_1.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_1_tanh_table7.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_2.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_2_tanh_table4.vhd", "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_tanh_table1.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 34 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1585 ms.
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (aM)
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Add Sources  : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // by (cl)
+// [GUI Memory]: 128 MB (+6750kb) [00:02:42]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1211ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1211 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,460 MB. GUI used memory: 69 MB. Current time: 5/12/21, 8:43:52 PM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1171 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3214 ms.
+// Elapsed time: 25 seconds
+dockFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az (aK, aM)
+// PAResourceOtoP.PAViews_SOURCES: Sources: dock view
+dismissDialog("Remove Sources"); // aE (aM)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cl): Run Synthesis: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1774 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2084 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1151 ms.
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2520 ms.
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed May 12 20:44:26 2021] Launched synth_1... Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1495 ms.
+// [GUI Memory]: 142 MB (+7584kb) [00:07:54]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 969ms to process. Increasing delay to 3000 ms.
+// ah (cl): Synthesis Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3152 ms.
+// Elapsed time: 381 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cl): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2029 ms.
+// Elapsed time: 697 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1256 ms.
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1054 ms.
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed May 12 21:02:29 2021] Launched impl_1... Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 700 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,467 MB. GUI used memory: 80 MB. Current time: 5/12/21, 9:13:52 PM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1286 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1695 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2298 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1159ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1160 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1279 ms.
+// ah (cl): Implementation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1659 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3614 ms.
+// Elapsed time: 901 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cl): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1857 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// TclEventType: RUN_MODIFY
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed May 12 21:17:40 2021] Launched impl_1... Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1610 ms.
+dismissDialog("Generate Bitstream"); // by (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1201 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 981ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1277 ms.
+// ah (cl): Bitstream Generation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1619 ms.
+// Elapsed time: 205 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1214 ms.
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,606 MB. GUI used memory: 83 MB. Current time: 5/12/21, 9:21:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,857 MB. GUI used memory: 82 MB. Current time: 5/12/21, 9:21:32 PM CDT
+// [Engine Memory]: 6,136 MB (+441988kb) [00:40:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,279 MB. GUI used memory: 82 MB. Current time: 5/12/21, 9:21:52 PM CDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 7,232 MB. GUI used memory: 82 MB. Current time: 5/12/21, 9:22:07 PM CDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 7,264 MB (+861318kb) [00:41:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 7,269 MB. GUI used memory: 83 MB. Current time: 5/12/21, 9:22:12 PM CDT
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// [GUI Memory]: 150 MB (+806kb) [00:41:11]
+// DeviceView Instantiated
+// [GUI Memory]: 165 MB (+8510kb) [00:41:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3000 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7vx690tffg1927-2 INFO: [Netlist 29-17] Analyzing 10549 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 8682.184 ; gain = 128.547 ; free physical = 29158 ; free virtual = 93732 
+// Tcl Message: Restored from archive | CPU: 8.890000 secs | Memory: 158.537994 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 8682.184 ; gain = 128.547 ; free physical = 29158 ; free virtual = 93732 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8682.184 ; gain = 0.000 ; free physical = 29202 ; free virtual = 93777 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// WARNING: HEventQueue.dispatchEvent() is taking  2859 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 8875.570 ; gain = 1899.953 ; free physical = 29107 ; free virtual = 93687 
+// ExpRunCommands.openImplResults elapsed time: 70.2s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  1366 ms.
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 177 MB (+3528kb) [00:41:17]
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1244 ms.
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 186 MB (+361kb) [00:41:19]
+// [Engine Memory]: 7,907 MB (+293295kb) [00:41:23]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 15.3s
+// [GUI Memory]: 198 MB (+2479kb) [00:41:23]
+// [GUI Memory]: 209 MB (+1244kb) [00:41:23]
+// [GUI Memory]: 220 MB (+581kb) [00:41:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  6994 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 7,996 MB. GUI used memory: 155 MB. Current time: 5/12/21, 9:22:32 PM CDT
+// Device view-level: 0.1
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+// 'dR' command handler elapsed time: 85 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1328 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1146 ms.
+// Elapsed time: 86 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1322 ms.
