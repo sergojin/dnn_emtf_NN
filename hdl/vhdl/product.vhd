@@ -14,7 +14,7 @@ port (
     ap_clk : IN STD_LOGIC;
     ap_rst : IN STD_LOGIC;
     a_V : IN STD_LOGIC_VECTOR (23 downto 0);
-    w_V : IN STD_LOGIC_VECTOR (17 downto 0);
+    w_V : IN STD_LOGIC_VECTOR (18 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (23 downto 0);
     ap_ce : IN STD_LOGIC );
 end;
@@ -38,9 +38,9 @@ architecture behav of product is
     signal ap_block_pp0_stage0 : BOOLEAN;
     signal grp_fu_43_ce : STD_LOGIC;
     signal a_V_int_reg : STD_LOGIC_VECTOR (23 downto 0);
-    signal w_V_int_reg : STD_LOGIC_VECTOR (17 downto 0);
+    signal w_V_int_reg : STD_LOGIC_VECTOR (18 downto 0);
 
-    component myproject_mul_mul_18s_24s_37_3_1 IS
+    component emtfptnn_mul_mul_19s_24s_37_3_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -50,7 +50,7 @@ architecture behav of product is
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (17 downto 0);
+        din0 : IN STD_LOGIC_VECTOR (18 downto 0);
         din1 : IN STD_LOGIC_VECTOR (23 downto 0);
         ce : IN STD_LOGIC;
         dout : OUT STD_LOGIC_VECTOR (36 downto 0) );
@@ -59,11 +59,11 @@ architecture behav of product is
 
 
 begin
-    myproject_mul_mul_18s_24s_37_3_1_U52 : component myproject_mul_mul_18s_24s_37_3_1
+    emtfptnn_mul_mul_19s_24s_37_3_1_U1 : component emtfptnn_mul_mul_19s_24s_37_3_1
     generic map (
         ID => 1,
         NUM_STAGE => 3,
-        din0_WIDTH => 18,
+        din0_WIDTH => 19,
         din1_WIDTH => 24,
         dout_WIDTH => 37)
     port map (
