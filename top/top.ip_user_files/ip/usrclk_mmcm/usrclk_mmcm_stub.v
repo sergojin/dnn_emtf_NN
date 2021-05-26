@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Nov 26 15:50:21 2019
-// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.6 (Nitrogen)
-// Command     : write_verilog -force -mode synth_stub -rename_top usrclk_mmcm -prefix
-//               usrclk_mmcm_ usrclk_mmcm_stub.v
+// Date        : Tue May 25 23:40:14 2021
+// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+// Command     : write_verilog -force -mode synth_stub
+//               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_stub.v
 // Design      : usrclk_mmcm
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7vx690tffg1927-2

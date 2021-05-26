@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date                      : Thu May 20 09:46:06 2021
+| Date                      : Tue May 25 23:48:20 2021
 | Host                      : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command                   : report_io -file mtf7_core_top_io_placed.rpt
 | Design                    : mtf7_core_top

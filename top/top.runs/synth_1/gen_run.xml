@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1621521527">
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1622004080">
   <File Type="VDS-TIMING-PB" Name="mtf7_core_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="mtf7_core_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="mtf7_core_top.dcp"/>
@@ -128,36 +128,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_11ns_34_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_12ns_35_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_15ns_37_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_13ns_36_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_14ns_37_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../hdl/vhdl/tanh_tanh_table1.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -176,25 +146,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_mul_bkb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../hdl/vhdl/tanh_2.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_10ns_33_4_0.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../hdl/vhdl/product.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_24s_9ns_32_4_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -255,12 +219,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../hdl/vhdl/normalize_0_0_0_0_0_s.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/emtfptnn_mul_mul_19s_24s_37_3_1.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

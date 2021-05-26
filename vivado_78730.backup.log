@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 12 20:40:31 2021
+# Process ID: 78730
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed
+# Command line: vivado
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.log
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2_tanh_table4.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1_tanh_table7.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_13ns_36_4_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_15ns_37_4_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_7ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_14ns_37_4_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/product.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_15ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_s.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_8ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_1.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_11ns_34_4_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_12ns_35_4_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_tanh_table1.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_16ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_12ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_2.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_9ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_13ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_2.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_s.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_1.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_10ns_18s_24_2_0.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_3.vhd'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/Vivado/2019.1/data/ip'.
+CRITICAL WARNING: [Common 17-1649] The Vivado message database '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/vivado.pb' contains 43333 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 43334' and re-open the project.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 6772.434 ; gain = 180.137 ; free physical = 39663 ; free virtual = 99749
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2_tanh_table4.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1_tanh_table7.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_13ns_36_4_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_15ns_37_4_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_7ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_14ns_37_4_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/product.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_15ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_8ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_11ns_34_4_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_12ns_35_4_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_tanh_table1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_16ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_12ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_9ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_13ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_10ns_18s_24_2_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_3.vhd] -no_script -reset -force -quiet
+remove_files  {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2_tanh_table4.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1_tanh_table7.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_13ns_36_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_15ns_37_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_7ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_14ns_37_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/product.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_15ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_8ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_11ns_34_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_24s_12ns_35_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_tanh_table1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_16ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_12ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/tanh.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_9ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_13ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/dense_latency_0_0_0_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/myproject_mul_10ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hls_vhdl/normalize_0_0_0_0_0_3.vhd}
+add_files -norecurse {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_11ns_34_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_15ns_37_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_12ns_35_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_13ns_36_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_mul_18s_24s_37_3_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_tanh_table1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_16ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_12ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_9ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/product.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_24s_14ns_37_4_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_8ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_15ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_10ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_2.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_7ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_3.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_1_tanh_table7.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_2_tanh_table4.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/myproject_mul_13ns_18s_24_2_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_1.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_s.vhd}
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed May 12 20:44:26 2021] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+CRITICAL WARNING: [Common 17-1649] The Vivado message database '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/vivado.pb' contains 43334 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 43335' and re-open the project.
+launch_runs impl_1 -jobs 16
+[Wed May 12 21:02:29 2021] Launched impl_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Wed May 12 21:17:40 2021] Launched impl_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
+INFO: [Netlist 29-17] Analyzing 10549 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 8682.184 ; gain = 128.547 ; free physical = 29158 ; free virtual = 93732
+Restored from archive | CPU: 8.890000 secs | Memory: 158.537994 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 8682.184 ; gain = 128.547 ; free physical = 29158 ; free virtual = 93732
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8682.184 ; gain = 0.000 ; free physical = 29202 ; free virtual = 93777
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 8875.570 ; gain = 1899.953 ; free physical = 29107 ; free virtual = 93687
+open_report: Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 9410.855 ; gain = 458.473 ; free physical = 28330 ; free virtual = 92923
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 12 22:24:56 2021...

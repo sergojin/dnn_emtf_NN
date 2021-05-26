@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="usrclk_mmcm_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
+<GenRun Id="usrclk_mmcm_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1622003972">
+  <File Type="VDS-TIMING-PB" Name="usrclk_mmcm_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="usrclk_mmcm_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="usrclk_mmcm.dcp"/>
-  <File Type="PA-TCL" Name="usrclk_mmcm.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="usrclk_mmcm_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="usrclk_mmcm_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="usrclk_mmcm_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="usrclk_mmcm.vds"/>
   <File Type="REPORTS-TCL" Name="usrclk_mmcm_reports.tcl"/>
+  <File Type="PA-TCL" Name="usrclk_mmcm.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/usrclk_mmcm">
     <File Path="$PPRDIR/../hdl/emtf/usrclk_mmcm/usrclk_mmcm.xci">
       <FileInfo>
