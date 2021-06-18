@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Tue Nov 26 15:50:21 2019
--- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.6 (Nitrogen)
--- Command     : write_vhdl -force -mode funcsim -rename_top ctoc_mmcm -prefix
---               ctoc_mmcm_ ctoc_mmcm_sim_netlist.vhdl
+-- Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+-- Date        : Fri Jun 18 09:47:00 2021
+-- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_sim_netlist.vhdl
 -- Design      : ctoc_mmcm
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,6 +23,8 @@ entity ctoc_mmcm_ctoc_mmcm_clk_wiz is
     locked : out STD_LOGIC;
     clk_125M_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of ctoc_mmcm_ctoc_mmcm_clk_wiz : entity is "ctoc_mmcm_clk_wiz";
 end ctoc_mmcm_ctoc_mmcm_clk_wiz;
 
 architecture STRUCTURE of ctoc_mmcm_ctoc_mmcm_clk_wiz is

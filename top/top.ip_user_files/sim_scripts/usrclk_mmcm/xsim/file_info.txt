@@ -1,2 +1,0 @@
-usrclk_mmcm_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../../hdl/emtf/usrclk_mmcm/usrclk_mmcm_sim_netlist.vhdl,incdir="../../../../../hdl/emtf/usrclk_mmcm"
-glbl.v,Verilog,xil_defaultlib,glbl.v

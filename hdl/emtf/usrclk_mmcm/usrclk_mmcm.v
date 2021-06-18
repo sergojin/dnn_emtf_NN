@@ -56,12 +56,12 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// CLK_OUT1___160.000______0.000______50.0______190.317____208.802
-// CLK_OUT2____40.000______0.000______50.0______273.894____208.802
-// CLK_OUT3___100.000______0.000______50.0______212.630____208.802
-// CLK_OUT4___114.286______0.000______50.0______205.787____208.802
-// CLK_OUT5___400.000______0.000______50.0______163.050____208.802
-// CLK_OUT6___266.667______0.000______50.0______174.089____208.802
+// CLK_OUT1__160.00000______0.000______50.0______190.317____208.802
+// CLK_OUT2__40.00000______0.000______50.0______273.894____208.802
+// CLK_OUT3__100.00000______0.000______50.0______212.630____208.802
+// CLK_OUT4__114.28571______0.000______50.0______205.787____208.802
+// CLK_OUT5__400.00000______0.000______50.0______163.050____208.802
+// CLK_OUT6__266.66667______0.000______50.0______174.089____208.802
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -70,7 +70,7 @@
 
 `timescale 1ps/1ps
 
-(* CORE_GENERATION_INFO = "usrclk_mmcm,clk_wiz_v6_0_3_0_0,{component_name=usrclk_mmcm,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=true,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=6,clkin1_period=25.000,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
+(* CORE_GENERATION_INFO = "usrclk_mmcm,clk_wiz_v6_0_5_0_0,{component_name=usrclk_mmcm,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=true,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=6,clkin1_period=25.000,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
 
 module usrclk_mmcm 
  (

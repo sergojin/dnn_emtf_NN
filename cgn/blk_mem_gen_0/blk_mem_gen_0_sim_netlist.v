@@ -1,10 +1,10 @@
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Nov 26 15:51:46 2019
-// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.6 (Nitrogen)
-// Command     : write_verilog -force -mode funcsim -rename_top blk_mem_gen_0 -prefix
-//               blk_mem_gen_0_ blk_mem_gen_0_sim_netlist.v
+// Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+// Date        : Fri Jun 18 09:47:58 2021
+// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+// Command     : write_verilog -force -mode funcsim
+//               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/cgn/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v
 // Design      : blk_mem_gen_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "blk_mem_gen_0,blk_mem_gen_v8_4_3,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_4_3,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "blk_mem_gen_0,blk_mem_gen_v8_4_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_4_4,Vivado 2020.1" *) 
 (* NotValidForBitStream *)
 module blk_mem_gen_0
    (clka,
@@ -130,8 +130,9 @@ module blk_mem_gen_0
   (* C_WRITE_WIDTH_A = "702" *) 
   (* C_WRITE_WIDTH_B = "702" *) 
   (* C_XDEVICEFAMILY = "virtex7" *) 
+  (* KEEP_HIERARCHY = "soft" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
-  blk_mem_gen_0_blk_mem_gen_v8_4_3 U0
+  blk_mem_gen_0_blk_mem_gen_v8_4_4 U0
        (.addra(addra),
         .addrb({1'b0,1'b0,1'b0,1'b0}),
         .clka(clka),
@@ -197,6 +198,7 @@ module blk_mem_gen_0
         .web(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module blk_mem_gen_0_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -290,6 +292,7 @@ module blk_mem_gen_0_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module blk_mem_gen_0_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -599,6 +602,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized8
         .wea(wea));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -3016,6 +3020,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized8
         .WEBWE({1'b0,1'b0,1'b0,1'b0,wea,wea,wea,wea}));
 endmodule
 
+(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module blk_mem_gen_0_blk_mem_gen_top
    (douta,
     clka,
@@ -3071,8 +3076,8 @@ endmodule
 (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) (* C_WRITE_DEPTH_A = "10" *) 
 (* C_WRITE_DEPTH_B = "10" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "702" *) (* C_WRITE_WIDTH_B = "702" *) (* C_XDEVICEFAMILY = "virtex7" *) 
-(* downgradeipidentifiedwarnings = "yes" *) 
-module blk_mem_gen_0_blk_mem_gen_v8_4_3
+(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4" *) (* downgradeipidentifiedwarnings = "yes" *) 
+module blk_mem_gen_0_blk_mem_gen_v8_4_4
    (clka,
     rsta,
     ena,
@@ -4646,7 +4651,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_4_3
   assign sbiterr = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  blk_mem_gen_0_blk_mem_gen_v8_4_3_synth inst_blk_mem_gen
+  blk_mem_gen_0_blk_mem_gen_v8_4_4_synth inst_blk_mem_gen
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -4655,7 +4660,8 @@ module blk_mem_gen_0_blk_mem_gen_v8_4_3
         .wea(wea));
 endmodule
 
-module blk_mem_gen_0_blk_mem_gen_v8_4_3_synth
+(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4_synth" *) 
+module blk_mem_gen_0_blk_mem_gen_v8_4_4_synth
    (douta,
     clka,
     ena,
@@ -4692,12 +4698,15 @@ module glbl ();
 
     parameter ROC_WIDTH = 100000;
     parameter TOC_WIDTH = 0;
+    parameter GRES_WIDTH = 10000;
+    parameter GRES_START = 10000;
 
 //--------   STARTUP Globals --------------
     wire GSR;
     wire GTS;
     wire GWE;
     wire PRLD;
+    wire GRESTORE;
     tri1 p_up_tmp;
     tri (weak1, strong0) PLL_LOCKG = p_up_tmp;
 
@@ -4710,6 +4719,7 @@ module glbl ();
     reg GSR_int;
     reg GTS_int;
     reg PRLD_int;
+    reg GRESTORE_int;
 
 //--------   JTAG Globals --------------
     wire JTAG_TDO_GLBL;
@@ -4737,6 +4747,7 @@ module glbl ();
     assign (strong1, weak0) GSR = GSR_int;
     assign (strong1, weak0) GTS = GTS_int;
     assign (weak1, weak0) PRLD = PRLD_int;
+    assign (strong1, weak0) GRESTORE = GRESTORE_int;
 
     initial begin
 	GSR_int = 1'b1;
@@ -4750,6 +4761,14 @@ module glbl ();
 	GTS_int = 1'b1;
 	#(TOC_WIDTH)
 	GTS_int = 1'b0;
+    end
+
+    initial begin 
+	GRESTORE_int = 1'b0;
+	#(GRES_START);
+	GRESTORE_int = 1'b1;
+	#(GRES_WIDTH);
+	GRESTORE_int = 1'b0;
     end
 
 endmodule

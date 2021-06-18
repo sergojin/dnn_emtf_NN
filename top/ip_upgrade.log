@@ -1,3 +1,171 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:37 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'usrclk_mmcm'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of usrclk_mmcm (xilinx.com:ip:clk_wiz:6.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:35 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'inject_mem_64'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of inject_mem_64 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:34 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'eleven2two_lut'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of eleven2two_lut (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:33 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'eleven2nine_lut'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of eleven2nine_lut (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:31 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctoc_mmcm_in'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctoc_mmcm_in (xilinx.com:ip:clk_wiz:6.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:42:19 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctoc_mmcm'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctoc_mmcm (xilinx.com:ip:clk_wiz:6.0) from (Rev. 3) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:41:57 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ctoc_ififo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ctoc_ififo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:41:56 2021
+| Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1927-2
+---------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'blk_mem_gen_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of blk_mem_gen_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019

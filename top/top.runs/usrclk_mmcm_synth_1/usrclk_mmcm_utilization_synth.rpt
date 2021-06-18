@@ -1,7 +1,7 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue May 25 23:40:14 2021
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:46:58 2021
 | Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command      : report_utilization -file usrclk_mmcm_utilization_synth.rpt -pb usrclk_mmcm_utilization_synth.pb
 | Design       : usrclk_mmcm

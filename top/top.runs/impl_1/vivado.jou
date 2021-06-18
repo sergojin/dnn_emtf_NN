@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue May 25 23:45:18 2021
-# Process ID: 100435
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jun 18 09:52:19 2021
+# Process ID: 100729
 # Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1
 # Command line: vivado -log mtf7_core_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mtf7_core_top.tcl -notrace
 # Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/mtf7_core_top.vdi

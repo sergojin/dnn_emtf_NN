@@ -1,7 +1,7 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue May 25 23:50:24 2021
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jun 18 09:57:40 2021
 | Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command      : report_methodology -file mtf7_core_top_methodology_drc_routed.rpt -pb mtf7_core_top_methodology_drc_routed.pb -rpx mtf7_core_top_methodology_drc_routed.rpx
 | Design       : mtf7_core_top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 14
+             Violations found: 13
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                         | 2          |
+| LUTAR-1   | Warning  | LUT drives async reset alert                         | 1          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
 | TIMING-18 | Warning  | Missing input or output delay                        | 2          |
@@ -41,11 +41,6 @@ Table of Contents
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/gf36e1_inst.sngfifo36e1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell ctoc/data_out[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.wr_rst_reg1_reg/PRE, ctoc/ctoc_ififo_/U0/inst_fifo_gen/gconvfifo.rf/gbi.bi/g7ser_birst.rstbt/rsync.ric.wr_rst_reg2_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-9#1 Warning

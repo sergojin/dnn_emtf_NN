@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="eleven2two_lut_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593401362">
-  <File Type="RDS-UTIL-PB" Name="eleven2two_lut_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="eleven2two_lut_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="eleven2two_lut.vds"/>
+<GenRun Id="eleven2two_lut_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1624027554">
+  <File Type="VDS-TIMING-PB" Name="eleven2two_lut_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eleven2two_lut_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="eleven2two_lut.dcp"/>
-  <File Type="PA-TCL" Name="eleven2two_lut.tcl"/>
   <File Type="REPORTS-TCL" Name="eleven2two_lut_reports.tcl"/>
+  <File Type="PA-TCL" Name="eleven2two_lut.tcl"/>
+  <File Type="RDS-RDS" Name="eleven2two_lut.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="eleven2two_lut_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="eleven2two_lut_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="eleven2two_lut_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/eleven2two_lut">
     <File Path="$PSRCDIR/sources_1/ip/eleven2two_lut/eleven2two_lut.xci">
       <FileInfo>
@@ -39,7 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

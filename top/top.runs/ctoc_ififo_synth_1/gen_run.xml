@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ctoc_ififo_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1593201554">
-  <File Type="PA-TCL" Name="ctoc_ififo.tcl"/>
+<GenRun Id="ctoc_ififo_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1624027554">
+  <File Type="VDS-TIMING-PB" Name="ctoc_ififo_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ctoc_ififo_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ctoc_ififo.dcp"/>
-  <File Type="RDS-RDS" Name="ctoc_ififo.vds"/>
   <File Type="REPORTS-TCL" Name="ctoc_ififo_reports.tcl"/>
+  <File Type="PA-TCL" Name="ctoc_ififo.tcl"/>
+  <File Type="RDS-RDS" Name="ctoc_ififo.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ctoc_ififo_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="ctoc_ififo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ctoc_ififo_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ctoc_ififo">
     <File Path="$PPRDIR/../hdl/emtf/ctoc_ififo/ctoc_ififo.xci">
       <FileInfo>
@@ -37,7 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

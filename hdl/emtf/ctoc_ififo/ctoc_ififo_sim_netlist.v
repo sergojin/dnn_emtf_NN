@@ -1,10 +1,10 @@
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Tue Nov 26 15:51:10 2019
-// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.6 (Nitrogen)
-// Command     : write_verilog -force -mode funcsim -rename_top ctoc_ififo -prefix
-//               ctoc_ififo_ ctoc_ififo_sim_netlist.v
+// Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+// Date        : Fri Jun 18 09:47:51 2021
+// Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+// Command     : write_verilog -force -mode funcsim
+//               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_ififo/ctoc_ififo_sim_netlist.v
 // Design      : ctoc_ififo
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "ctoc_ififo,fifo_generator_v13_2_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "fifo_generator_v13_2_4,Vivado 2019.1" *) 
+(* CHECK_LICENSE_TYPE = "ctoc_ififo,fifo_generator_v13_2_5,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "fifo_generator_v13_2_5,Vivado 2020.1" *) 
 (* NotValidForBitStream *)
 module ctoc_ififo
    (rst,
@@ -26,8 +26,8 @@ module ctoc_ififo
     empty,
     valid);
   input rst;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 write_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME write_clk, FREQ_HZ 125000000, PHASE 0.000, INSERT_VIP 0" *) input wr_clk;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 read_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME read_clk, FREQ_HZ 125000000, PHASE 0.000, INSERT_VIP 0" *) input rd_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 write_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME write_clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input wr_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 read_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME read_clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input rd_clk;
   (* x_interface_info = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_DATA" *) input [68:0]din;
   (* x_interface_info = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_EN" *) input wr_en;
   (* x_interface_info = "xilinx.com:interface:fifo_read:1.0 FIFO_READ RD_EN" *) input rd_en;
@@ -371,7 +371,8 @@ module ctoc_ififo
   (* C_WR_PNTR_WIDTH_WDCH = "10" *) 
   (* C_WR_PNTR_WIDTH_WRCH = "4" *) 
   (* C_WR_RESPONSE_LATENCY = "1" *) 
-  ctoc_ififo_fifo_generator_v13_2_4 U0
+  (* KEEP_HIERARCHY = "soft" *) 
+  ctoc_ififo_fifo_generator_v13_2_5 U0
        (.almost_empty(NLW_U0_almost_empty_UNCONNECTED),
         .almost_full(NLW_U0_almost_full_UNCONNECTED),
         .axi_ar_data_count(NLW_U0_axi_ar_data_count_UNCONNECTED[4:0]),
@@ -605,6 +606,7 @@ module ctoc_ififo
         .wr_rst_busy(NLW_U0_wr_rst_busy_UNCONNECTED));
 endmodule
 
+(* ORIG_REF_NAME = "builtin_extdepth_v6" *) 
 module ctoc_ififo_builtin_extdepth_v6
    (valid,
     empty,
@@ -675,6 +677,7 @@ module ctoc_ififo_builtin_extdepth_v6
         .O(dbr_as_reg));
 endmodule
 
+(* ORIG_REF_NAME = "builtin_prim_v6" *) 
 module ctoc_ififo_builtin_prim_v6
    (empty,
     full,
@@ -697,7 +700,10 @@ module ctoc_ififo_builtin_prim_v6
   input wr_en;
   input [68:0]din;
 
+  wire [12:9]RDCOUNT;
   wire RST;
+  wire [12:9]WRCOUNT;
+  wire dbiterr_i;
   wire [68:0]din;
   wire [68:0]dout;
   wire empty;
@@ -726,17 +732,14 @@ module ctoc_ififo_builtin_prim_v6
   wire \gf36e1_inst.sngfifo36e1_n_5 ;
   wire \gf36e1_inst.sngfifo36e1_n_98 ;
   wire \gf36e1_inst.sngfifo36e1_n_99 ;
-  wire p_2_out;
-  wire p_3_out;
-  wire p_5_out;
+  wire overflow_i;
   wire rd_clk;
   wire rd_en;
+  wire sbiterr_i;
   wire valid;
   wire wr_clk;
   wire wr_en;
   wire [7:0]\NLW_gf36e1_inst.sngfifo36e1_ECCPARITY_UNCONNECTED ;
-  wire [12:9]\NLW_gf36e1_inst.sngfifo36e1_RDCOUNT_UNCONNECTED ;
-  wire [12:9]\NLW_gf36e1_inst.sngfifo36e1_WRCOUNT_UNCONNECTED ;
 
   (* box_type = "PRIMITIVE" *) 
   FIFO36E1 #(
@@ -761,7 +764,7 @@ module ctoc_ififo_builtin_prim_v6
     \gf36e1_inst.sngfifo36e1 
        (.ALMOSTEMPTY(\gf36e1_inst.sngfifo36e1_n_0 ),
         .ALMOSTFULL(\gf36e1_inst.sngfifo36e1_n_1 ),
-        .DBITERR(p_2_out),
+        .DBITERR(dbiterr_i),
         .DI({din[67:36],din[31:0]}),
         .DIP({1'b0,1'b0,1'b0,din[68],din[35:32]}),
         .DO({dout[67:36],dout[31:0]}),
@@ -772,17 +775,17 @@ module ctoc_ififo_builtin_prim_v6
         .INJECTDBITERR(1'b0),
         .INJECTSBITERR(1'b0),
         .RDCLK(rd_clk),
-        .RDCOUNT({\NLW_gf36e1_inst.sngfifo36e1_RDCOUNT_UNCONNECTED [12:9],\gf36e1_inst.sngfifo36e1_n_12 ,\gf36e1_inst.sngfifo36e1_n_13 ,\gf36e1_inst.sngfifo36e1_n_14 ,\gf36e1_inst.sngfifo36e1_n_15 ,\gf36e1_inst.sngfifo36e1_n_16 ,\gf36e1_inst.sngfifo36e1_n_17 ,\gf36e1_inst.sngfifo36e1_n_18 ,\gf36e1_inst.sngfifo36e1_n_19 ,\gf36e1_inst.sngfifo36e1_n_20 }),
+        .RDCOUNT({RDCOUNT,\gf36e1_inst.sngfifo36e1_n_12 ,\gf36e1_inst.sngfifo36e1_n_13 ,\gf36e1_inst.sngfifo36e1_n_14 ,\gf36e1_inst.sngfifo36e1_n_15 ,\gf36e1_inst.sngfifo36e1_n_16 ,\gf36e1_inst.sngfifo36e1_n_17 ,\gf36e1_inst.sngfifo36e1_n_18 ,\gf36e1_inst.sngfifo36e1_n_19 ,\gf36e1_inst.sngfifo36e1_n_20 }),
         .RDEN(rd_en),
         .RDERR(\gf36e1_inst.sngfifo36e1_n_5 ),
         .REGCE(1'b0),
         .RST(RST),
         .RSTREG(1'b0),
-        .SBITERR(p_3_out),
+        .SBITERR(sbiterr_i),
         .WRCLK(wr_clk),
-        .WRCOUNT({\NLW_gf36e1_inst.sngfifo36e1_WRCOUNT_UNCONNECTED [12:9],\gf36e1_inst.sngfifo36e1_n_25 ,\gf36e1_inst.sngfifo36e1_n_26 ,\gf36e1_inst.sngfifo36e1_n_27 ,\gf36e1_inst.sngfifo36e1_n_28 ,\gf36e1_inst.sngfifo36e1_n_29 ,\gf36e1_inst.sngfifo36e1_n_30 ,\gf36e1_inst.sngfifo36e1_n_31 ,\gf36e1_inst.sngfifo36e1_n_32 ,\gf36e1_inst.sngfifo36e1_n_33 }),
+        .WRCOUNT({WRCOUNT,\gf36e1_inst.sngfifo36e1_n_25 ,\gf36e1_inst.sngfifo36e1_n_26 ,\gf36e1_inst.sngfifo36e1_n_27 ,\gf36e1_inst.sngfifo36e1_n_28 ,\gf36e1_inst.sngfifo36e1_n_29 ,\gf36e1_inst.sngfifo36e1_n_30 ,\gf36e1_inst.sngfifo36e1_n_31 ,\gf36e1_inst.sngfifo36e1_n_32 ,\gf36e1_inst.sngfifo36e1_n_33 }),
         .WREN(wr_en),
-        .WRERR(p_5_out));
+        .WRERR(overflow_i));
   LUT1 #(
     .INIT(2'h1)) 
     valid_INST_0
@@ -790,6 +793,7 @@ module ctoc_ififo_builtin_prim_v6
         .O(valid));
 endmodule
 
+(* ORIG_REF_NAME = "builtin_top_v6" *) 
 module ctoc_ififo_builtin_top_v6
    (valid,
     empty,
@@ -836,6 +840,7 @@ module ctoc_ififo_builtin_top_v6
         .wr_en(wr_en));
 endmodule
 
+(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module ctoc_ififo_fifo_generator_top
    (empty,
     full,
@@ -869,7 +874,7 @@ module ctoc_ififo_fifo_generator_top
   wire wr_clk;
   wire wr_en;
 
-  ctoc_ififo_fifo_generator_v13_2_4_builtin \gbi.bi 
+  ctoc_ififo_fifo_generator_v13_2_5_builtin \gbi.bi 
        (.din(din),
         .dout(dout),
         .empty(empty),
@@ -949,8 +954,8 @@ endmodule
 (* C_WR_DEPTH_WRCH = "16" *) (* C_WR_FREQ = "125" *) (* C_WR_PNTR_WIDTH = "9" *) 
 (* C_WR_PNTR_WIDTH_AXIS = "10" *) (* C_WR_PNTR_WIDTH_RACH = "4" *) (* C_WR_PNTR_WIDTH_RDCH = "10" *) 
 (* C_WR_PNTR_WIDTH_WACH = "4" *) (* C_WR_PNTR_WIDTH_WDCH = "10" *) (* C_WR_PNTR_WIDTH_WRCH = "4" *) 
-(* C_WR_RESPONSE_LATENCY = "1" *) 
-module ctoc_ififo_fifo_generator_v13_2_4
+(* C_WR_RESPONSE_LATENCY = "1" *) (* ORIG_REF_NAME = "fifo_generator_v13_2_5" *) 
+module ctoc_ififo_fifo_generator_v13_2_5
    (backup,
     backup_marker,
     clk,
@@ -1952,7 +1957,7 @@ module ctoc_ififo_fifo_generator_v13_2_4
        (.G(\<const0> ));
   VCC VCC
        (.P(\<const1> ));
-  ctoc_ififo_fifo_generator_v13_2_4_synth inst_fifo_gen
+  ctoc_ififo_fifo_generator_v13_2_5_synth inst_fifo_gen
        (.din(din),
         .dout(dout),
         .empty(empty),
@@ -1965,7 +1970,8 @@ module ctoc_ififo_fifo_generator_v13_2_4
         .wr_en(wr_en));
 endmodule
 
-module ctoc_ififo_fifo_generator_v13_2_4_builtin
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_builtin" *) 
+module ctoc_ififo_fifo_generator_v13_2_5_builtin
    (empty,
     full,
     dout,
@@ -2017,7 +2023,8 @@ module ctoc_ififo_fifo_generator_v13_2_4_builtin
         .wr_en(wr_en));
 endmodule
 
-module ctoc_ififo_fifo_generator_v13_2_4_synth
+(* ORIG_REF_NAME = "fifo_generator_v13_2_5_synth" *) 
+module ctoc_ififo_fifo_generator_v13_2_5_synth
    (empty,
     full,
     dout,
@@ -2063,6 +2070,7 @@ module ctoc_ififo_fifo_generator_v13_2_4_synth
         .wr_en(wr_en));
 endmodule
 
+(* ORIG_REF_NAME = "reset_builtin" *) 
 module ctoc_ififo_reset_builtin
    (RST,
     wr_clk,
@@ -2314,12 +2322,15 @@ module glbl ();
 
     parameter ROC_WIDTH = 100000;
     parameter TOC_WIDTH = 0;
+    parameter GRES_WIDTH = 10000;
+    parameter GRES_START = 10000;
 
 //--------   STARTUP Globals --------------
     wire GSR;
     wire GTS;
     wire GWE;
     wire PRLD;
+    wire GRESTORE;
     tri1 p_up_tmp;
     tri (weak1, strong0) PLL_LOCKG = p_up_tmp;
 
@@ -2332,6 +2343,7 @@ module glbl ();
     reg GSR_int;
     reg GTS_int;
     reg PRLD_int;
+    reg GRESTORE_int;
 
 //--------   JTAG Globals --------------
     wire JTAG_TDO_GLBL;
@@ -2359,6 +2371,7 @@ module glbl ();
     assign (strong1, weak0) GSR = GSR_int;
     assign (strong1, weak0) GTS = GTS_int;
     assign (weak1, weak0) PRLD = PRLD_int;
+    assign (strong1, weak0) GRESTORE = GRESTORE_int;
 
     initial begin
 	GSR_int = 1'b1;
@@ -2372,6 +2385,14 @@ module glbl ();
 	GTS_int = 1'b1;
 	#(TOC_WIDTH)
 	GTS_int = 1'b0;
+    end
+
+    initial begin 
+	GRESTORE_int = 1'b0;
+	#(GRES_START);
+	GRESTORE_int = 1'b1;
+	#(GRES_WIDTH);
+	GRESTORE_int = 1'b0;
     end
 
 endmodule

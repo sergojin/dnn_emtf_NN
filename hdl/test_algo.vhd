@@ -103,10 +103,10 @@ architecture Behavioral of test_algo is
         input1_20_V : IN STD_LOGIC_VECTOR (17 downto 0);
         input1_21_V : IN STD_LOGIC_VECTOR (17 downto 0);
         input1_22_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        layer16_out_0_V : OUT STD_LOGIC_VECTOR (11 downto 0);
-        layer16_out_0_V_ap_vld : OUT STD_LOGIC;
-        layer16_out_1_V : OUT STD_LOGIC_VECTOR (11 downto 0);
-        layer16_out_1_V_ap_vld : OUT STD_LOGIC;
+        layer15_out_0_V : OUT STD_LOGIC_VECTOR (11 downto 0);
+        layer15_out_0_V_ap_vld : OUT STD_LOGIC;
+        layer15_out_1_V : OUT STD_LOGIC_VECTOR (11 downto 0);
+        layer15_out_1_V_ap_vld : OUT STD_LOGIC;
         const_size_in_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
         const_size_in_1_ap_vld : OUT STD_LOGIC;
         const_size_out_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -121,7 +121,7 @@ architecture Behavioral of test_algo is
     
     signal bram_address : unsigned(3 downto 0) := (others => '1');
     
-    signal layer16_out_valid : STD_LOGIC;
+    signal layer15_out_valid : STD_LOGIC;
     signal data_valid, dvDbg1, dvDbg1a,dvDbg1b, dvDbg1c, dvDbg2, dvDbg3 : STD_LOGIC:= '0';
     signal data, dataDbg1, dataDbg1a,dataDbg1b, dataDbg1c, dataDbg2  : STD_LOGIC_VECTOR(701 downto 0);
         
@@ -174,8 +174,8 @@ architecture Behavioral of test_algo is
 	signal vb_RPCbit2 	 : std_logic;
 	signal vb_RPCbit3 	 : std_logic;
 	signal vb_RPCbit4 	 : std_logic;
-	signal vb_layer16_out_invpt 	 : std_logic;
-	signal vb_layer16_out_d0 	 : std_logic;
+	signal vb_layer15_out_invpt 	 : std_logic;
+	signal vb_layer15_out_d0 	 : std_logic;
 	signal deltaPhi1 	 : std_logic_vector(17 downto 0);
 	signal deltaPhi2 	 : std_logic_vector(17 downto 0);
 	signal deltaPhi3 	 : std_logic_vector(17 downto 0);
@@ -199,8 +199,8 @@ architecture Behavioral of test_algo is
 	signal RPCbit2 	 : std_logic_vector(17 downto 0);
 	signal RPCbit3 	 : std_logic_vector(17 downto 0);
 	signal RPCbit4 	 : std_logic_vector(17 downto 0);
-	signal layer16_out_invpt 	 : std_logic_vector(11 downto 0);
-	signal layer16_out_d0 	 : std_logic_vector(11 downto 0);
+	signal layer15_out_invpt 	 : std_logic_vector(11 downto 0);
+	signal layer15_out_d0 	 : std_logic_vector(11 downto 0);
 
 
 	attribute mark_debug of deltaPhi1 	 : signal is "true";
@@ -226,8 +226,8 @@ architecture Behavioral of test_algo is
 	attribute mark_debug of RPCbit2 	 : signal is "true";
 	attribute mark_debug of RPCbit3 	 : signal is "true";
 	attribute mark_debug of RPCbit4 	 : signal is "true";
-	attribute mark_debug of layer16_out_invpt 	 : signal is "true";
-	attribute mark_debug of layer16_out_d0 	 : signal is "true";
+	attribute mark_debug of layer15_out_invpt 	 : signal is "true";
+	attribute mark_debug of layer15_out_d0 	 : signal is "true";
 
     
     
@@ -244,7 +244,7 @@ begin
             doutDbg2 <= doutDbg1;
             doutDbg3 <= doutDbg2;
             
-            dvOutDbg1 <= layer16_out_valid;
+            dvOutDbg1 <= layer15_out_valid;
             dvOutDbg2 <= dvOutDbg1;
             dvOutDbg3 <= dvOutDbg2;     
             
@@ -350,7 +350,7 @@ begin
 --    my_ila_label : ila_0
 --        PORT MAP(
 --                clk => clk1,
---                probe0(0) => layer16_out_valid,
+--                probe0(0) => layer15_out_valid,
 --                probe1 => data(31 downto 0),
 --                probe2 => data(63 downto 32),
 --                probe3(0) => data_valid,
@@ -432,10 +432,10 @@ begin
                             input1_20_V_ap_vld      => vb_RPCbit2,
                             input1_21_V_ap_vld      => vb_RPCbit3,
                             input1_22_V_ap_vld      => vb_RPCbit4,
-                            layer16_out_0_V      => layer16_out_invpt,
-                            layer16_out_1_V      => layer16_out_d0,
-                            layer16_out_0_V_ap_vld      => vb_layer16_out_invpt,
-                            layer16_out_1_V_ap_vld      => vb_layer16_out_d0,
+                            layer15_out_0_V      => layer15_out_invpt,
+                            layer15_out_1_V      => layer15_out_d0,
+                            layer15_out_0_V_ap_vld      => vb_layer15_out_invpt,
+                            layer15_out_1_V_ap_vld      => vb_layer15_out_d0,
                 
                 
                 --========================================
@@ -506,10 +506,10 @@ begin
                 
                 
                  
-	hls_to_ila(11 downto 0) 	 <= layer16_out_invpt;
-	hls_to_ila(23 downto 12) 	 <= layer16_out_d0;
+	hls_to_ila(11 downto 0) 	 <= layer15_out_invpt;
+	hls_to_ila(23 downto 12) 	 <= layer15_out_d0;
 
-                    layer16_out_valid      <= vb_layer16_out_invpt or vb_layer16_out_d0;
+                    layer15_out_valid      <= vb_layer15_out_invpt or vb_layer15_out_d0;
                 
                 
                 --========================================

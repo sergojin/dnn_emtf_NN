@@ -1,8 +1,8 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Fri Jun 26 14:58:49 2020
--- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.8 (Nitrogen)
+-- Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+-- Date        : Fri Jun 18 09:47:52 2021
+-- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sources_1/ip/eleven2nine_lut/eleven2nine_lut_sim_netlist.vhdl
 -- Design      : eleven2nine_lut
@@ -236,17 +236,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity eleven2nine_lut_blk_mem_gen_v8_4_3_synth is
+entity eleven2nine_lut_blk_mem_gen_v8_4_4_synth is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of eleven2nine_lut_blk_mem_gen_v8_4_3_synth : entity is "blk_mem_gen_v8_4_3_synth";
-end eleven2nine_lut_blk_mem_gen_v8_4_3_synth;
+  attribute ORIG_REF_NAME of eleven2nine_lut_blk_mem_gen_v8_4_4_synth : entity is "blk_mem_gen_v8_4_4_synth";
+end eleven2nine_lut_blk_mem_gen_v8_4_4_synth;
 
-architecture STRUCTURE of eleven2nine_lut_blk_mem_gen_v8_4_3_synth is
+architecture STRUCTURE of eleven2nine_lut_blk_mem_gen_v8_4_4_synth is
 begin
 \gnbram.gnativebmg.native_blk_mem_gen\: entity work.eleven2nine_lut_blk_mem_gen_top
      port map (
@@ -259,7 +259,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity eleven2nine_lut_blk_mem_gen_v8_4_3 is
+entity eleven2nine_lut_blk_mem_gen_v8_4_4 is
   port (
     clka : in STD_LOGIC;
     rsta : in STD_LOGIC;
@@ -326,162 +326,162 @@ entity eleven2nine_lut_blk_mem_gen_v8_4_3 is
     s_axi_rdaddrecc : out STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   attribute C_ADDRA_WIDTH : integer;
-  attribute C_ADDRA_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 11;
+  attribute C_ADDRA_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 11;
   attribute C_ADDRB_WIDTH : integer;
-  attribute C_ADDRB_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 11;
+  attribute C_ADDRB_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 11;
   attribute C_ALGORITHM : integer;
-  attribute C_ALGORITHM of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_ALGORITHM of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 4;
+  attribute C_AXI_ID_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 4;
   attribute C_AXI_SLAVE_TYPE : integer;
-  attribute C_AXI_SLAVE_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_AXI_SLAVE_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_AXI_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_BYTE_SIZE : integer;
-  attribute C_BYTE_SIZE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 9;
+  attribute C_BYTE_SIZE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 9;
   attribute C_COMMON_CLK : integer;
-  attribute C_COMMON_CLK of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_COMMON_CLK of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_COUNT_18K_BRAM : string;
-  attribute C_COUNT_18K_BRAM of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "1";
+  attribute C_COUNT_18K_BRAM of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "1";
   attribute C_COUNT_36K_BRAM : string;
-  attribute C_COUNT_36K_BRAM of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "0";
+  attribute C_COUNT_36K_BRAM of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "0";
   attribute C_CTRL_ECC_ALGO : string;
-  attribute C_CTRL_ECC_ALGO of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "NONE";
+  attribute C_CTRL_ECC_ALGO of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "NONE";
   attribute C_DEFAULT_DATA : string;
-  attribute C_DEFAULT_DATA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "0";
+  attribute C_DEFAULT_DATA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "0";
   attribute C_DISABLE_WARN_BHV_COLL : integer;
-  attribute C_DISABLE_WARN_BHV_COLL of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_DISABLE_WARN_BHV_COLL of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_DISABLE_WARN_BHV_RANGE : integer;
-  attribute C_DISABLE_WARN_BHV_RANGE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_DISABLE_WARN_BHV_RANGE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_ELABORATION_DIR : string;
-  attribute C_ELABORATION_DIR of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "./";
+  attribute C_ELABORATION_DIR of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "./";
   attribute C_ENABLE_32BIT_ADDRESS : integer;
-  attribute C_ENABLE_32BIT_ADDRESS of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_ENABLE_32BIT_ADDRESS of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_DEEPSLEEP_PIN : integer;
-  attribute C_EN_DEEPSLEEP_PIN of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_DEEPSLEEP_PIN of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_ECC_PIPE : integer;
-  attribute C_EN_ECC_PIPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_ECC_PIPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_RDADDRA_CHG : integer;
-  attribute C_EN_RDADDRA_CHG of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_RDADDRA_CHG of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_RDADDRB_CHG : integer;
-  attribute C_EN_RDADDRB_CHG of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_RDADDRB_CHG of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_SAFETY_CKT of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_SHUTDOWN_PIN : integer;
-  attribute C_EN_SHUTDOWN_PIN of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_SHUTDOWN_PIN of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EN_SLEEP_PIN : integer;
-  attribute C_EN_SLEEP_PIN of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_EN_SLEEP_PIN of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_EST_POWER_SUMMARY : string;
-  attribute C_EST_POWER_SUMMARY of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "Estimated Power for IP     :     1.2196 mW";
+  attribute C_EST_POWER_SUMMARY of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "Estimated Power for IP     :     1.2196 mW";
   attribute C_FAMILY : string;
-  attribute C_FAMILY of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "virtex7";
+  attribute C_FAMILY of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "virtex7";
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_AXI_ID of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_ENA : integer;
-  attribute C_HAS_ENA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_ENA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_ENB : integer;
-  attribute C_HAS_ENB of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_ENB of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_INJECTERR : integer;
-  attribute C_HAS_INJECTERR of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_INJECTERR of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_MEM_OUTPUT_REGS_A : integer;
-  attribute C_HAS_MEM_OUTPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_MEM_OUTPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_MEM_OUTPUT_REGS_B : integer;
-  attribute C_HAS_MEM_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_MEM_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_MUX_OUTPUT_REGS_A : integer;
-  attribute C_HAS_MUX_OUTPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_MUX_OUTPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_MUX_OUTPUT_REGS_B : integer;
-  attribute C_HAS_MUX_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_MUX_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_REGCEA : integer;
-  attribute C_HAS_REGCEA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_REGCEA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_REGCEB : integer;
-  attribute C_HAS_REGCEB of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_REGCEB of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_RSTA : integer;
-  attribute C_HAS_RSTA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_RSTA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_RSTB : integer;
-  attribute C_HAS_RSTB of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_RSTB of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
-  attribute C_HAS_SOFTECC_INPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_SOFTECC_INPUT_REGS_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_HAS_SOFTECC_OUTPUT_REGS_B : integer;
-  attribute C_HAS_SOFTECC_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_HAS_SOFTECC_OUTPUT_REGS_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_INITA_VAL : string;
-  attribute C_INITA_VAL of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "0";
+  attribute C_INITA_VAL of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "0";
   attribute C_INITB_VAL : string;
-  attribute C_INITB_VAL of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "0";
+  attribute C_INITB_VAL of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "0";
   attribute C_INIT_FILE : string;
-  attribute C_INIT_FILE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "eleven2nine_lut.mem";
+  attribute C_INIT_FILE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "eleven2nine_lut.mem";
   attribute C_INIT_FILE_NAME : string;
-  attribute C_INIT_FILE_NAME of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "eleven2nine_lut.mif";
+  attribute C_INIT_FILE_NAME of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "eleven2nine_lut.mif";
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_INTERFACE_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_LOAD_INIT_FILE : integer;
-  attribute C_LOAD_INIT_FILE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_LOAD_INIT_FILE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_MEM_TYPE : integer;
-  attribute C_MEM_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 3;
+  attribute C_MEM_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 3;
   attribute C_MUX_PIPELINE_STAGES : integer;
-  attribute C_MUX_PIPELINE_STAGES of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_MUX_PIPELINE_STAGES of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_PRIM_TYPE : integer;
-  attribute C_PRIM_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_PRIM_TYPE of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_READ_DEPTH_A : integer;
-  attribute C_READ_DEPTH_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 2048;
+  attribute C_READ_DEPTH_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 2048;
   attribute C_READ_DEPTH_B : integer;
-  attribute C_READ_DEPTH_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 2048;
+  attribute C_READ_DEPTH_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 2048;
   attribute C_READ_LATENCY_A : integer;
-  attribute C_READ_LATENCY_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_READ_LATENCY_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_READ_LATENCY_B : integer;
-  attribute C_READ_LATENCY_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_READ_LATENCY_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_READ_WIDTH_A : integer;
-  attribute C_READ_WIDTH_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 8;
+  attribute C_READ_WIDTH_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 8;
   attribute C_READ_WIDTH_B : integer;
-  attribute C_READ_WIDTH_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 8;
+  attribute C_READ_WIDTH_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 8;
   attribute C_RSTRAM_A : integer;
-  attribute C_RSTRAM_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_RSTRAM_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_RSTRAM_B : integer;
-  attribute C_RSTRAM_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_RSTRAM_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_RST_PRIORITY_A : string;
-  attribute C_RST_PRIORITY_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "CE";
+  attribute C_RST_PRIORITY_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "CE";
   attribute C_RST_PRIORITY_B : string;
-  attribute C_RST_PRIORITY_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "CE";
+  attribute C_RST_PRIORITY_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "CE";
   attribute C_SIM_COLLISION_CHECK : string;
-  attribute C_SIM_COLLISION_CHECK of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "ALL";
+  attribute C_SIM_COLLISION_CHECK of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "ALL";
   attribute C_USE_BRAM_BLOCK : integer;
-  attribute C_USE_BRAM_BLOCK of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_BRAM_BLOCK of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_BYTE_WEA : integer;
-  attribute C_USE_BYTE_WEA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_BYTE_WEA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_BYTE_WEB : integer;
-  attribute C_USE_BYTE_WEB of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_BYTE_WEB of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_DEFAULT_DATA : integer;
-  attribute C_USE_DEFAULT_DATA of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_DEFAULT_DATA of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_ECC of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_SOFTECC : integer;
-  attribute C_USE_SOFTECC of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_SOFTECC of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_USE_URAM : integer;
-  attribute C_USE_URAM of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 0;
+  attribute C_USE_URAM of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 0;
   attribute C_WEA_WIDTH : integer;
-  attribute C_WEA_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_WEA_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_WEB_WIDTH : integer;
-  attribute C_WEB_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 1;
+  attribute C_WEB_WIDTH of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 1;
   attribute C_WRITE_DEPTH_A : integer;
-  attribute C_WRITE_DEPTH_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 2048;
+  attribute C_WRITE_DEPTH_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 2048;
   attribute C_WRITE_DEPTH_B : integer;
-  attribute C_WRITE_DEPTH_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 2048;
+  attribute C_WRITE_DEPTH_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 2048;
   attribute C_WRITE_MODE_A : string;
-  attribute C_WRITE_MODE_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "WRITE_FIRST";
+  attribute C_WRITE_MODE_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "WRITE_FIRST";
   attribute C_WRITE_MODE_B : string;
-  attribute C_WRITE_MODE_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "WRITE_FIRST";
+  attribute C_WRITE_MODE_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "WRITE_FIRST";
   attribute C_WRITE_WIDTH_A : integer;
-  attribute C_WRITE_WIDTH_A of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 8;
+  attribute C_WRITE_WIDTH_A of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 8;
   attribute C_WRITE_WIDTH_B : integer;
-  attribute C_WRITE_WIDTH_B of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is 8;
+  attribute C_WRITE_WIDTH_B of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is 8;
   attribute C_XDEVICEFAMILY : string;
-  attribute C_XDEVICEFAMILY of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "virtex7";
+  attribute C_XDEVICEFAMILY of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "virtex7";
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "blk_mem_gen_v8_4_3";
+  attribute ORIG_REF_NAME of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "blk_mem_gen_v8_4_4";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of eleven2nine_lut_blk_mem_gen_v8_4_3 : entity is "yes";
-end eleven2nine_lut_blk_mem_gen_v8_4_3;
+  attribute downgradeipidentifiedwarnings of eleven2nine_lut_blk_mem_gen_v8_4_4 : entity is "yes";
+end eleven2nine_lut_blk_mem_gen_v8_4_4;
 
-architecture STRUCTURE of eleven2nine_lut_blk_mem_gen_v8_4_3 is
+architecture STRUCTURE of eleven2nine_lut_blk_mem_gen_v8_4_4 is
   signal \<const0>\ : STD_LOGIC;
 begin
   dbiterr <= \<const0>\;
@@ -550,7 +550,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-inst_blk_mem_gen: entity work.eleven2nine_lut_blk_mem_gen_v8_4_3_synth
+inst_blk_mem_gen: entity work.eleven2nine_lut_blk_mem_gen_v8_4_4_synth
      port map (
       addra(10 downto 0) => addra(10 downto 0),
       clka => clka,
@@ -570,11 +570,11 @@ entity eleven2nine_lut is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of eleven2nine_lut : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of eleven2nine_lut : entity is "eleven2nine_lut,blk_mem_gen_v8_4_3,{}";
+  attribute CHECK_LICENSE_TYPE of eleven2nine_lut : entity is "eleven2nine_lut,blk_mem_gen_v8_4_4,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of eleven2nine_lut : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of eleven2nine_lut : entity is "blk_mem_gen_v8_4_3,Vivado 2019.1";
+  attribute x_core_info of eleven2nine_lut : entity is "blk_mem_gen_v8_4_4,Vivado 2020.1";
 end eleven2nine_lut;
 
 architecture STRUCTURE of eleven2nine_lut is
@@ -748,6 +748,8 @@ architecture STRUCTURE of eleven2nine_lut is
   attribute C_WRITE_WIDTH_B of U0 : label is 8;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of U0 : label is "virtex7";
+  attribute KEEP_HIERARCHY : string;
+  attribute KEEP_HIERARCHY of U0 : label is "soft";
   attribute downgradeipidentifiedwarnings of U0 : label is "yes";
   attribute x_interface_info : string;
   attribute x_interface_info of clka : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK";
@@ -756,7 +758,7 @@ architecture STRUCTURE of eleven2nine_lut is
   attribute x_interface_info of addra : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR";
   attribute x_interface_info of douta : signal is "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT";
 begin
-U0: entity work.eleven2nine_lut_blk_mem_gen_v8_4_3
+U0: entity work.eleven2nine_lut_blk_mem_gen_v8_4_4
      port map (
       addra(10 downto 0) => addra(10 downto 0),
       addrb(10 downto 0) => B"00000000000",

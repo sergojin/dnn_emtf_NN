@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../../hdl/emtf/usrclk_mmcm/usrclk_mmcm_sim_netlist.vhdl" \
-
-nosort

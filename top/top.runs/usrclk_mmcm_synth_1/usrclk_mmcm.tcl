@@ -3,6 +3,58 @@
 # 
 
 set TIME_start [clock seconds] 
+namespace eval ::optrace {
+  variable script "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/usrclk_mmcm_synth_1/usrclk_mmcm.tcl"
+  variable category "vivado_synth"
+}
+
+# Try to connect to running dispatch if we haven't done so already.
+# This code assumes that the Tcl interpreter is not using threads,
+# since the ::dispatch::connected variable isn't mutex protected.
+if {![info exists ::dispatch::connected]} {
+  namespace eval ::dispatch {
+    variable connected false
+    if {[llength [array get env XILINX_CD_CONNECT_ID]] > 0} {
+      set result "true"
+      if {[catch {
+        if {[lsearch -exact [package names] DispatchTcl] < 0} {
+          set result [load librdi_cd_clienttcl[info sharedlibextension]] 
+        }
+        if {$result eq "false"} {
+          puts "WARNING: Could not load dispatch client library"
+        }
+        set connect_id [ ::dispatch::init_client -mode EXISTING_SERVER ]
+        if { $connect_id eq "" } {
+          puts "WARNING: Could not initialize dispatch client"
+        } else {
+          puts "INFO: Dispatch client connection id - $connect_id"
+          set connected true
+        }
+      } catch_res]} {
+        puts "WARNING: failed to connect to dispatch server - $catch_res"
+      }
+    }
+  }
+}
+if {$::dispatch::connected} {
+  # Remove the dummy proc if it exists.
+  if { [expr {[llength [info procs ::OPTRACE]] > 0}] } {
+    rename ::OPTRACE ""
+  }
+  proc ::OPTRACE { task action {tags {} } } {
+    ::vitis_log::op_trace "$task" $action -tags $tags -script $::optrace::script -category $::optrace::category
+  }
+  # dispatch is generic. We specifically want to attach logging.
+  ::vitis_log::connect_client
+} else {
+  # Add dummy proc if it doesn't exist.
+  if { [expr {[llength [info procs ::OPTRACE]] == 0}] } {
+    proc ::OPTRACE {{arg1 \"\" } {arg2 \"\"} {arg3 \"\" } {arg4 \"\"} {arg5 \"\" } {arg6 \"\"}} {
+        # Do nothing
+    }
+  }
+}
+
 proc create_report { reportName command } {
   set status "."
   append status $reportName ".fail"
@@ -17,8 +69,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+OPTRACE "usrclk_mmcm_synth_1" START { ROLLUP_AUTO }
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
+OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7vx690tffg1927-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,12 +88,15 @@ set_property ip_repo_paths /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf
 update_ip_catalog
 set_property ip_output_repo /data/rrivera/ML_muon_trigger/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+OPTRACE "Creating in-memory project" END { }
+OPTRACE "Adding files" START { }
 read_ip -quiet /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.xci
 set_property used_in_implementation false [get_files -all /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_board.xdc]
 set_property used_in_implementation false [get_files -all /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.xdc]
 set_property used_in_implementation false [get_files -all /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_late.xdc]
 set_property used_in_implementation false [get_files -all /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm_ooc.xdc]
 
+OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -51,20 +108,28 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+OPTRACE "Configure IP Cache" START { }
 
 set cached_ip [config_ip_cache -export -no_bom  -dir /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/usrclk_mmcm_synth_1 -new_name usrclk_mmcm -ip [get_ips usrclk_mmcm]]
 
+OPTRACE "Configure IP Cache" END { }
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
+OPTRACE "synth_design" START { }
 synth_design -top usrclk_mmcm -part xc7vx690tffg1927-2 -mode out_of_context
+OPTRACE "synth_design" END { }
 
 rename_ref -prefix_all usrclk_mmcm_
 
+OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef usrclk_mmcm.dcp
+OPTRACE "write_checkpoint" END { }
+OPTRACE "synth reports" START { REPORT }
 create_report "usrclk_mmcm_synth_1_synth_report_utilization_0" "report_utilization -file usrclk_mmcm_utilization_synth.rpt -pb usrclk_mmcm_utilization_synth.pb"
+OPTRACE "synth reports" END { }
 
 if { [catch {
   file copy -force /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/usrclk_mmcm_synth_1/usrclk_mmcm.dcp /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/usrclk_mmcm/usrclk_mmcm.dcp
@@ -147,3 +212,4 @@ if {[file isdir /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/
 }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
+OPTRACE "usrclk_mmcm_synth_1" END { }

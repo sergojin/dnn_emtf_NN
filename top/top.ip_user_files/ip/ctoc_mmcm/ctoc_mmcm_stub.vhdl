@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Tue Nov 26 15:50:21 2019
--- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.6 (Nitrogen)
--- Command     : write_vhdl -force -mode synth_stub -rename_top ctoc_mmcm -prefix
---               ctoc_mmcm_ ctoc_mmcm_stub.vhdl
+-- Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+-- Date        : Fri Jun 18 09:47:00 2021
+-- Host        : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/ctoc_mmcm/ctoc_mmcm_stub.vhdl
 -- Design      : ctoc_mmcm
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7vx690tffg1927-2
