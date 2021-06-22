@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="eleven2nine_lut_synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1624027554">
-  <File Type="VDS-TIMING-PB" Name="eleven2nine_lut_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="eleven2nine_lut_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="eleven2nine_lut.dcp"/>
   <File Type="REPORTS-TCL" Name="eleven2nine_lut_reports.tcl"/>
   <File Type="PA-TCL" Name="eleven2nine_lut.tcl"/>
+  <File Type="RDS-DCP" Name="eleven2nine_lut.dcp"/>
   <File Type="RDS-RDS" Name="eleven2nine_lut.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="eleven2nine_lut_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="eleven2nine_lut_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="eleven2nine_lut_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/eleven2nine_lut">
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

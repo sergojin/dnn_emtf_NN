@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1624027937">
+<GenRun Id="impl_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1624374749">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BITSTR-SYSDEF" Name="mtf7_core_top.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -77,12 +77,6 @@
   <File Type="PA-TCL" Name="mtf7_core_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../hdl/test_algo.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../cgn/my_coe.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -206,7 +200,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s_tanh_tdEe.vhd">
+    <File Path="$PPRDIR/../hdl/test_algo.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -224,19 +218,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s.vhd">
+    <File Path="$PPRDIR/../hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -249,12 +237,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../hdl/vhdl/emtfptnn.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config15_0_0_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
