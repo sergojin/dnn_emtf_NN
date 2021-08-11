@@ -4,6 +4,7 @@
 -- Copyright (C) 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- 
 -- ===========================================================
+-- Version 10, 20-15, 166MHz HLS target
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -77,7 +78,7 @@ end;
 architecture behav of emtfptnn is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "emtfptnn,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7vx690t-ffg1927-2,HLS_INPUT_CLOCK=6.024000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=6.406000,HLS_SYN_LAT=16,HLS_SYN_TPT=1,HLS_SYN_MEM=18,HLS_SYN_DSP=775,HLS_SYN_FF=26568,HLS_SYN_LUT=55745,HLS_VERSION=2020_1}";
+    "emtfptnn,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7vx690t-ffg1927-2,HLS_INPUT_CLOCK=6.024000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=6.406000,HLS_SYN_LAT=16,HLS_SYN_TPT=1,HLS_SYN_MEM=18,HLS_SYN_DSP=775,HLS_SYN_FF=26603,HLS_SYN_LUT=58370,HLS_VERSION=2020_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_pp0_stage0 : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -420,47 +421,26 @@ architecture behav of emtfptnn is
     signal ap_block_state16_pp0_stage0_iter15_ignore_call102 : BOOLEAN;
     signal ap_block_state17_pp0_stage0_iter16_ignore_call102 : BOOLEAN;
     signal ap_block_pp0_stage0_11001_ignoreCallOp89 : BOOLEAN;
-    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_0 : STD_LOGIC_VECTOR (11 downto 0);
-    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_1 : STD_LOGIC_VECTOR (11 downto 0);
-    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_ce : STD_LOGIC;
-    signal ap_block_state1_pp0_stage0_iter0_ignore_call155 : BOOLEAN;
-    signal ap_block_state2_pp0_stage0_iter1_ignore_call155 : BOOLEAN;
-    signal ap_block_state3_pp0_stage0_iter2_ignore_call155 : BOOLEAN;
-    signal ap_block_state4_pp0_stage0_iter3_ignore_call155 : BOOLEAN;
-    signal ap_block_state5_pp0_stage0_iter4_ignore_call155 : BOOLEAN;
-    signal ap_block_state6_pp0_stage0_iter5_ignore_call155 : BOOLEAN;
-    signal ap_block_state7_pp0_stage0_iter6_ignore_call155 : BOOLEAN;
-    signal ap_block_state8_pp0_stage0_iter7_ignore_call155 : BOOLEAN;
-    signal ap_block_state9_pp0_stage0_iter8_ignore_call155 : BOOLEAN;
-    signal ap_block_state10_pp0_stage0_iter9_ignore_call155 : BOOLEAN;
-    signal ap_block_state11_pp0_stage0_iter10_ignore_call155 : BOOLEAN;
-    signal ap_block_state12_pp0_stage0_iter11_ignore_call155 : BOOLEAN;
-    signal ap_block_state13_pp0_stage0_iter12_ignore_call155 : BOOLEAN;
-    signal ap_block_state14_pp0_stage0_iter13_ignore_call155 : BOOLEAN;
-    signal ap_block_state15_pp0_stage0_iter14_ignore_call155 : BOOLEAN;
-    signal ap_block_state16_pp0_stage0_iter15_ignore_call155 : BOOLEAN;
-    signal ap_block_state17_pp0_stage0_iter16_ignore_call155 : BOOLEAN;
-    signal ap_block_pp0_stage0_11001_ignoreCallOp149 : BOOLEAN;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start : STD_LOGIC;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_done : STD_LOGIC;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_idle : STD_LOGIC;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ready : STD_LOGIC;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ce : STD_LOGIC;
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_0 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_1 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_2 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_3 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_4 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_5 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_6 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_7 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_8 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_9 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_10 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_11 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_12 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_13 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_14 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start : STD_LOGIC;
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_done : STD_LOGIC;
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_idle : STD_LOGIC;
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ready : STD_LOGIC;
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ce : STD_LOGIC;
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_0 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_1 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_2 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_3 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_4 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_5 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_6 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_7 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_8 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_9 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_10 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_11 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_12 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_13 : STD_LOGIC_VECTOR (23 downto 0);
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_14 : STD_LOGIC_VECTOR (23 downto 0);
     signal ap_block_state1_pp0_stage0_iter0_ignore_call139 : BOOLEAN;
     signal ap_block_state2_pp0_stage0_iter1_ignore_call139 : BOOLEAN;
     signal ap_block_state3_pp0_stage0_iter2_ignore_call139 : BOOLEAN;
@@ -479,6 +459,27 @@ architecture behav of emtfptnn is
     signal ap_block_state16_pp0_stage0_iter15_ignore_call139 : BOOLEAN;
     signal ap_block_state17_pp0_stage0_iter16_ignore_call139 : BOOLEAN;
     signal ap_block_pp0_stage0_11001_ignoreCallOp131 : BOOLEAN;
+    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_0 : STD_LOGIC_VECTOR (11 downto 0);
+    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_ce : STD_LOGIC;
+    signal ap_block_state1_pp0_stage0_iter0_ignore_call155 : BOOLEAN;
+    signal ap_block_state2_pp0_stage0_iter1_ignore_call155 : BOOLEAN;
+    signal ap_block_state3_pp0_stage0_iter2_ignore_call155 : BOOLEAN;
+    signal ap_block_state4_pp0_stage0_iter3_ignore_call155 : BOOLEAN;
+    signal ap_block_state5_pp0_stage0_iter4_ignore_call155 : BOOLEAN;
+    signal ap_block_state6_pp0_stage0_iter5_ignore_call155 : BOOLEAN;
+    signal ap_block_state7_pp0_stage0_iter6_ignore_call155 : BOOLEAN;
+    signal ap_block_state8_pp0_stage0_iter7_ignore_call155 : BOOLEAN;
+    signal ap_block_state9_pp0_stage0_iter8_ignore_call155 : BOOLEAN;
+    signal ap_block_state10_pp0_stage0_iter9_ignore_call155 : BOOLEAN;
+    signal ap_block_state11_pp0_stage0_iter10_ignore_call155 : BOOLEAN;
+    signal ap_block_state12_pp0_stage0_iter11_ignore_call155 : BOOLEAN;
+    signal ap_block_state13_pp0_stage0_iter12_ignore_call155 : BOOLEAN;
+    signal ap_block_state14_pp0_stage0_iter13_ignore_call155 : BOOLEAN;
+    signal ap_block_state15_pp0_stage0_iter14_ignore_call155 : BOOLEAN;
+    signal ap_block_state16_pp0_stage0_iter15_ignore_call155 : BOOLEAN;
+    signal ap_block_state17_pp0_stage0_iter16_ignore_call155 : BOOLEAN;
+    signal ap_block_pp0_stage0_11001_ignoreCallOp149 : BOOLEAN;
     signal call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389_ap_ready : STD_LOGIC;
     signal call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389_ap_return_0 : STD_LOGIC_VECTOR (23 downto 0);
     signal call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389_ap_return_1 : STD_LOGIC_VECTOR (23 downto 0);
@@ -504,7 +505,7 @@ architecture behav of emtfptnn is
     signal call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389_ap_return_21 : STD_LOGIC_VECTOR (23 downto 0);
     signal call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389_ap_return_22 : STD_LOGIC_VECTOR (23 downto 0);
     signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_fu_323_ap_start_reg : STD_LOGIC := '0';
-    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg : STD_LOGIC := '0';
+    signal grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg : STD_LOGIC := '0';
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_idle_pp0_0to15 : STD_LOGIC;
@@ -657,31 +658,6 @@ architecture behav of emtfptnn is
     end component;
 
 
-    component dense_latency_ap_fixed_ap_fixed_config11_0_0_0 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        data_0_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_1_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_2_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_3_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_4_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_5_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_6_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_7_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_8_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_9_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_10_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_11_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_12_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_13_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        data_14_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
-        ap_return_0 : OUT STD_LOGIC_VECTOR (11 downto 0);
-        ap_return_1 : OUT STD_LOGIC_VECTOR (11 downto 0);
-        ap_ce : IN STD_LOGIC );
-    end component;
-
-
     component tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s IS
     port (
         ap_clk : IN STD_LOGIC;
@@ -721,6 +697,31 @@ architecture behav of emtfptnn is
         ap_return_12 : OUT STD_LOGIC_VECTOR (23 downto 0);
         ap_return_13 : OUT STD_LOGIC_VECTOR (23 downto 0);
         ap_return_14 : OUT STD_LOGIC_VECTOR (23 downto 0) );
+    end component;
+
+
+    component dense_latency_ap_fixed_ap_fixed_config11_0_0_0 IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        data_0_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_1_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_2_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_3_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_4_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_5_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_6_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_7_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_8_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_9_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_10_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_11_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_12_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_13_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        data_14_V_read : IN STD_LOGIC_VECTOR (23 downto 0);
+        ap_return_0 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        ap_return_1 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        ap_ce : IN STD_LOGIC );
     end component;
 
 
@@ -918,38 +919,15 @@ begin
         ap_return_18 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_fu_323_ap_return_18,
         ap_return_19 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_fu_323_ap_return_19);
 
-    grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349 : component dense_latency_ap_fixed_ap_fixed_config11_0_0_0
+    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349 : component tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        data_0_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_0,
-        data_1_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_1,
-        data_2_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_2,
-        data_3_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_3,
-        data_4_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_4,
-        data_5_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_5,
-        data_6_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_6,
-        data_7_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_7,
-        data_8_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_8,
-        data_9_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_9,
-        data_10_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_10,
-        data_11_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_11,
-        data_12_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_12,
-        data_13_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_13,
-        data_14_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_14,
-        ap_return_0 => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_0,
-        ap_return_1 => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_1,
-        ap_ce => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_ce);
-
-    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368 : component tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start,
-        ap_done => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_done,
-        ap_idle => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_idle,
-        ap_ready => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ready,
-        ap_ce => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ce,
+        ap_start => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start,
+        ap_done => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_done,
+        ap_idle => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_idle,
+        ap_ready => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ready,
+        ap_ce => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ce,
         data_0_V_read => layer7_out_0_V_reg_1171,
         data_1_V_read => layer7_out_1_V_reg_1176,
         data_2_V_read => layer7_out_2_V_reg_1181,
@@ -965,21 +943,44 @@ begin
         data_12_V_read => layer7_out_12_V_reg_1231,
         data_13_V_read => layer7_out_13_V_reg_1236,
         data_14_V_read => layer7_out_14_V_reg_1241,
-        ap_return_0 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_0,
-        ap_return_1 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_1,
-        ap_return_2 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_2,
-        ap_return_3 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_3,
-        ap_return_4 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_4,
-        ap_return_5 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_5,
-        ap_return_6 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_6,
-        ap_return_7 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_7,
-        ap_return_8 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_8,
-        ap_return_9 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_9,
-        ap_return_10 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_10,
-        ap_return_11 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_11,
-        ap_return_12 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_12,
-        ap_return_13 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_13,
-        ap_return_14 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_return_14);
+        ap_return_0 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_0,
+        ap_return_1 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_1,
+        ap_return_2 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_2,
+        ap_return_3 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_3,
+        ap_return_4 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_4,
+        ap_return_5 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_5,
+        ap_return_6 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_6,
+        ap_return_7 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_7,
+        ap_return_8 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_8,
+        ap_return_9 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_9,
+        ap_return_10 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_10,
+        ap_return_11 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_11,
+        ap_return_12 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_12,
+        ap_return_13 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_13,
+        ap_return_14 => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_14);
+
+    grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370 : component dense_latency_ap_fixed_ap_fixed_config11_0_0_0
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst,
+        data_0_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_0,
+        data_1_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_1,
+        data_2_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_2,
+        data_3_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_3,
+        data_4_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_4,
+        data_5_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_5,
+        data_6_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_6,
+        data_7_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_7,
+        data_8_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_8,
+        data_9_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_9,
+        data_10_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_10,
+        data_11_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_11,
+        data_12_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_12,
+        data_13_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_13,
+        data_14_V_read => grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_return_14,
+        ap_return_0 => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_0,
+        ap_return_1 => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_1,
+        ap_ce => grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_ce);
 
     call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_389 : component normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s
     port map (
@@ -1271,16 +1272,16 @@ begin
     end process;
 
 
-    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg_assign_proc : process(ap_clk)
+    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg <= ap_const_logic_0;
+                grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg <= ap_const_logic_0;
             else
                 if (((ap_enable_reg_pp0_iter10 = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0_11001))) then 
-                    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ready = ap_const_logic_1)) then 
-                    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg <= ap_const_logic_0;
+                    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ready = ap_const_logic_1)) then 
+                    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -2361,26 +2362,26 @@ begin
     end process;
 
 
-    grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_ce_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001_ignoreCallOp149)
+    grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_ce_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001_ignoreCallOp149)
     begin
-        if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001_ignoreCallOp149) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_ce <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0_11001_ignoreCallOp149))) then 
+            grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_ce <= ap_const_logic_1;
         else 
-            grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_ce <= ap_const_logic_0;
+            grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_ce <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ce_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001_ignoreCallOp131)
+    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ce_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001_ignoreCallOp131)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0_11001_ignoreCallOp131))) then 
-            grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ce <= ap_const_logic_1;
+            grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ce <= ap_const_logic_1;
         else 
-            grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_ce <= ap_const_logic_0;
+            grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_ce <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start <= grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_368_ap_start_reg;
+    grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start <= grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_fu_349_ap_start_reg;
 
     grp_tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_fu_323_ap_ce_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0_11001_ignoreCallOp89)
     begin
@@ -3082,7 +3083,7 @@ begin
         end if; 
     end process;
 
-    layer11_out_0_V <= grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_0;
+    layer11_out_0_V <= grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_0;
 
     layer11_out_0_V_ap_vld_assign_proc : process(ap_enable_reg_pp0_iter16, ap_block_pp0_stage0_11001)
     begin
@@ -3093,7 +3094,7 @@ begin
         end if; 
     end process;
 
-    layer11_out_1_V <= grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_349_ap_return_1;
+    layer11_out_1_V <= grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_370_ap_return_1;
 
     layer11_out_1_V_ap_vld_assign_proc : process(ap_enable_reg_pp0_iter16, ap_block_pp0_stage0_11001)
     begin

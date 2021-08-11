@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Jun 22 08:14:55 2021
-# Process ID: 8883
+# Start of session at: Wed Aug 11 10:24:26 2021
+# Process ID: 89749
 # Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed
 # Command line: vivado
 # Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.log
@@ -11,10 +11,6 @@
 #-----------------------------------------------------------
 start_gui
 open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr
-CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s_tanh_tdEe.vhd'.
-CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s.vhd'.
-CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0.vhd'.
-CRITICAL WARNING: [Project 1-19] Could not find the file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config15_0_0_0.vhd'.
 Scanning sources...
 Finished scanning sources
 WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'.
@@ -23,33 +19,18 @@ WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/sergo/cms-ph
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/2020.1/data/ip'.
 WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 7259.258 ; gain = 47.043 ; free physical = 30004 ; free virtual = 62636
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s_tanh_tdEe.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_tanh_tcud.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config15_0_0_0.vhd] -no_script -reset -force -quiet
-export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_tanh_tabkb.vhd] -no_script -reset -force -quiet
-remove_files  {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s_tanh_tdEe.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_tanh_tcud.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config14_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config15_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_tanh_tabkb.vhd}
-add_files -norecurse {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_tanh_tcud.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_tanh_tabkb.vhd}
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 7252.664 ; gain = 32.035 ; free physical = 71316 ; free virtual = 134805
 reset_run synth_1
 launch_runs synth_1 -jobs 16
-[Tue Jun 22 10:08:19 2021] Launched synth_1...
+[Wed Aug 11 10:31:51 2021] Launched synth_1...
 Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 16
-[Tue Jun 22 10:12:29 2021] Launched impl_1...
+[Wed Aug 11 10:35:49 2021] Launched impl_1...
 Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log
 open_run impl_1
 INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
-Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.25 . Memory (MB): peak = 7470.516 ; gain = 0.000 ; free physical = 47424 ; free virtual = 80742
-INFO: [Netlist 29-17] Analyzing 3886 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 7475.977 ; gain = 0.000 ; free physical = 70650 ; free virtual = 134380
+INFO: [Netlist 29-17] Analyzing 4166 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -60,12 +41,12 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8437.910 ; gain = 41.961 ; free physical = 46727 ; free virtual = 80045
-Restored from archive | CPU: 2.070000 secs | Memory: 55.962326 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8437.910 ; gain = 41.961 ; free physical = 46727 ; free virtual = 80045
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8437.910 ; gain = 0.000 ; free physical = 46735 ; free virtual = 80053
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8446.633 ; gain = 48.961 ; free physical = 69748 ; free virtual = 133478
+Restored from archive | CPU: 2.090000 secs | Memory: 56.341415 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8446.633 ; gain = 48.961 ; free physical = 69748 ; free virtual = 133478
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8446.633 ; gain = 0.000 ; free physical = 69751 ; free virtual = 133481
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 9134.949 ; gain = 1705.625 ; free physical = 46271 ; free virtual = 79591
-open_report: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 9134.949 ; gain = 0.000 ; free physical = 45674 ; free virtual = 79039
+open_run: Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 9148.047 ; gain = 1708.305 ; free physical = 69304 ; free virtual = 133037
+open_report: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 9148.047 ; gain = 0.000 ; free physical = 69074 ; free virtual = 132808
