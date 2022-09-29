@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 22 21:49:39 2022
+# Process ID: 56056
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl
+# Command line: vivado
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vivado.log
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 21:51:16 2022...

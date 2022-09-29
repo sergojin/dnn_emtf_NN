@@ -108,16 +108,17 @@ read_verilog -library xil_defaultlib -sv {
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/axi_or_mux.sv
 }
 read_vhdl -library xil_defaultlib {
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s.vhd
   /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s_tanh_tcud.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config10_s.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd
-  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_11_5_3_0_tanh_config6_s_tanh_tabkb.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd
+  /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd
 }
 read_ip -quiet /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sources_1/ip/eleven2two_lut/eleven2two_lut.xci
 set_property used_in_implementation false [get_files -all /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sources_1/ip/eleven2two_lut/eleven2two_lut_ooc.xdc]

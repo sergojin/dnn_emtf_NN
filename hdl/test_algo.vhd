@@ -57,56 +57,39 @@ architecture Behavioral of test_algo is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        input1_0_V_ap_vld : IN STD_LOGIC;
-        input1_1_V_ap_vld : IN STD_LOGIC;
-        input1_2_V_ap_vld : IN STD_LOGIC;
-        input1_3_V_ap_vld : IN STD_LOGIC;
-        input1_4_V_ap_vld : IN STD_LOGIC;
-        input1_5_V_ap_vld : IN STD_LOGIC;
-        input1_6_V_ap_vld : IN STD_LOGIC;
-        input1_7_V_ap_vld : IN STD_LOGIC;
-        input1_8_V_ap_vld : IN STD_LOGIC;
-        input1_9_V_ap_vld : IN STD_LOGIC;
-        input1_10_V_ap_vld : IN STD_LOGIC;
-        input1_11_V_ap_vld : IN STD_LOGIC;
-        input1_12_V_ap_vld : IN STD_LOGIC;
-        input1_13_V_ap_vld : IN STD_LOGIC;
-        input1_14_V_ap_vld : IN STD_LOGIC;
-        input1_15_V_ap_vld : IN STD_LOGIC;
-        input1_16_V_ap_vld : IN STD_LOGIC;
-        input1_17_V_ap_vld : IN STD_LOGIC;
-        input1_18_V_ap_vld : IN STD_LOGIC;
-        input1_19_V_ap_vld : IN STD_LOGIC;
-        input1_20_V_ap_vld : IN STD_LOGIC;
-        input1_21_V_ap_vld : IN STD_LOGIC;
-        input1_22_V_ap_vld : IN STD_LOGIC;
-        input1_0_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_1_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_2_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_3_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_4_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_5_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_6_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_7_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_8_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_9_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_10_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_11_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_12_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_13_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_14_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_15_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_16_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_17_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_18_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_19_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_20_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_21_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        input1_22_V : IN STD_LOGIC_VECTOR (17 downto 0);
-        layer11_out_0_V : OUT STD_LOGIC_VECTOR (11 downto 0);
-        layer11_out_0_V_ap_vld : OUT STD_LOGIC;
-        layer11_out_1_V : OUT STD_LOGIC_VECTOR (11 downto 0);
-        layer11_out_1_V_ap_vld : OUT STD_LOGIC;
+        input1_0_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_1_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_2_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_3_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_4_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_5_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_6_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_7_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_8_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_9_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_10_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_11_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_12_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_13_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_14_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_15_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_16_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_17_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_18_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_19_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_20_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_21_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_22_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_23_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_24_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_25_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_26_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_27_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_28_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_29_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        input1_30_V : IN STD_LOGIC_VECTOR (12 downto 0);
+        layer12_out_0_V : OUT STD_LOGIC_VECTOR (7 downto 0);
+        layer12_out_1_V : OUT STD_LOGIC_VECTOR (7 downto 0);
         const_size_in_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
         const_size_in_1_ap_vld : OUT STD_LOGIC;
         const_size_out_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -121,7 +104,7 @@ architecture Behavioral of test_algo is
     
     signal bram_address : unsigned(3 downto 0) := (others => '1');
     
-    signal layer11_out_valid : STD_LOGIC;
+    signal layer12_out_valid : STD_LOGIC;
     signal data_valid, dvDbg1, dvDbg1a,dvDbg1b, dvDbg1c, dvDbg2, dvDbg3 : STD_LOGIC:= '0';
     signal data, dataDbg1, dataDbg1a,dataDbg1b, dataDbg1c, dataDbg2  : STD_LOGIC_VECTOR(701 downto 0);
         
@@ -150,57 +133,43 @@ architecture Behavioral of test_algo is
     --top declarations...
     --========================================
     
-    
-        	signal vb_deltaPhi1 	 : std_logic;
-	signal vb_deltaPhi2 	 : std_logic;
-	signal vb_deltaPhi3 	 : std_logic;
-	signal vb_deltaPhi4 	 : std_logic;
-	signal vb_deltaPhi5 	 : std_logic;
-	signal vb_deltaPhi6 	 : std_logic;
-	signal vb_deltaTheta1 	 : std_logic;
-	signal vb_deltaTheta2 	 : std_logic;
-	signal vb_deltaTheta3 	 : std_logic;
-	signal vb_deltaTheta4 	 : std_logic;
-	signal vb_deltaTheta5 	 : std_logic;
-	signal vb_deltaTheta6 	 : std_logic;
-	signal vb_bend1 	 : std_logic;
-	signal vb_bend2 	 : std_logic;
-	signal vb_bend3 	 : std_logic;
-	signal vb_bend4 	 : std_logic;
-	signal vb_ME1_fr 	 : std_logic;
-	signal vb_theta 	 : std_logic;
-	signal vb_ME1_ring 	 : std_logic;
-	signal vb_RPCbit1 	 : std_logic;
-	signal vb_RPCbit2 	 : std_logic;
-	signal vb_RPCbit3 	 : std_logic;
-	signal vb_RPCbit4 	 : std_logic;
-	signal vb_layer11_out_invpt 	 : std_logic;
-	signal vb_layer11_out_d0 	 : std_logic;
-	signal deltaPhi1 	 : std_logic_vector(17 downto 0);
-	signal deltaPhi2 	 : std_logic_vector(17 downto 0);
-	signal deltaPhi3 	 : std_logic_vector(17 downto 0);
-	signal deltaPhi4 	 : std_logic_vector(17 downto 0);
-	signal deltaPhi5 	 : std_logic_vector(17 downto 0);
-	signal deltaPhi6 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta1 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta2 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta3 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta4 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta5 	 : std_logic_vector(17 downto 0);
-	signal deltaTheta6 	 : std_logic_vector(17 downto 0);
-	signal bend1 	 : std_logic_vector(17 downto 0);
-	signal bend2 	 : std_logic_vector(17 downto 0);
-	signal bend3 	 : std_logic_vector(17 downto 0);
-	signal bend4 	 : std_logic_vector(17 downto 0);
-	signal ME1_fr 	 : std_logic_vector(17 downto 0);
-	signal theta 	 : std_logic_vector(17 downto 0);
-	signal ME1_ring 	 : std_logic_vector(17 downto 0);
-	signal RPCbit1 	 : std_logic_vector(17 downto 0);
-	signal RPCbit2 	 : std_logic_vector(17 downto 0);
-	signal RPCbit3 	 : std_logic_vector(17 downto 0);
-	signal RPCbit4 	 : std_logic_vector(17 downto 0);
-	signal layer11_out_invpt 	 : std_logic_vector(11 downto 0);
-	signal layer11_out_d0 	 : std_logic_vector(11 downto 0);
+	signal deltaPhi1 	 : std_logic_vector(12 downto 0);
+	signal deltaPhi2 	 : std_logic_vector(12 downto 0);
+	signal deltaPhi3 	 : std_logic_vector(12 downto 0);
+	signal deltaPhi4 	 : std_logic_vector(12 downto 0);
+	signal deltaPhi5 	 : std_logic_vector(12 downto 0);
+        signal deltaPhi6 	 : std_logic_vector(12 downto 0);
+    	signal sdeltaPhi1 	 : std_logic_vector(12 downto 0);
+	signal sdeltaPhi2 	 : std_logic_vector(12 downto 0);
+	signal sdeltaPhi3 	 : std_logic_vector(12 downto 0);
+	signal sdeltaPhi4 	 : std_logic_vector(12 downto 0);
+	signal sdeltaPhi5 	 : std_logic_vector(12 downto 0);
+	signal sdeltaPhi6 	 : std_logic_vector(12 downto 0);
+ 
+	signal deltaTheta1 	 : std_logic_vector(12 downto 0);
+	signal deltaTheta2 	 : std_logic_vector(12 downto 0);
+	signal deltaTheta3 	 : std_logic_vector(12 downto 0);
+	signal deltaTheta4 	 : std_logic_vector(12 downto 0);
+	signal deltaTheta5 	 : std_logic_vector(12 downto 0);
+        signal deltaTheta6 	 : std_logic_vector(12 downto 0);
+        signal sdeltaTheta1 	 : std_logic_vector(12 downto 0);
+	signal sdeltaTheta2 	 : std_logic_vector(12 downto 0);
+	signal sdeltaTheta3 	 : std_logic_vector(12 downto 0);
+	signal sdeltaTheta4 	 : std_logic_vector(12 downto 0);
+	signal sdeltaTheta5 	 : std_logic_vector(12 downto 0);
+	signal sdeltaTheta6 	 : std_logic_vector(12 downto 0);
+
+        signal bend1 	 : std_logic_vector(12 downto 0);
+	signal bend2 	 : std_logic_vector(12 downto 0);
+	signal bend3 	 : std_logic_vector(12 downto 0);
+        signal bend4 	 : std_logic_vector(12 downto 0);
+
+        signal ME1_fr 	 : std_logic_vector(12 downto 0);
+	signal theta 	 : std_logic_vector(12 downto 0);
+	signal ME1_ring 	 : std_logic_vector(12 downto 0);
+
+        signal layer12_out_invpt 	 : std_logic_vector(7 downto 0);
+	signal layer12_out_d0 	 : std_logic_vector(7 downto 0);
 
 
 	attribute mark_debug of deltaPhi1 	 : signal is "true";
@@ -208,26 +177,34 @@ architecture Behavioral of test_algo is
 	attribute mark_debug of deltaPhi3 	 : signal is "true";
 	attribute mark_debug of deltaPhi4 	 : signal is "true";
 	attribute mark_debug of deltaPhi5 	 : signal is "true";
-	attribute mark_debug of deltaPhi6 	 : signal is "true";
+        attribute mark_debug of deltaPhi6 	 : signal is "true";
+    	attribute mark_debug of sdeltaPhi1 	 : signal is "true";
+	attribute mark_debug of sdeltaPhi2 	 : signal is "true";
+	attribute mark_debug of sdeltaPhi3 	 : signal is "true";
+	attribute mark_debug of sdeltaPhi4 	 : signal is "true";
+	attribute mark_debug of sdeltaPhi5 	 : signal is "true";
+	attribute mark_debug of sdeltaPhi6 	 : signal is "true";
 	attribute mark_debug of deltaTheta1 	 : signal is "true";
 	attribute mark_debug of deltaTheta2 	 : signal is "true";
 	attribute mark_debug of deltaTheta3 	 : signal is "true";
 	attribute mark_debug of deltaTheta4 	 : signal is "true";
 	attribute mark_debug of deltaTheta5 	 : signal is "true";
-	attribute mark_debug of deltaTheta6 	 : signal is "true";
+        attribute mark_debug of deltaTheta6 	 : signal is "true";
+    	attribute mark_debug of sdeltaTheta1 	 : signal is "true";
+	attribute mark_debug of sdeltaTheta2 	 : signal is "true";
+	attribute mark_debug of sdeltaTheta3 	 : signal is "true";
+	attribute mark_debug of sdeltaTheta4 	 : signal is "true";
+	attribute mark_debug of sdeltaTheta5 	 : signal is "true";
+	attribute mark_debug of sdeltaTheta6 	 : signal is "true";
 	attribute mark_debug of bend1 	 : signal is "true";
 	attribute mark_debug of bend2 	 : signal is "true";
 	attribute mark_debug of bend3 	 : signal is "true";
-	attribute mark_debug of bend4 	 : signal is "true";
+        attribute mark_debug of bend4 	 : signal is "true";
 	attribute mark_debug of ME1_fr 	 : signal is "true";
 	attribute mark_debug of theta 	 : signal is "true";
 	attribute mark_debug of ME1_ring 	 : signal is "true";
-	attribute mark_debug of RPCbit1 	 : signal is "true";
-	attribute mark_debug of RPCbit2 	 : signal is "true";
-	attribute mark_debug of RPCbit3 	 : signal is "true";
-	attribute mark_debug of RPCbit4 	 : signal is "true";
-	attribute mark_debug of layer11_out_invpt 	 : signal is "true";
-	attribute mark_debug of layer11_out_d0 	 : signal is "true";
+	attribute mark_debug of layer12_out_invpt 	 : signal is "true";
+	attribute mark_debug of layer12_out_d0 	 : signal is "true";
 
     
     
@@ -244,7 +221,7 @@ begin
             doutDbg2 <= doutDbg1;
             doutDbg3 <= doutDbg2;
             
-            dvOutDbg1 <= layer11_out_valid;
+            dvOutDbg1 <= layer12_out_valid;
             dvOutDbg2 <= dvOutDbg1;
             dvOutDbg3 <= dvOutDbg2;     
             
@@ -345,20 +322,6 @@ begin
     algo_start <= start when data_sel = '1' else data_in_start; --data_in_strobe;
     data_valid <=  start when data_sel = '1' else data_in_start; --for now one valid bit, but valid bus could indicate partial input readiness
     data <= bram_to_hls(701 downto 0) when data_sel = '1' else data_in;
-
-
---    my_ila_label : ila_0
---        PORT MAP(
---                clk => clk1,
---                probe0(0) => layer11_out_valid,
---                probe1 => data(31 downto 0),
---                probe2 => data(63 downto 32),
---                probe3(0) => data_valid,
---                probe4 => hls_to_ila(23 downto 0),
---                probe5 => hls_to_ila(35 downto 18),
---                probe6(0) => data_sel,
---                probe7(0) => ready);
-                   
     
     
     my_bram_label : blk_mem_gen_0
@@ -392,51 +355,34 @@ begin
                             input1_3_V      => deltaPhi4,
                             input1_4_V      => deltaPhi5,
                             input1_5_V      => deltaPhi6,
-                            input1_6_V      => deltaTheta1,
-                            input1_7_V      => deltaTheta2,
-                            input1_8_V      => deltaTheta3,
-                            input1_9_V      => deltaTheta4,
-                            input1_10_V      => deltaTheta5,
-                            input1_11_V      => deltaTheta6,
-                            input1_12_V      => bend1,
-                            input1_13_V      => bend2,
-                            input1_14_V      => bend3,
-                            input1_15_V      => bend4,
-                            input1_16_V      => ME1_fr,
-                            input1_17_V      => theta,
-                            input1_18_V      => ME1_ring,
-                            input1_19_V      => RPCbit1,
-                            input1_20_V      => RPCbit2,
-                            input1_21_V      => RPCbit3,
-                            input1_22_V      => RPCbit4,
-                            input1_0_V_ap_vld      => vb_deltaPhi1,
-                            input1_1_V_ap_vld      => vb_deltaPhi2,
-                            input1_2_V_ap_vld      => vb_deltaPhi3,
-                            input1_3_V_ap_vld      => vb_deltaPhi4,
-                            input1_4_V_ap_vld      => vb_deltaPhi5,
-                            input1_5_V_ap_vld      => vb_deltaPhi6,
-                            input1_6_V_ap_vld      => vb_deltaTheta1,
-                            input1_7_V_ap_vld      => vb_deltaTheta2,
-                            input1_8_V_ap_vld      => vb_deltaTheta3,
-                            input1_9_V_ap_vld      => vb_deltaTheta4,
-                            input1_10_V_ap_vld      => vb_deltaTheta5,
-                            input1_11_V_ap_vld      => vb_deltaTheta6,
-                            input1_12_V_ap_vld      => vb_bend1,
-                            input1_13_V_ap_vld      => vb_bend2,
-                            input1_14_V_ap_vld      => vb_bend3,
-                            input1_15_V_ap_vld      => vb_bend4,
-                            input1_16_V_ap_vld      => vb_ME1_fr,
-                            input1_17_V_ap_vld      => vb_theta,
-                            input1_18_V_ap_vld      => vb_ME1_ring,
-                            input1_19_V_ap_vld      => vb_RPCbit1,
-                            input1_20_V_ap_vld      => vb_RPCbit2,
-                            input1_21_V_ap_vld      => vb_RPCbit3,
-                            input1_22_V_ap_vld      => vb_RPCbit4,
-                            layer11_out_0_V      => layer11_out_invpt,
-                            layer11_out_1_V      => layer11_out_d0,
-                            layer11_out_0_V_ap_vld      => vb_layer11_out_invpt,
-                            layer11_out_1_V_ap_vld      => vb_layer11_out_d0,
-                
+                            input1_6_V      => sdeltaPhi1,
+                            input1_7_V      => sdeltaPhi2,
+                            input1_8_V      => sdeltaPhi3,
+                            input1_9_V      => sdeltaPhi4,
+                            input1_10_V      => sdeltaPhi5,
+                            input1_11_V      => sdeltaPhi6,
+                            input1_12_V      => deltaTheta1,
+                            input1_13_V      => deltaTheta2,
+                            input1_14_V      => deltaTheta3,
+                            input1_15_V      => deltaTheta4,
+                            input1_16_V      => deltaTheta5,
+                            input1_17_V      => deltaTheta6,
+                            input1_18_V      => sdeltaTheta1,
+                            input1_19_V      => sdeltaTheta2,
+                            input1_20_V      => sdeltaTheta3,
+                            input1_21_V      => sdeltaTheta4,
+                            input1_22_V      => sdeltaTheta5,
+                            input1_23_V      => sdeltaTheta6,
+                            input1_24_V      => bend1,
+                            input1_25_V      => bend2,
+                            input1_26_V      => bend3,
+                            input1_27_V      => bend4,
+                            input1_28_V      => ME1_fr,
+                            input1_29_V      => theta,
+                            input1_30_V      => ME1_ring,
+                   
+                            layer12_out_0_V      => layer12_out_invpt,
+                            layer12_out_1_V      => layer12_out_d0,
                 
                 --========================================
                 --end entity port map...
@@ -455,61 +401,42 @@ begin
                 
                 
                 
-        deltaPhi1 	 <= data(17 downto 0);
-	deltaPhi2 	 <= data(35 downto 18);
-	deltaPhi3 	 <= data(53 downto 36);
-	deltaPhi4 	 <= data(71 downto 54);
-	deltaPhi5 	 <= data(89 downto 72);
-	deltaPhi6 	 <= data(107 downto 90);
-	deltaTheta1 	 <= data(125 downto 108);
-	deltaTheta2 	 <= data(143 downto 126);
-	deltaTheta3 	 <= data(161 downto 144);
-	deltaTheta4 	 <= data(179 downto 162);
-	deltaTheta5 	 <= data(197 downto 180);
-	deltaTheta6 	 <= data(215 downto 198);
-	bend1 	 <= data(233 downto 216);
-	bend2 	 <= data(251 downto 234);
-	bend3 	 <= data(269 downto 252);
-	bend4 	 <= data(287 downto 270);
-	ME1_fr 	 <= data(305 downto 288);
-	theta 	 <= data(323 downto 306);
-	ME1_ring 	 <= data(341 downto 324);
-	RPCbit1 	 <= data(359 downto 342);
-	RPCbit2 	 <= data(377 downto 360);
-	RPCbit3 	 <= data(395 downto 378);
-	RPCbit4 	 <= data(413 downto 396);
-
-
-                    vb_deltaPhi1      <= data_valid;
-                    vb_deltaPhi2      <= data_valid;
-                    vb_deltaPhi3      <= data_valid;
-                    vb_deltaPhi4      <= data_valid;
-                    vb_deltaPhi5      <= data_valid;
-                    vb_deltaPhi6      <= data_valid;
-                    vb_deltaTheta1      <= data_valid;
-                    vb_deltaTheta2      <= data_valid;
-                    vb_deltaTheta3      <= data_valid;
-                    vb_deltaTheta4      <= data_valid;
-                    vb_deltaTheta5      <= data_valid;
-                    vb_deltaTheta6      <= data_valid;
-                    vb_bend1      <= data_valid;
-                    vb_bend2      <= data_valid;
-                    vb_bend3      <= data_valid;
-                    vb_bend4      <= data_valid;
-                    vb_ME1_fr      <= data_valid;
-                    vb_theta      <= data_valid;
-                    vb_ME1_ring      <= data_valid;
-                    vb_RPCbit1      <= data_valid;
-                    vb_RPCbit2      <= data_valid;
-                    vb_RPCbit3      <= data_valid;
-                    vb_RPCbit4      <= data_valid;
-                
-                
+        deltaPhi1 	 <= data(12 downto 0);
+	deltaPhi2 	 <= data(25 downto 13);
+	deltaPhi3 	 <= data(38 downto 26);
+	deltaPhi4 	 <= data(51 downto 39);
+	deltaPhi5 	 <= data(64 downto 52);
+        deltaPhi6 	 <= data(77 downto 65);
+        sdeltaPhi1 	 <= data(90 downto 78);
+	sdeltaPhi2 	 <= data(103 downto 91);
+	sdeltaPhi3 	 <= data(116 downto 104);
+	sdeltaPhi4 	 <= data(129 downto 117);
+	sdeltaPhi5 	 <= data(142 downto 130);
+	sdeltaPhi6 	 <= data(155 downto 143);
+	deltaTheta1 	 <= data(168 downto 156);
+	deltaTheta2 	 <= data(181 downto 169);
+	deltaTheta3 	 <= data(194 downto 182);
+	deltaTheta4 	 <= data(207 downto 195);
+	deltaTheta5 	 <= data(220 downto 208);
+        deltaTheta6 	 <= data(233 downto 221);
+    	sdeltaTheta1 	 <= data(246 downto 234);
+	sdeltaTheta2 	 <= data(259 downto 247);
+	sdeltaTheta3 	 <= data(272 downto 260);
+	sdeltaTheta4 	 <= data(285 downto 273);
+	sdeltaTheta5 	 <= data(298 downto 286);
+	sdeltaTheta6 	 <= data(311 downto 299);
+	bend1 	 <= data(324 downto 312);
+	bend2 	 <= data(337 downto 325);
+	bend3 	 <= data(350 downto 338);
+	bend4 	 <= data(363 downto 351);
+	ME1_fr 	 <= data(376 downto 364);
+	theta 	 <= data(389 downto 377);
+	ME1_ring 	 <= data(402 downto 390);  
                  
-	hls_to_ila(11 downto 0) 	 <= layer11_out_invpt;
-	hls_to_ila(23 downto 12) 	 <= layer11_out_d0;
+	hls_to_ila(7 downto 0) 	 <= layer12_out_invpt;
+	hls_to_ila(15 downto 8) 	 <= layer12_out_d0;
 
-                    layer11_out_valid      <= vb_layer11_out_invpt or vb_layer11_out_d0;
+        layer12_out_valid      <= layer12_out_invpt(0);
                 
                 
                 --========================================
