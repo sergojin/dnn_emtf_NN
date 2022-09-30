@@ -49,7 +49,7 @@ port (
     input1_29_V : IN STD_LOGIC_VECTOR (12 downto 0);
     input1_30_V : IN STD_LOGIC_VECTOR (12 downto 0);
     layer12_out_0_V : OUT STD_LOGIC_VECTOR (7 downto 0);
-    layer12_out_1_V : OUT STD_LOGIC_VECTOR (7 downto 0);
+    layer12_out_1_V : OUT STD_LOGIC_VECTOR (6 downto 0);
     const_size_in_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
     const_size_in_1_ap_vld : OUT STD_LOGIC;
     const_size_out_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -1480,5 +1480,5 @@ begin
     grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423_ap_start <= grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423_ap_start_reg;
     grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_fu_397_ap_start <= grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_fu_397_ap_start_reg;
     layer12_out_0_V <= call_ret_relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s_fu_529_ap_return_0;
-    layer12_out_1_V <= call_ret_relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s_fu_529_ap_return_1;
+    layer12_out_1_V <= call_ret_relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s_fu_529_ap_return_1(6 downto 0);
 end behav;

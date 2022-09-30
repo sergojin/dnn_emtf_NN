@@ -89,7 +89,7 @@ architecture Behavioral of test_algo is
         input1_29_V : IN STD_LOGIC_VECTOR (12 downto 0);
         input1_30_V : IN STD_LOGIC_VECTOR (12 downto 0);
         layer12_out_0_V : OUT STD_LOGIC_VECTOR (7 downto 0);
-        layer12_out_1_V : OUT STD_LOGIC_VECTOR (7 downto 0);
+        layer12_out_1_V : OUT STD_LOGIC_VECTOR (6 downto 0);
         const_size_in_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
         const_size_in_1_ap_vld : OUT STD_LOGIC;
         const_size_out_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -169,7 +169,7 @@ architecture Behavioral of test_algo is
 	signal ME1_ring 	 : std_logic_vector(12 downto 0);
 
         signal layer12_out_invpt 	 : std_logic_vector(7 downto 0);
-	signal layer12_out_d0 	 : std_logic_vector(7 downto 0);
+	signal layer12_out_d0 	 : std_logic_vector(6 downto 0);
 
 
 	attribute mark_debug of deltaPhi1 	 : signal is "true";
@@ -434,7 +434,7 @@ begin
 	ME1_ring 	 <= data(402 downto 390);  
                  
 	hls_to_ila(7 downto 0) 	 <= layer12_out_invpt;
-	hls_to_ila(15 downto 8) 	 <= layer12_out_d0;
+	hls_to_ila(14 downto 8) 	 <= layer12_out_d0;
 
         layer12_out_valid      <= layer12_out_invpt(0);
                 

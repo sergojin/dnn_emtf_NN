@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Thu Sep 29 10:01:32 2022
+| Date         : Thu Sep 29 20:20:23 2022
 | Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command      : report_methodology -file mtf7_core_top_methodology_drc_routed.rpt -pb mtf7_core_top_methodology_drc_routed.pb -rpx mtf7_core_top_methodology_drc_routed.rpx
 | Design       : mtf7_core_top

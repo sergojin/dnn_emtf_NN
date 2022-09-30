@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Thu Sep 29 09:55:50 2022
+| Date         : Thu Sep 29 20:11:49 2022
 | Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command      : report_utilization -file mtf7_core_top_utilization_synth.rpt -pb mtf7_core_top_utilization_synth.pb
 | Design       : mtf7_core_top
@@ -31,12 +31,12 @@ Table of Contents
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
 | Slice LUTs*                | 23284 |     0 |    433200 |  5.37 |
-|   LUT as Logic             | 23253 |     0 |    433200 |  5.37 |
-|   LUT as Memory            |    31 |     0 |    174200 |  0.02 |
+|   LUT as Logic             | 23254 |     0 |    433200 |  5.37 |
+|   LUT as Memory            |    30 |     0 |    174200 |  0.02 |
 |     LUT as Distributed RAM |     0 |     0 |           |       |
-|     LUT as Shift Register  |    31 |     0 |           |       |
-| Slice Registers            | 11839 |     0 |    866400 |  1.37 |
-|   Register as Flip Flop    | 11839 |     0 |    866400 |  1.37 |
+|     LUT as Shift Register  |    30 |     0 |           |       |
+| Slice Registers            | 11838 |     0 |    866400 |  1.37 |
+|   Register as Flip Flop    | 11838 |     0 |    866400 |  1.37 |
 |   Register as Latch        |     0 |     0 |    866400 |  0.00 |
 | F7 Muxes                   |     0 |     0 |    216600 |  0.00 |
 | F8 Muxes                   |     0 |     0 |    108300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 356   |          Yes |         Set |            - |
-| 11483 |          Yes |       Reset |            - |
+| 11482 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -156,17 +156,17 @@ Table of Contents
 +--------------+-------+---------------------+
 |   Ref Name   |  Used | Functional Category |
 +--------------+-------+---------------------+
-| LUT2         | 13645 |                 LUT |
-| FDRE         | 11483 |        Flop & Latch |
+| LUT2         | 13644 |                 LUT |
+| FDRE         | 11482 |        Flop & Latch |
 | LUT4         |  6912 |                 LUT |
 | LUT3         |  6802 |                 LUT |
 | CARRY4       |  6158 |          CarryLogic |
-| LUT1         |  1620 |                 LUT |
+| LUT1         |  1621 |                 LUT |
 | LUT6         |  1324 |                 LUT |
 | LUT5         |   826 |                 LUT |
 | DSP48E1      |   699 |    Block Arithmetic |
 | FDSE         |   356 |        Flop & Latch |
-| SRL16E       |    31 |  Distributed Memory |
+| SRL16E       |    30 |  Distributed Memory |
 | IBUF         |    20 |                  IO |
 | RAMB18E1     |    18 |        Block Memory |
 | OBUF         |    15 |                  IO |

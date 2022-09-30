@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Sep 29 09:50:06 2022
-# Process ID: 49814
+# Start of session at: Thu Sep 29 20:07:57 2022
+# Process ID: 21811
 # Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1
 # Command line: vivado -log mtf7_core_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mtf7_core_top.tcl
 # Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/mtf7_core_top.vds
@@ -21,12 +21,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx69
 INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 55743
+INFO: [Synth 8-7075] Helper process launched with PID 21868
 WARNING: [Synth 8-6901] identifier 'bw_addr' is used before its declaration [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv:18]
 WARNING: [Synth 8-2507] parameter declaration becomes local in core_params_axi with formal parameter declaration list [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/../core/spbits.sv:65]
 WARNING: [Synth 8-2507] parameter declaration becomes local in core_params_axi with formal parameter declaration list [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/../core/spbits.sv:66]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2414.188 ; gain = 154.715 ; free physical = 38392 ; free virtual = 131295
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2414.152 ; gain = 151.715 ; free physical = 75041 ; free virtual = 145294
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mtf7_core_top' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:24]
 	Parameter seg_ch bound to: 2 - type: integer 
@@ -164,9 +164,9 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/data/Xilinx/Vivado/2020.1
 	Parameter TBYTE_SRC bound to: FALSE - type: string 
 	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (6#1) [/data/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:50391]
-INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm_in' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/ctoc_mmcm_in_stub.vhdl:21]
-INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/ctoc_mmcm_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'ctoc_ififo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/ctoc_ififo_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm_in' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/ctoc_mmcm_in_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/ctoc_mmcm_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'ctoc_ififo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/ctoc_ififo_stub.vhdl:21]
 INFO: [Synth 8-6155] done synthesizing module 'control_to_core_slave_axi' (7#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/control_to_core_axi.sv:21]
 INFO: [Synth 8-6157] synthesizing module 'core_params_axi' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv:4]
 	Parameter AW bound to: 15 - type: integer 
@@ -229,9 +229,9 @@ INFO: [Synth 8-6157] synthesizing module 'inject_mem_axi_64' [/home/sergo/cms-ph
 	Parameter WRITE bound to: 2'b01 
 	Parameter READ bound to: 2'b10 
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/inject_mem_axi.sv:53]
-INFO: [Synth 8-638] synthesizing module 'inject_mem_64' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/inject_mem_64_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'inject_mem_64' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/inject_mem_64_stub.vhdl:22]
 INFO: [Synth 8-6155] done synthesizing module 'inject_mem_axi_64' (9#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/inject_mem_axi.sv:1]
-INFO: [Synth 8-638] synthesizing module 'usrclk_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/usrclk_mmcm_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'usrclk_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/usrclk_mmcm_stub.vhdl:24]
 INFO: [Synth 8-6157] synthesizing module 'register_bank' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:24]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:53]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:68]
@@ -239,83 +239,83 @@ INFO: [Synth 8-6157] synthesizing module 'USR_ACCESSE2' [/data/Xilinx/Vivado/202
 INFO: [Synth 8-6155] done synthesizing module 'USR_ACCESSE2' (10#1) [/data/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:81704]
 INFO: [Synth 8-6155] done synthesizing module 'register_bank' (11#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:24]
 INFO: [Synth 8-638] synthesizing module 'test_algo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:15]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'my_bram_label' of component 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:327]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'emtfptnn' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:12' bound to instance 'my_hls_label' of component 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:336]
-INFO: [Synth 8-638] synthesizing module 'emtfptnn' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:60]
-INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_338' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:648]
-INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (12#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:71]
-INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_373' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:705]
-INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (13#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_fu_397' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:746]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:63]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'my_bram_label' of component 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'emtfptnn' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:12' bound to instance 'my_hls_label' of component 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:336]
+INFO: [Synth 8-638] synthesizing module 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:60]
+INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_338' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:648]
+INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (12#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_373' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:705]
+INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (13#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_fu_397' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:746]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:63]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2342' bound to instance 'tanh_table1_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:678]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2412]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2342' bound to instance 'tanh_table1_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:678]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2412]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:9' bound to instance 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2481]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:81]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:9' bound to instance 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2481]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:81]
 	Parameter DWIDTH bound to: 11 - type: integer 
 	Parameter AWIDTH bound to: 10 - type: integer 
 	Parameter MEM_SIZE bound to: 1024 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' (14#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' (15#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2412]
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' (16#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:63]
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:795]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb_rom' (14#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb' (15#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd:2412]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s' (16#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd:63]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:795]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:53]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1863' bound to instance 'tanh_table3_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:528]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1918]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1863' bound to instance 'tanh_table3_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:528]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1918]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
 	Parameter AddressWidth bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:9' bound to instance 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1972]
-INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:66]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:9' bound to instance 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom_U' of component 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1972]
+INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:66]
 	Parameter DWIDTH bound to: 11 - type: integer 
 	Parameter AWIDTH bound to: 10 - type: integer 
 	Parameter MEM_SIZE bound to: 1024 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' (17#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' (18#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1918]
-INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' (19#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:53]
-INFO: [Synth 8-3491] module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:12' bound to instance 'grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_444' of component 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:834]
-INFO: [Synth 8-638] synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' (20#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
-INFO: [Synth 8-3491] module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:12' bound to instance 'call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_463' of component 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:857]
-INFO: [Synth 8-638] synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' (21#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:80]
-INFO: [Synth 8-3491] module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' declared at '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:12' bound to instance 'call_ret_relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s_fu_529' of component 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:923]
-INFO: [Synth 8-638] synthesizing module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' (22#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'emtfptnn' (23#1) [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd:60]
-INFO: [Synth 8-3491] module 'eleven2nine_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:5' bound to instance 'my_11_9_lut' of component 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:447]
-INFO: [Synth 8-638] synthesizing module 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'eleven2two_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:5' bound to instance 'my_11_2_lut' of component 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:453]
-INFO: [Synth 8-638] synthesizing module 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-49814-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom' (17#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud' (18#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd:1918]
+INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s' (19#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd:53]
+INFO: [Synth 8-3491] module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:12' bound to instance 'grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_444' of component 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:834]
+INFO: [Synth 8-638] synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' (20#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
+INFO: [Synth 8-3491] module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:12' bound to instance 'call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_463' of component 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:857]
+INFO: [Synth 8-638] synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' (21#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:80]
+INFO: [Synth 8-3491] module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:12' bound to instance 'call_ret_relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s_fu_529' of component 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:923]
+INFO: [Synth 8-638] synthesizing module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s' (22#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'emtfptnn' (23#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:60]
+INFO: [Synth 8-3491] module 'eleven2nine_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:5' bound to instance 'my_11_9_lut' of component 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:447]
+INFO: [Synth 8-638] synthesizing module 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'eleven2two_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:5' bound to instance 'my_11_2_lut' of component 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:453]
+INFO: [Synth 8-638] synthesizing module 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-21811-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:14]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'my_hls_label'. This will prevent further optimization [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:336]
 INFO: [Synth 8-256] done synthesizing module 'test_algo' (24#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:15]
 WARNING: [Synth 8-689] width (1440) of port connection 'data_in' does not match port width (702) of module 'test_algo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:180]
 INFO: [Synth 8-6155] done synthesizing module 'mtf7_core_top' (25#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2599.098 ; gain = 339.625 ; free physical = 25322 ; free virtual = 118268
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2599.062 ; gain = 336.625 ; free physical = 74955 ; free virtual = 145211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2605.031 ; gain = 345.559 ; free physical = 23852 ; free virtual = 116758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2604.996 ; gain = 342.559 ; free physical = 74978 ; free virtual = 145233
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2605.031 ; gain = 345.559 ; free physical = 23849 ; free virtual = 116755
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2604.996 ; gain = 342.559 ; free physical = 74978 ; free virtual = 145233
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2608.000 ; gain = 0.000 ; free physical = 21189 ; free virtual = 114095
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2607.965 ; gain = 0.000 ; free physical = 74946 ; free virtual = 145201
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'ctoc/ext_clk_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-432] The IBUFG primitive 'pcie_clk_buff' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
@@ -374,26 +374,26 @@ WARNING: [Constraints 18-619] A clock with name 'clk40_in_p' already exists, ove
 Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2810.531 ; gain = 0.000 ; free physical = 18951 ; free virtual = 111862
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2810.496 ; gain = 0.000 ; free physical = 74783 ; free virtual = 145038
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUFG => IBUF: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2810.531 ; gain = 0.000 ; free physical = 18938 ; free virtual = 111849
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2810.496 ; gain = 0.000 ; free physical = 74783 ; free virtual = 145038
 WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'usrclk_mmcm_' at clock pin 'CLK_IN1' is different from the actual clock period '24.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'imem/im64_0' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_11_2_lut' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_11_9_lut' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_bram_label' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 18750 ; free virtual = 111664
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 74955 ; free virtual = 145210
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 18750 ; free virtual = 111664
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 74955 ; free virtual = 145210
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -407,7 +407,7 @@ Applied set_property DONT_TOUCH = true for usrclk_mmcm_. (constraint file  auto 
 Applied set_property DONT_TOUCH = true for my_test_algo/my_bram_label. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ctoc/ctoc_mmcm_out. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 18755 ; free virtual = 111669
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 74955 ; free virtual = 145211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'bs_st_reg' in module 'control_to_core_slave_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'core_params_axi'
@@ -438,7 +438,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'inject_mem_axi_64'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 18315 ; free virtual = 111270
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 74840 ; free virtual = 145099
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1025,85 +1025,85 @@ DSP Report: Generating DSP mul_ln1118_235_fu_1012_p2, operation Mode is: A*(B:0x
 DSP Report: operator mul_ln1118_235_fu_1012_p2 is absorbed into DSP mul_ln1118_235_fu_1012_p2.
 DSP Report: Generating DSP mul_ln1118_206_fu_936_p2, operation Mode is: A*(B:0x186).
 DSP Report: operator mul_ln1118_206_fu_936_p2 is absorbed into DSP mul_ln1118_206_fu_936_p2.
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_30_V_read_int_reg_reg[23:0]' into 'data_30_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5012]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
-INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_16_V_read_int_reg_reg[23:0]' into 'data_16_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4996]
-INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_15_V_read_int_reg_reg[23:0]' into 'data_15_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4995]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
-INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
-INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
-INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_24_V_read_int_reg_reg[23:0]' into 'data_24_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5005]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
-INFO: [Synth 8-4471] merging register 'data_24_V_read_int_reg_reg[23:0]' into 'data_24_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5005]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_25_V_read_int_reg_reg[23:0]' into 'data_25_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5006]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_30_V_read_int_reg_reg[23:0]' into 'data_30_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5012]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
+INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_16_V_read_int_reg_reg[23:0]' into 'data_16_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4996]
+INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_15_V_read_int_reg_reg[23:0]' into 'data_15_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4995]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
+INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
+INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_5_V_read_int_reg_reg[23:0]' into 'data_5_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5015]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_24_V_read_int_reg_reg[23:0]' into 'data_24_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5005]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_7_V_read_int_reg_reg[23:0]' into 'data_7_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5017]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_17_V_read_int_reg_reg[23:0]' into 'data_17_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4997]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_11_V_read_int_reg_reg[23:0]' into 'data_11_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4991]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
+INFO: [Synth 8-4471] merging register 'data_24_V_read_int_reg_reg[23:0]' into 'data_24_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5005]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_25_V_read_int_reg_reg[23:0]' into 'data_25_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5006]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_14_V_read_int_reg_reg[23:0]' into 'data_14_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4994]
 DSP Report: Generating DSP tmp_405_reg_981484_reg, operation Mode is: (A2*(B:0x5b))'.
 DSP Report: register data_30_V_read_int_reg_reg is absorbed into DSP tmp_405_reg_981484_reg.
 DSP Report: register tmp_405_reg_981484_reg is absorbed into DSP tmp_405_reg_981484_reg.
@@ -1397,26 +1397,26 @@ DSP Report: operator mul_ln1118_203_fu_1294_p2 is absorbed into DSP mul_ln1118_2
 DSP Report: Generating DSP mul_ln1118_316_fu_1205_p2, operation Mode is: A2*(B:0x3ffd6).
 DSP Report: register data_24_V_read_int_reg_reg is absorbed into DSP mul_ln1118_316_fu_1205_p2.
 DSP Report: operator mul_ln1118_316_fu_1205_p2 is absorbed into DSP mul_ln1118_316_fu_1205_p2.
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
-INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
-INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_15_V_read_int_reg_reg[23:0]' into 'data_15_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4995]
-INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
-INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
-INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
-INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
-INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
-INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_9_V_read_int_reg_reg[23:0]' into 'data_9_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5019]
+INFO: [Synth 8-4471] merging register 'data_10_V_read_int_reg_reg[23:0]' into 'data_10_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4990]
+INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_15_V_read_int_reg_reg[23:0]' into 'data_15_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4995]
+INFO: [Synth 8-4471] merging register 'data_12_V_read_int_reg_reg[23:0]' into 'data_12_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4992]
+INFO: [Synth 8-4471] merging register 'data_2_V_read_int_reg_reg[23:0]' into 'data_2_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5011]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_13_V_read_int_reg_reg[23:0]' into 'data_13_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4993]
+INFO: [Synth 8-4471] merging register 'data_4_V_read_int_reg_reg[23:0]' into 'data_4_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5014]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_0_V_read_int_reg_reg[23:0]' into 'data_0_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4989]
+INFO: [Synth 8-4471] merging register 'data_1_V_read_int_reg_reg[23:0]' into 'data_1_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5000]
+INFO: [Synth 8-4471] merging register 'data_3_V_read_int_reg_reg[23:0]' into 'data_3_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5013]
+INFO: [Synth 8-4471] merging register 'data_8_V_read_int_reg_reg[23:0]' into 'data_8_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:5018]
 INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 DSP Report: Generating DSP mul_ln1118_70_fu_1108_p2, operation Mode is: A2*(B:0x3ffb4).
 DSP Report: register data_3_V_read_int_reg_reg is absorbed into DSP mul_ln1118_70_fu_1108_p2.
@@ -1644,7 +1644,8 @@ DSP Report: operator mul_ln1118_216_fu_1273_p2 is absorbed into DSP mul_ln1118_2
 DSP Report: Generating DSP mul_ln1118_226_fu_1067_p2, operation Mode is: A2*(B:0x11d).
 DSP Report: register data_16_V_read_int_reg_reg is absorbed into DSP mul_ln1118_226_fu_1067_p2.
 DSP Report: operator mul_ln1118_226_fu_1067_p2 is absorbed into DSP mul_ln1118_226_fu_1067_p2.
-INFO: [Synth 8-4471] merging register 'data_16_V_read_int_reg_reg[23:0]' into 'data_16_V_read_int_reg_reg[23:0]' [/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4996]
+INFO: [Synth 8-4471] merging register 'data_16_V_read_int_reg_reg[23:0]' into 'data_16_V_read_int_reg_reg[23:0]' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:4996]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 DSP Report: Generating DSP mul_ln1118_231_fu_1577_p2, operation Mode is: A2*(B:0x6d).
 DSP Report: register data_16_V_read_int_reg_reg is absorbed into DSP mul_ln1118_231_fu_1577_p2.
@@ -2627,7 +2628,7 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_dense
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\layer2_out_4_V_reg_1012_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer2_out_0_V_reg_992_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:02:56 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 17493 ; free virtual = 110507
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:43 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 70738 ; free virtual = 141046
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3349,13 +3350,13 @@ WARNING: [Synth 8-565] redefining clock 'pcie_clk'
 WARNING: [Synth 8-565] redefining clock 'ext_clk_in'
 WARNING: [Synth 8-565] redefining clock 'clk40_in_p'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:49 ; elapsed = 00:03:13 . Memory (MB): peak = 2814.500 ; gain = 555.027 ; free physical = 28542 ; free virtual = 121578
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:54 . Memory (MB): peak = 2814.465 ; gain = 552.027 ; free physical = 70548 ; free virtual = 140891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:03:32 . Memory (MB): peak = 2934.480 ; gain = 675.008 ; free physical = 29204 ; free virtual = 122252
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:07 . Memory (MB): peak = 2936.445 ; gain = 674.008 ; free physical = 70382 ; free virtual = 140730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -3388,7 +3389,7 @@ INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/i_0/g
 INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/i_0/grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/i_0/grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:04:01 . Memory (MB): peak = 2971.434 ; gain = 711.961 ; free physical = 34579 ; free virtual = 127628
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:02:31 . Memory (MB): peak = 2973.398 ; gain = 710.961 ; free physical = 69596 ; free virtual = 139943
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3421,37 +3422,37 @@ INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_t
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:30 ; elapsed = 00:04:10 . Memory (MB): peak = 2971.434 ; gain = 711.961 ; free physical = 34677 ; free virtual = 127755
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:02:39 . Memory (MB): peak = 2973.398 ; gain = 710.961 ; free physical = 69553 ; free virtual = 139928
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:30 ; elapsed = 00:04:10 . Memory (MB): peak = 2971.434 ; gain = 711.961 ; free physical = 34661 ; free virtual = 127739
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:02:39 . Memory (MB): peak = 2973.398 ; gain = 710.961 ; free physical = 69554 ; free virtual = 139928
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:56 ; elapsed = 00:04:36 . Memory (MB): peak = 2971.434 ; gain = 711.961 ; free physical = 35712 ; free virtual = 128799
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:02:55 . Memory (MB): peak = 2973.398 ; gain = 710.961 ; free physical = 69455 ; free virtual = 139830
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:56 ; elapsed = 00:04:36 . Memory (MB): peak = 2971.434 ; gain = 711.961 ; free physical = 35709 ; free virtual = 128796
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:02:55 . Memory (MB): peak = 2973.398 ; gain = 710.961 ; free physical = 69455 ; free virtual = 139830
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:57 ; elapsed = 00:04:36 . Memory (MB): peak = 2974.449 ; gain = 714.977 ; free physical = 35728 ; free virtual = 128815
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:02:56 . Memory (MB): peak = 2975.414 ; gain = 712.977 ; free physical = 69454 ; free virtual = 139828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:57 ; elapsed = 00:04:36 . Memory (MB): peak = 2974.449 ; gain = 714.977 ; free physical = 35711 ; free virtual = 128798
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:02:56 . Memory (MB): peak = 2975.414 ; gain = 712.977 ; free physical = 69454 ; free virtual = 139828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3463,7 +3464,7 @@ Static Shift Register Report:
 +------------+-------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |emtfptnn    | grp_tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_fu_423/ap_enable_reg_pp0_iter1_reg | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
 |emtfptnn    | ap_enable_reg_pp0_iter5_reg                                                               | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|test_algo   | data_out_reg[34]                                                                          | 4      | 27    | NO           | NO                 | YES               | 27     | 0       | 
+|test_algo   | data_out_reg[34]                                                                          | 4      | 26    | NO           | NO                 | YES               | 26     | 0       | 
 |test_algo   | data_in_start_gen[0].readEnableShiftGen.read_enable_shr_reg[3]                            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 |test_algo   | data_source_gen[0].readEnableShiftGen.read_enable_shr_reg[1]                              | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +------------+-------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
@@ -3506,48 +3507,48 @@ Report Cell Usage:
 |11    |DSP48E1              |   699|
 |22    |IBUFDS_GTE2          |     1|
 |23    |ISERDESE2            |    14|
-|24    |LUT1                 |  1621|
-|25    |LUT2                 | 13645|
+|24    |LUT1                 |  1622|
+|25    |LUT2                 | 13644|
 |26    |LUT3                 |  6802|
 |27    |LUT4                 |  6912|
 |28    |LUT5                 |   826|
 |29    |LUT6                 |  1324|
 |30    |OSERDESE2            |    14|
 |31    |RAMB18E1             |    18|
-|34    |SRL16E               |    31|
+|34    |SRL16E               |    30|
 |35    |USR_ACCESSE2         |     1|
-|36    |FDRE                 | 11483|
+|36    |FDRE                 | 11482|
 |37    |FDSE                 |   356|
 |38    |IBUF                 |    18|
 |39    |IBUFG                |     2|
 |40    |OBUF                 |    15|
 +------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:57 ; elapsed = 00:04:36 . Memory (MB): peak = 2974.449 ; gain = 714.977 ; free physical = 35711 ; free virtual = 128798
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:02:56 . Memory (MB): peak = 2975.414 ; gain = 712.977 ; free physical = 69454 ; free virtual = 139828
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:47 ; elapsed = 00:04:24 . Memory (MB): peak = 2978.355 ; gain = 509.414 ; free physical = 40786 ; free virtual = 133873
-Synthesis Optimization Complete : Time (s): cpu = 00:03:02 ; elapsed = 00:04:38 . Memory (MB): peak = 2978.355 ; gain = 718.883 ; free physical = 40793 ; free virtual = 133873
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:02:53 . Memory (MB): peak = 2979.320 ; gain = 507.414 ; free physical = 74555 ; free virtual = 144930
+Synthesis Optimization Complete : Time (s): cpu = 00:01:51 ; elapsed = 00:03:01 . Memory (MB): peak = 2979.320 ; gain = 716.883 ; free physical = 74562 ; free virtual = 144931
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2978.355 ; gain = 0.000 ; free physical = 40753 ; free virtual = 133833
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2979.320 ; gain = 0.000 ; free physical = 74525 ; free virtual = 144892
 INFO: [Netlist 29-17] Analyzing 6891 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'ctoc/ext_clk_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-432] The IBUFG primitive 'pcie_clk_buff' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3064.035 ; gain = 0.000 ; free physical = 42562 ; free virtual = 135638
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3066.000 ; gain = 0.000 ; free physical = 74447 ; free virtual = 144815
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUFG => IBUF: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-359 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+360 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:29 ; elapsed = 00:05:22 . Memory (MB): peak = 3064.035 ; gain = 833.527 ; free physical = 42801 ; free virtual = 135876
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:03:31 . Memory (MB): peak = 3066.000 ; gain = 832.527 ; free physical = 74767 ; free virtual = 145135
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/mtf7_core_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3096.055 ; gain = 32.020 ; free physical = 42691 ; free virtual = 135775
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3098.020 ; gain = 32.020 ; free physical = 74759 ; free virtual = 145136
 INFO: [runtcl-4] Executing : report_utilization -file mtf7_core_top_utilization_synth.rpt -pb mtf7_core_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 29 09:55:50 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 29 20:11:49 2022...
