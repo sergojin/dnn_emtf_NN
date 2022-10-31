@@ -86,8 +86,6 @@ architecture Behavioral of test_algo is
         input1_26_V : IN STD_LOGIC_VECTOR (12 downto 0);
         input1_27_V : IN STD_LOGIC_VECTOR (12 downto 0);
         input1_28_V : IN STD_LOGIC_VECTOR (12 downto 0);
-        input1_29_V : IN STD_LOGIC_VECTOR (12 downto 0);
-        input1_30_V : IN STD_LOGIC_VECTOR (12 downto 0);
         layer12_out_0_V : OUT STD_LOGIC_VECTOR (7 downto 0);
         layer12_out_1_V : OUT STD_LOGIC_VECTOR (6 downto 0);
         const_size_in_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -164,9 +162,7 @@ architecture Behavioral of test_algo is
 	signal bend3 	 : std_logic_vector(12 downto 0);
         signal bend4 	 : std_logic_vector(12 downto 0);
 
-        signal ME1_fr 	 : std_logic_vector(12 downto 0);
 	signal theta 	 : std_logic_vector(12 downto 0);
-	signal ME1_ring 	 : std_logic_vector(12 downto 0);
 
         signal layer12_out_invpt 	 : std_logic_vector(7 downto 0);
 	signal layer12_out_d0 	 : std_logic_vector(6 downto 0);
@@ -200,9 +196,7 @@ architecture Behavioral of test_algo is
 	attribute mark_debug of bend2 	 : signal is "true";
 	attribute mark_debug of bend3 	 : signal is "true";
         attribute mark_debug of bend4 	 : signal is "true";
-	attribute mark_debug of ME1_fr 	 : signal is "true";
 	attribute mark_debug of theta 	 : signal is "true";
-	attribute mark_debug of ME1_ring 	 : signal is "true";
 	attribute mark_debug of layer12_out_invpt 	 : signal is "true";
 	attribute mark_debug of layer12_out_d0 	 : signal is "true";
 
@@ -377,9 +371,7 @@ begin
                             input1_25_V      => bend2,
                             input1_26_V      => bend3,
                             input1_27_V      => bend4,
-                            input1_28_V      => ME1_fr,
-                            input1_29_V      => theta,
-                            input1_30_V      => ME1_ring,
+                            input1_28_V      => theta,
                    
                             layer12_out_0_V      => layer12_out_invpt,
                             layer12_out_1_V      => layer12_out_d0,
@@ -429,9 +421,7 @@ begin
 	bend2 	 <= data(337 downto 325);
 	bend3 	 <= data(350 downto 338);
 	bend4 	 <= data(363 downto 351);
-	ME1_fr 	 <= data(376 downto 364);
-	theta 	 <= data(389 downto 377);
-	ME1_ring 	 <= data(402 downto 390);  
+	theta 	 <= data(376 downto 364);
                  
 	hls_to_ila(7 downto 0) 	 <= layer12_out_invpt;
 	hls_to_ila(14 downto 8) 	 <= layer12_out_d0;

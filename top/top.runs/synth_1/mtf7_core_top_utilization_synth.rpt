@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Thu Sep 29 20:11:49 2022
+| Date         : Mon Oct 31 13:07:08 2022
 | Host         : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command      : report_utilization -file mtf7_core_top_utilization_synth.rpt -pb mtf7_core_top_utilization_synth.pb
 | Design       : mtf7_core_top
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 23284 |     0 |    433200 |  5.37 |
-|   LUT as Logic             | 23254 |     0 |    433200 |  5.37 |
+| Slice LUTs*                | 14765 |     0 |    433200 |  3.41 |
+|   LUT as Logic             | 14735 |     0 |    433200 |  3.40 |
 |   LUT as Memory            |    30 |     0 |    174200 |  0.02 |
 |     LUT as Distributed RAM |     0 |     0 |           |       |
 |     LUT as Shift Register  |    30 |     0 |           |       |
-| Slice Registers            | 11838 |     0 |    866400 |  1.37 |
-|   Register as Flip Flop    | 11838 |     0 |    866400 |  1.37 |
+| Slice Registers            |  9302 |     0 |    866400 |  1.07 |
+|   Register as Flip Flop    |  9302 |     0 |    866400 |  1.07 |
 |   Register as Latch        |     0 |     0 |    866400 |  0.00 |
 | F7 Muxes                   |     0 |     0 |    216600 |  0.00 |
 | F8 Muxes                   |     0 |     0 |    108300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 356   |          Yes |         Set |            - |
-| 11482 |          Yes |       Reset |            - |
+| 8946  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -83,8 +83,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |  699 |     0 |      3600 | 19.42 |
-|   DSP48E1 only |  699 |       |           |       |
+| DSPs           |  933 |     0 |      3600 | 25.92 |
+|   DSP48E1 only |  933 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -153,29 +153,29 @@ Table of Contents
 7. Primitives
 -------------
 
-+--------------+-------+---------------------+
-|   Ref Name   |  Used | Functional Category |
-+--------------+-------+---------------------+
-| LUT2         | 13644 |                 LUT |
-| FDRE         | 11482 |        Flop & Latch |
-| LUT4         |  6912 |                 LUT |
-| LUT3         |  6802 |                 LUT |
-| CARRY4       |  6158 |          CarryLogic |
-| LUT1         |  1621 |                 LUT |
-| LUT6         |  1324 |                 LUT |
-| LUT5         |   826 |                 LUT |
-| DSP48E1      |   699 |    Block Arithmetic |
-| FDSE         |   356 |        Flop & Latch |
-| SRL16E       |    30 |  Distributed Memory |
-| IBUF         |    20 |                  IO |
-| RAMB18E1     |    18 |        Block Memory |
-| OBUF         |    15 |                  IO |
-| OSERDESE2    |    14 |                  IO |
-| ISERDESE2    |    14 |                  IO |
-| BUFG         |     2 |               Clock |
-| USR_ACCESSE2 |     1 |              Others |
-| IBUFDS_GTE2  |     1 |                  IO |
-+--------------+-------+---------------------+
++--------------+------+---------------------+
+|   Ref Name   | Used | Functional Category |
++--------------+------+---------------------+
+| FDRE         | 8946 |        Flop & Latch |
+| LUT2         | 7745 |                 LUT |
+| LUT3         | 5771 |                 LUT |
+| LUT4         | 5273 |                 LUT |
+| CARRY4       | 3937 |          CarryLogic |
+| DSP48E1      |  933 |    Block Arithmetic |
+| LUT6         |  885 |                 LUT |
+| LUT1         |  649 |                 LUT |
+| LUT5         |  485 |                 LUT |
+| FDSE         |  356 |        Flop & Latch |
+| SRL16E       |   30 |  Distributed Memory |
+| IBUF         |   20 |                  IO |
+| RAMB18E1     |   18 |        Block Memory |
+| OBUF         |   15 |                  IO |
+| OSERDESE2    |   14 |                  IO |
+| ISERDESE2    |   14 |                  IO |
+| BUFG         |    2 |               Clock |
+| USR_ACCESSE2 |    1 |              Others |
+| IBUFDS_GTE2  |    1 |                  IO |
++--------------+------+---------------------+
 
 
 8. Black Boxes

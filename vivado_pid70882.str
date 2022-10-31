@@ -1242,3 +1242,5 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
 // WARNING: HEventQueue.dispatchEvent() is taking  1128 ms.
 // Elapsed time: 38 seconds
 dismissDialog("Reloading"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,860 MB. GUI used memory: 165 MB. Current time: 9/29/22, 8:51:28 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 7,860 MB. GUI used memory: 156 MB. Current time: 9/29/22, 9:21:28 PM CDT
