@@ -20,12 +20,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx69
 INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 44352
+INFO: [Synth 8-7075] Helper process launched with PID 91738
 WARNING: [Synth 8-6901] identifier 'bw_addr' is used before its declaration [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv:18]
 WARNING: [Synth 8-2507] parameter declaration becomes local in core_params_axi with formal parameter declaration list [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/../core/spbits.sv:65]
 WARNING: [Synth 8-2507] parameter declaration becomes local in core_params_axi with formal parameter declaration list [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/../core/spbits.sv:66]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2414.156 ; gain = 151.715 ; free physical = 66453 ; free virtual = 133097
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2414.156 ; gain = 157.715 ; free physical = 84004 ; free virtual = 123589
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mtf7_core_top' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:24]
 	Parameter seg_ch bound to: 2 - type: integer 
@@ -163,9 +163,9 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/data/Xilinx/Vivado/2020.1
 	Parameter TBYTE_SRC bound to: FALSE - type: string 
 	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (6#1) [/data/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:50391]
-INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm_in' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/ctoc_mmcm_in_stub.vhdl:21]
-INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/ctoc_mmcm_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'ctoc_ififo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/ctoc_ififo_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm_in' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/ctoc_mmcm_in_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'ctoc_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/ctoc_mmcm_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'ctoc_ififo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/ctoc_ififo_stub.vhdl:21]
 INFO: [Synth 8-6155] done synthesizing module 'control_to_core_slave_axi' (7#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/control_to_core_axi.sv:21]
 INFO: [Synth 8-6157] synthesizing module 'core_params_axi' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv:4]
 	Parameter AW bound to: 15 - type: integer 
@@ -228,9 +228,9 @@ INFO: [Synth 8-6157] synthesizing module 'inject_mem_axi_64' [/home/sergo/cms-ph
 	Parameter WRITE bound to: 2'b01 
 	Parameter READ bound to: 2'b10 
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/inject_mem_axi.sv:53]
-INFO: [Synth 8-638] synthesizing module 'inject_mem_64' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/inject_mem_64_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'inject_mem_64' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/inject_mem_64_stub.vhdl:22]
 INFO: [Synth 8-6155] done synthesizing module 'inject_mem_axi_64' (9#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/inject_mem_axi.sv:1]
-INFO: [Synth 8-638] synthesizing module 'usrclk_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/usrclk_mmcm_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'usrclk_mmcm' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/usrclk_mmcm_stub.vhdl:24]
 INFO: [Synth 8-6157] synthesizing module 'register_bank' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:24]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:53]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:68]
@@ -238,17 +238,19 @@ INFO: [Synth 8-6157] synthesizing module 'USR_ACCESSE2' [/data/Xilinx/Vivado/202
 INFO: [Synth 8-6155] done synthesizing module 'USR_ACCESSE2' (10#1) [/data/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:81704]
 INFO: [Synth 8-6155] done synthesizing module 'register_bank' (11#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv:24]
 INFO: [Synth 8-638] synthesizing module 'test_algo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:15]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'my_bram_label' of component 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:321]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'my_bram_label' of component 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:321]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/blk_mem_gen_0_stub.vhdl:17]
+WARNING: [Synth 8-5640] Port 'layer12_out_0_v_ap_vld' is missing in component declaration [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:52]
+WARNING: [Synth 8-5640] Port 'layer12_out_1_v_ap_vld' is missing in component declaration [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:52]
 INFO: [Synth 8-3491] module 'emtfptnn' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:12' bound to instance 'my_hls_label' of component 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:330]
-INFO: [Synth 8-638] synthesizing module 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:58]
-INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_322' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:654]
+INFO: [Synth 8-638] synthesizing module 'emtfptnn' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:60]
+INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_324' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:656]
 INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:69]
 INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (12#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:69]
-INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_355' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:709]
+INFO: [Synth 8-3491] module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:12' bound to instance 'grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_357' of component 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:711]
 INFO: [Synth 8-638] synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
 INFO: [Synth 8-256] done synthesizing module 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0' (13#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd:55]
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379' of component 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:750]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381' of component 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:752]
 INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd:63]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
@@ -266,7 +268,7 @@ INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom' (14#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.vhd:81]
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb' (15#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.vhd:2412]
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s' (16#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd:63]
-INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405' of component 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:799]
+INFO: [Synth 8-3491] module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd:12' bound to instance 'grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407' of component 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:801]
 INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd:53]
 	Parameter DataWidth bound to: 11 - type: integer 
 	Parameter AddressRange bound to: 1024 - type: integer 
@@ -284,37 +286,37 @@ INFO: [Synth 8-638] synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom' (17#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.vhd:66]
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud' (18#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.vhd:1918]
 INFO: [Synth 8-256] done synthesizing module 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s' (19#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd:53]
-INFO: [Synth 8-3491] module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:12' bound to instance 'grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_426' of component 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:838]
+INFO: [Synth 8-3491] module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:12' bound to instance 'grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_428' of component 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:840]
 INFO: [Synth 8-638] synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
 INFO: [Synth 8-256] done synthesizing module 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0' (20#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd:37]
-INFO: [Synth 8-3491] module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:12' bound to instance 'call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445' of component 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:861]
+INFO: [Synth 8-3491] module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:12' bound to instance 'call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447' of component 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:863]
 INFO: [Synth 8-638] synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:76]
 INFO: [Synth 8-256] done synthesizing module 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s' (21#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd:76]
-INFO: [Synth 8-3491] module 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd:12' bound to instance 'call_ret_relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s_fu_507' of component 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:923]
+INFO: [Synth 8-3491] module 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd:12' bound to instance 'call_ret_relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s_fu_509' of component 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:925]
 INFO: [Synth 8-638] synthesizing module 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s' (22#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'emtfptnn' (23#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:58]
-INFO: [Synth 8-3491] module 'eleven2nine_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:5' bound to instance 'my_11_9_lut' of component 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:437]
-INFO: [Synth 8-638] synthesizing module 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'eleven2two_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:5' bound to instance 'my_11_2_lut' of component 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:443]
-INFO: [Synth 8-638] synthesizing module 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-44291-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'emtfptnn' (23#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd:60]
+INFO: [Synth 8-3491] module 'eleven2nine_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:5' bound to instance 'my_11_9_lut' of component 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:437]
+INFO: [Synth 8-638] synthesizing module 'eleven2nine_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/eleven2nine_lut_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'eleven2two_lut' declared at '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:5' bound to instance 'my_11_2_lut' of component 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'eleven2two_lut' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/.Xil/Vivado-91606-correlator2.fnal.gov/realtime/eleven2two_lut_stub.vhdl:14]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'my_hls_label'. This will prevent further optimization [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:330]
 INFO: [Synth 8-256] done synthesizing module 'test_algo' (24#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/test_algo.vhd:15]
 WARNING: [Synth 8-689] width (1440) of port connection 'data_in' does not match port width (702) of module 'test_algo' [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:180]
 INFO: [Synth 8-6155] done synthesizing module 'mtf7_core_top' (25#1) [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/mtf7_core_top.sv:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2581.066 ; gain = 318.625 ; free physical = 66386 ; free virtual = 133032
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2581.066 ; gain = 324.625 ; free physical = 83933 ; free virtual = 123521
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2589.969 ; gain = 327.527 ; free physical = 66407 ; free virtual = 133053
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2589.969 ; gain = 333.527 ; free physical = 83952 ; free virtual = 123540
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2589.969 ; gain = 327.527 ; free physical = 66407 ; free virtual = 133053
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2589.969 ; gain = 333.527 ; free physical = 83952 ; free virtual = 123540
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2592.938 ; gain = 0.000 ; free physical = 66379 ; free virtual = 133025
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2592.938 ; gain = 0.000 ; free physical = 83893 ; free virtual = 123480
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'ctoc/ext_clk_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-432] The IBUFG primitive 'pcie_clk_buff' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
@@ -373,26 +375,26 @@ WARNING: [Constraints 18-619] A clock with name 'clk40_in_p' already exists, ove
 Finished Parsing XDC File [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/mtf7_core_synth.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2793.469 ; gain = 0.000 ; free physical = 66219 ; free virtual = 132870
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2792.500 ; gain = 0.000 ; free physical = 83748 ; free virtual = 123338
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUFG => IBUF: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2793.469 ; gain = 0.000 ; free physical = 66219 ; free virtual = 132870
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2792.500 ; gain = 0.000 ; free physical = 83748 ; free virtual = 123338
 WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'usrclk_mmcm_' at clock pin 'CLK_IN1' is different from the actual clock period '24.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'imem/im64_0' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_11_2_lut' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_11_9_lut' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'my_test_algo/my_bram_label' at clock pin 'clka' is different from the actual clock period '7.750', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2796.438 ; gain = 533.996 ; free physical = 66377 ; free virtual = 133027
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2798.438 ; gain = 541.996 ; free physical = 83883 ; free virtual = 123478
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1927-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2796.438 ; gain = 533.996 ; free physical = 66377 ; free virtual = 133027
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2798.438 ; gain = 541.996 ; free physical = 83883 ; free virtual = 123478
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -406,7 +408,7 @@ Applied set_property DONT_TOUCH = true for usrclk_mmcm_. (constraint file  auto 
 Applied set_property DONT_TOUCH = true for my_test_algo/my_bram_label. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ctoc/ctoc_mmcm_out. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2796.438 ; gain = 533.996 ; free physical = 66377 ; free virtual = 133027
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2798.438 ; gain = 541.996 ; free physical = 83883 ; free virtual = 123478
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'bs_st_reg' in module 'control_to_core_slave_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'core_params_axi'
@@ -437,7 +439,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'inject_mem_axi_64'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2796.438 ; gain = 533.996 ; free physical = 66212 ; free virtual = 132865
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 2798.438 ; gain = 541.996 ; free physical = 83665 ; free virtual = 123287
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -2804,16 +2806,16 @@ DSP Report: operator mul_ln1118_149_fu_1781_p2 is absorbed into DSP mul_ln1118_1
 DSP Report: Generating DSP mul_ln1118_129_fu_1737_p2, operation Mode is: A2*(B:0x15eb5).
 DSP Report: register data_5_V_read_int_reg_reg is absorbed into DSP mul_ln1118_129_fu_1737_p2.
 DSP Report: operator mul_ln1118_129_fu_1737_p2 is absorbed into DSP mul_ln1118_129_fu_1737_p2.
-DSP Debug: swapped A/B pins for adder 0x4b1da5a0
-DSP Debug: swapped A/B pins for adder 0x4a3f5f20
-DSP Debug: swapped A/B pins for adder 0x2a839d60
-DSP Debug: swapped A/B pins for adder 0x3a2e9ed0
-DSP Debug: swapped A/B pins for adder 0x52242b20
-DSP Debug: swapped A/B pins for adder 0x2aa34f50
-DSP Debug: swapped A/B pins for adder 0x28c18c80
-DSP Debug: swapped A/B pins for adder 0x49fa94a0
-DSP Debug: swapped A/B pins for adder 0x292f28a0
-DSP Debug: swapped A/B pins for adder 0x4a3f3a40
+DSP Debug: swapped A/B pins for adder 0x488de550
+DSP Debug: swapped A/B pins for adder 0x49101c50
+DSP Debug: swapped A/B pins for adder 0x46e0adc0
+DSP Debug: swapped A/B pins for adder 0x45fa7720
+DSP Debug: swapped A/B pins for adder 0x51fcbd10
+DSP Debug: swapped A/B pins for adder 0x49e3e1e0
+DSP Debug: swapped A/B pins for adder 0x22953c50
+DSP Debug: swapped A/B pins for adder 0x4dad36d0
+DSP Debug: swapped A/B pins for adder 0x4cef5e00
+DSP Debug: swapped A/B pins for adder 0x509cd250
 DSP Report: Generating DSP mul_ln1118_15_fu_1060_p2, operation Mode is: A*(B:0x46b8).
 DSP Report: operator mul_ln1118_15_fu_1060_p2 is absorbed into DSP mul_ln1118_15_fu_1060_p2.
 DSP Report: operator mul_ln1118_15_fu_1060_p2 is absorbed into DSP mul_ln1118_15_fu_1060_p2.
@@ -3658,110 +3660,110 @@ DSP Report: operator mul_ln1118_284_fu_1062_p2 is absorbed into DSP mul_ln1118_2
 DSP Report: Generating DSP mul_ln1118_299_fu_862_p2, operation Mode is: A*(B:0x99b6).
 DSP Report: operator mul_ln1118_299_fu_862_p2 is absorbed into DSP mul_ln1118_299_fu_862_p2.
 DSP Report: operator mul_ln1118_299_fu_862_p2 is absorbed into DSP mul_ln1118_299_fu_862_p2.
-DSP Report: Generating DSP layer2_out_28_V_reg_1084_reg, operation Mode is: (C:0xfe5bc7)+A*(B:0x5ee).
-DSP Report: register layer2_out_28_V_reg_1084_reg is absorbed into DSP layer2_out_28_V_reg_1084_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_28_fu_4192_p2 is absorbed into DSP layer2_out_28_V_reg_1084_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_27_fu_383_p2 is absorbed into DSP layer2_out_28_V_reg_1084_reg.
-DSP Report: Generating DSP layer2_out_27_V_reg_1079_reg, operation Mode is: (C:0xfed2ee)+A*(B:0x1414).
-DSP Report: register layer2_out_27_V_reg_1079_reg is absorbed into DSP layer2_out_27_V_reg_1079_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_27_fu_4181_p2 is absorbed into DSP layer2_out_27_V_reg_1079_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_26_fu_397_p2 is absorbed into DSP layer2_out_27_V_reg_1079_reg.
-DSP Report: Generating DSP layer2_out_26_V_reg_1074_reg, operation Mode is: (C:0xfeb33c)+A*(B:0x1958).
-DSP Report: register layer2_out_26_V_reg_1074_reg is absorbed into DSP layer2_out_26_V_reg_1074_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_26_fu_4170_p2 is absorbed into DSP layer2_out_26_V_reg_1074_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_25_fu_380_p2 is absorbed into DSP layer2_out_26_V_reg_1074_reg.
-DSP Report: Generating DSP layer2_out_25_V_reg_1069_reg, operation Mode is: (C:0xfff648)+A*(B:0x1095).
-DSP Report: register layer2_out_25_V_reg_1069_reg is absorbed into DSP layer2_out_25_V_reg_1069_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_25_fu_4159_p2 is absorbed into DSP layer2_out_25_V_reg_1069_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_24_fu_395_p2 is absorbed into DSP layer2_out_25_V_reg_1069_reg.
-DSP Report: Generating DSP layer2_out_24_V_reg_1064_reg, operation Mode is: (C:0xff994c)+A*(B:0xe86).
-DSP Report: register layer2_out_24_V_reg_1064_reg is absorbed into DSP layer2_out_24_V_reg_1064_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_24_fu_4148_p2 is absorbed into DSP layer2_out_24_V_reg_1064_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_23_fu_393_p2 is absorbed into DSP layer2_out_24_V_reg_1064_reg.
-DSP Report: Generating DSP layer2_out_23_V_reg_1059_reg, operation Mode is: (C:0xff75b4)+(A:0x2227)*B.
-DSP Report: register layer2_out_23_V_reg_1059_reg is absorbed into DSP layer2_out_23_V_reg_1059_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_23_fu_4137_p2 is absorbed into DSP layer2_out_23_V_reg_1059_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_22_fu_389_p2 is absorbed into DSP layer2_out_23_V_reg_1059_reg.
-DSP Report: Generating DSP layer2_out_14_V_reg_1014_reg, operation Mode is: (C:0xff6994)+A*(B:0x2c1).
-DSP Report: register layer2_out_14_V_reg_1014_reg is absorbed into DSP layer2_out_14_V_reg_1014_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_14_fu_4038_p2 is absorbed into DSP layer2_out_14_V_reg_1014_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_13_fu_394_p2 is absorbed into DSP layer2_out_14_V_reg_1014_reg.
-DSP Report: Generating DSP layer2_out_13_V_reg_1009_reg, operation Mode is: (C:0xfee57f)+A*(B:0x8e5).
-DSP Report: register layer2_out_13_V_reg_1009_reg is absorbed into DSP layer2_out_13_V_reg_1009_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_13_fu_4027_p2 is absorbed into DSP layer2_out_13_V_reg_1009_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_12_fu_378_p2 is absorbed into DSP layer2_out_13_V_reg_1009_reg.
-DSP Report: Generating DSP layer2_out_12_V_reg_1004_reg, operation Mode is: (C:0xff0fac)+A*(B:0x5dc).
-DSP Report: register layer2_out_12_V_reg_1004_reg is absorbed into DSP layer2_out_12_V_reg_1004_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_12_fu_4016_p2 is absorbed into DSP layer2_out_12_V_reg_1004_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_11_fu_374_p2 is absorbed into DSP layer2_out_12_V_reg_1004_reg.
-DSP Report: Generating DSP layer2_out_11_V_reg_999_reg, operation Mode is: (C:0xff8d15)+(A:0x8a77)*B.
-DSP Report: register layer2_out_11_V_reg_999_reg is absorbed into DSP layer2_out_11_V_reg_999_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_11_fu_4005_p2 is absorbed into DSP layer2_out_11_V_reg_999_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_10_fu_399_p2 is absorbed into DSP layer2_out_11_V_reg_999_reg.
-DSP Report: Generating DSP layer2_out_10_V_reg_994_reg, operation Mode is: (C:0x6f0)+(A:0x588e)*B.
-DSP Report: register layer2_out_10_V_reg_994_reg is absorbed into DSP layer2_out_10_V_reg_994_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_10_fu_3994_p2 is absorbed into DSP layer2_out_10_V_reg_994_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_9_fu_390_p2 is absorbed into DSP layer2_out_10_V_reg_994_reg.
-DSP Report: Generating DSP layer2_out_9_V_reg_989_reg, operation Mode is: (C:0xfe5195)+(A:0x10b60)*B.
-DSP Report: register layer2_out_9_V_reg_989_reg is absorbed into DSP layer2_out_9_V_reg_989_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_9_fu_3983_p2 is absorbed into DSP layer2_out_9_V_reg_989_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_8_fu_387_p2 is absorbed into DSP layer2_out_9_V_reg_989_reg.
-DSP Report: Generating DSP layer2_out_8_V_reg_984_reg, operation Mode is: (C:0x700e)+(A:0x49a8)*B.
-DSP Report: register layer2_out_8_V_reg_984_reg is absorbed into DSP layer2_out_8_V_reg_984_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_8_fu_3972_p2 is absorbed into DSP layer2_out_8_V_reg_984_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_7_fu_401_p2 is absorbed into DSP layer2_out_8_V_reg_984_reg.
-DSP Report: Generating DSP layer2_out_7_V_reg_979_reg, operation Mode is: (C:0x8e0)+(A:0xa4ca)*B.
-DSP Report: register layer2_out_7_V_reg_979_reg is absorbed into DSP layer2_out_7_V_reg_979_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_7_fu_3961_p2 is absorbed into DSP layer2_out_7_V_reg_979_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_6_fu_398_p2 is absorbed into DSP layer2_out_7_V_reg_979_reg.
-DSP Report: Generating DSP layer2_out_6_V_reg_974_reg, operation Mode is: (C:0xc1b7)+(A:0xc1f9)*B.
-DSP Report: register layer2_out_6_V_reg_974_reg is absorbed into DSP layer2_out_6_V_reg_974_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_6_fu_3950_p2 is absorbed into DSP layer2_out_6_V_reg_974_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_5_fu_376_p2 is absorbed into DSP layer2_out_6_V_reg_974_reg.
-DSP Report: Generating DSP layer2_out_4_V_reg_964_reg, operation Mode is: (C:0x75964)+A*(B:0x25).
-DSP Report: register layer2_out_4_V_reg_964_reg is absorbed into DSP layer2_out_4_V_reg_964_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_4_fu_3913_p2 is absorbed into DSP layer2_out_4_V_reg_964_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_4_fu_384_p2 is absorbed into DSP layer2_out_4_V_reg_964_reg.
-DSP Report: Generating DSP layer2_out_3_V_reg_959_reg, operation Mode is: (C:0xdc1d8)+A*(B:0x49).
-DSP Report: register layer2_out_3_V_reg_959_reg is absorbed into DSP layer2_out_3_V_reg_959_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_3_fu_3898_p2 is absorbed into DSP layer2_out_3_V_reg_959_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_3_fu_375_p2 is absorbed into DSP layer2_out_3_V_reg_959_reg.
-DSP Report: Generating DSP layer2_out_2_V_reg_954_reg, operation Mode is: (C:0xf5e45)+A*(B:0x2a).
-DSP Report: register layer2_out_2_V_reg_954_reg is absorbed into DSP layer2_out_2_V_reg_954_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_2_fu_3883_p2 is absorbed into DSP layer2_out_2_V_reg_954_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_2_fu_396_p2 is absorbed into DSP layer2_out_2_V_reg_954_reg.
-DSP Report: Generating DSP layer2_out_1_V_reg_949_reg, operation Mode is: (C:0x1fd88d)+A*(B:0x6e).
-DSP Report: register layer2_out_1_V_reg_949_reg is absorbed into DSP layer2_out_1_V_reg_949_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_1_fu_3868_p2 is absorbed into DSP layer2_out_1_V_reg_949_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_1_fu_379_p2 is absorbed into DSP layer2_out_1_V_reg_949_reg.
-DSP Report: Generating DSP layer2_out_0_V_reg_944_reg, operation Mode is: (C:0x1f5a0f)+A*(B:0x6d).
-DSP Report: register layer2_out_0_V_reg_944_reg is absorbed into DSP layer2_out_0_V_reg_944_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_fu_3853_p2 is absorbed into DSP layer2_out_0_V_reg_944_reg.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_fu_392_p2 is absorbed into DSP layer2_out_0_V_reg_944_reg.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_15_fu_4049_p2, operation Mode is: (C:0xfec935)+A*(B:0x4e1).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_15_fu_4049_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_15_fu_4049_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_14_fu_391_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_15_fu_4049_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_16_fu_4060_p2, operation Mode is: (C:0xff5f10)+A*(B:0x3e6).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_16_fu_4060_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_16_fu_4060_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_15_fu_382_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_16_fu_4060_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_17_fu_4071_p2, operation Mode is: (C:0xff6d34)+A*(B:0x478).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_17_fu_4071_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_17_fu_4071_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_16_fu_381_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_17_fu_4071_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_18_fu_4082_p2, operation Mode is: (C:0x3fb5)+(A:0x2149)*B.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_18_fu_4082_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_18_fu_4082_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_17_fu_400_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_18_fu_4082_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_19_fu_4093_p2, operation Mode is: (C:0xff06b0)+(A:0x500f)*B.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_19_fu_4093_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_19_fu_4093_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_18_fu_385_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_19_fu_4093_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_20_fu_4104_p2, operation Mode is: (C:0xffbb9b)+A*(B:0x1b03).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_20_fu_4104_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_20_fu_4104_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_19_fu_402_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_20_fu_4104_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_21_fu_4115_p2, operation Mode is: (C:0xff6793)+A*(B:0x1d78).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_21_fu_4115_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_21_fu_4115_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_20_fu_386_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_21_fu_4115_p2.
-DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_22_fu_4126_p2, operation Mode is: (C:0x312e)+A*(B:0x13e9).
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_22_fu_4126_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_22_fu_4126_p2.
-DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/mul_ln703_21_fu_377_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445/add_ln703_22_fu_4126_p2.
+DSP Report: Generating DSP layer2_out_28_V_reg_1086_reg, operation Mode is: (C:0xfe5bc7)+A*(B:0x5ee).
+DSP Report: register layer2_out_28_V_reg_1086_reg is absorbed into DSP layer2_out_28_V_reg_1086_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_28_fu_4192_p2 is absorbed into DSP layer2_out_28_V_reg_1086_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_27_fu_383_p2 is absorbed into DSP layer2_out_28_V_reg_1086_reg.
+DSP Report: Generating DSP layer2_out_27_V_reg_1081_reg, operation Mode is: (C:0xfed2ee)+A*(B:0x1414).
+DSP Report: register layer2_out_27_V_reg_1081_reg is absorbed into DSP layer2_out_27_V_reg_1081_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_27_fu_4181_p2 is absorbed into DSP layer2_out_27_V_reg_1081_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_26_fu_397_p2 is absorbed into DSP layer2_out_27_V_reg_1081_reg.
+DSP Report: Generating DSP layer2_out_26_V_reg_1076_reg, operation Mode is: (C:0xfeb33c)+A*(B:0x1958).
+DSP Report: register layer2_out_26_V_reg_1076_reg is absorbed into DSP layer2_out_26_V_reg_1076_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_26_fu_4170_p2 is absorbed into DSP layer2_out_26_V_reg_1076_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_25_fu_380_p2 is absorbed into DSP layer2_out_26_V_reg_1076_reg.
+DSP Report: Generating DSP layer2_out_25_V_reg_1071_reg, operation Mode is: (C:0xfff648)+A*(B:0x1095).
+DSP Report: register layer2_out_25_V_reg_1071_reg is absorbed into DSP layer2_out_25_V_reg_1071_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_25_fu_4159_p2 is absorbed into DSP layer2_out_25_V_reg_1071_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_24_fu_395_p2 is absorbed into DSP layer2_out_25_V_reg_1071_reg.
+DSP Report: Generating DSP layer2_out_24_V_reg_1066_reg, operation Mode is: (C:0xff994c)+A*(B:0xe86).
+DSP Report: register layer2_out_24_V_reg_1066_reg is absorbed into DSP layer2_out_24_V_reg_1066_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_24_fu_4148_p2 is absorbed into DSP layer2_out_24_V_reg_1066_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_23_fu_393_p2 is absorbed into DSP layer2_out_24_V_reg_1066_reg.
+DSP Report: Generating DSP layer2_out_23_V_reg_1061_reg, operation Mode is: (C:0xff75b4)+(A:0x2227)*B.
+DSP Report: register layer2_out_23_V_reg_1061_reg is absorbed into DSP layer2_out_23_V_reg_1061_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_23_fu_4137_p2 is absorbed into DSP layer2_out_23_V_reg_1061_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_22_fu_389_p2 is absorbed into DSP layer2_out_23_V_reg_1061_reg.
+DSP Report: Generating DSP layer2_out_14_V_reg_1016_reg, operation Mode is: (C:0xff6994)+A*(B:0x2c1).
+DSP Report: register layer2_out_14_V_reg_1016_reg is absorbed into DSP layer2_out_14_V_reg_1016_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_14_fu_4038_p2 is absorbed into DSP layer2_out_14_V_reg_1016_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_13_fu_394_p2 is absorbed into DSP layer2_out_14_V_reg_1016_reg.
+DSP Report: Generating DSP layer2_out_13_V_reg_1011_reg, operation Mode is: (C:0xfee57f)+A*(B:0x8e5).
+DSP Report: register layer2_out_13_V_reg_1011_reg is absorbed into DSP layer2_out_13_V_reg_1011_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_13_fu_4027_p2 is absorbed into DSP layer2_out_13_V_reg_1011_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_12_fu_378_p2 is absorbed into DSP layer2_out_13_V_reg_1011_reg.
+DSP Report: Generating DSP layer2_out_12_V_reg_1006_reg, operation Mode is: (C:0xff0fac)+A*(B:0x5dc).
+DSP Report: register layer2_out_12_V_reg_1006_reg is absorbed into DSP layer2_out_12_V_reg_1006_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_12_fu_4016_p2 is absorbed into DSP layer2_out_12_V_reg_1006_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_11_fu_374_p2 is absorbed into DSP layer2_out_12_V_reg_1006_reg.
+DSP Report: Generating DSP layer2_out_11_V_reg_1001_reg, operation Mode is: (C:0xff8d15)+(A:0x8a77)*B.
+DSP Report: register layer2_out_11_V_reg_1001_reg is absorbed into DSP layer2_out_11_V_reg_1001_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_11_fu_4005_p2 is absorbed into DSP layer2_out_11_V_reg_1001_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_10_fu_399_p2 is absorbed into DSP layer2_out_11_V_reg_1001_reg.
+DSP Report: Generating DSP layer2_out_10_V_reg_996_reg, operation Mode is: (C:0x6f0)+(A:0x588e)*B.
+DSP Report: register layer2_out_10_V_reg_996_reg is absorbed into DSP layer2_out_10_V_reg_996_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_10_fu_3994_p2 is absorbed into DSP layer2_out_10_V_reg_996_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_9_fu_390_p2 is absorbed into DSP layer2_out_10_V_reg_996_reg.
+DSP Report: Generating DSP layer2_out_9_V_reg_991_reg, operation Mode is: (C:0xfe5195)+(A:0x10b60)*B.
+DSP Report: register layer2_out_9_V_reg_991_reg is absorbed into DSP layer2_out_9_V_reg_991_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_9_fu_3983_p2 is absorbed into DSP layer2_out_9_V_reg_991_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_8_fu_387_p2 is absorbed into DSP layer2_out_9_V_reg_991_reg.
+DSP Report: Generating DSP layer2_out_8_V_reg_986_reg, operation Mode is: (C:0x700e)+(A:0x49a8)*B.
+DSP Report: register layer2_out_8_V_reg_986_reg is absorbed into DSP layer2_out_8_V_reg_986_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_8_fu_3972_p2 is absorbed into DSP layer2_out_8_V_reg_986_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_7_fu_401_p2 is absorbed into DSP layer2_out_8_V_reg_986_reg.
+DSP Report: Generating DSP layer2_out_7_V_reg_981_reg, operation Mode is: (C:0x8e0)+(A:0xa4ca)*B.
+DSP Report: register layer2_out_7_V_reg_981_reg is absorbed into DSP layer2_out_7_V_reg_981_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_7_fu_3961_p2 is absorbed into DSP layer2_out_7_V_reg_981_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_6_fu_398_p2 is absorbed into DSP layer2_out_7_V_reg_981_reg.
+DSP Report: Generating DSP layer2_out_6_V_reg_976_reg, operation Mode is: (C:0xc1b7)+(A:0xc1f9)*B.
+DSP Report: register layer2_out_6_V_reg_976_reg is absorbed into DSP layer2_out_6_V_reg_976_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_6_fu_3950_p2 is absorbed into DSP layer2_out_6_V_reg_976_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_5_fu_376_p2 is absorbed into DSP layer2_out_6_V_reg_976_reg.
+DSP Report: Generating DSP layer2_out_4_V_reg_966_reg, operation Mode is: (C:0x75964)+A*(B:0x25).
+DSP Report: register layer2_out_4_V_reg_966_reg is absorbed into DSP layer2_out_4_V_reg_966_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_4_fu_3913_p2 is absorbed into DSP layer2_out_4_V_reg_966_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_4_fu_384_p2 is absorbed into DSP layer2_out_4_V_reg_966_reg.
+DSP Report: Generating DSP layer2_out_3_V_reg_961_reg, operation Mode is: (C:0xdc1d8)+A*(B:0x49).
+DSP Report: register layer2_out_3_V_reg_961_reg is absorbed into DSP layer2_out_3_V_reg_961_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_3_fu_3898_p2 is absorbed into DSP layer2_out_3_V_reg_961_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_3_fu_375_p2 is absorbed into DSP layer2_out_3_V_reg_961_reg.
+DSP Report: Generating DSP layer2_out_2_V_reg_956_reg, operation Mode is: (C:0xf5e45)+A*(B:0x2a).
+DSP Report: register layer2_out_2_V_reg_956_reg is absorbed into DSP layer2_out_2_V_reg_956_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_2_fu_3883_p2 is absorbed into DSP layer2_out_2_V_reg_956_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_2_fu_396_p2 is absorbed into DSP layer2_out_2_V_reg_956_reg.
+DSP Report: Generating DSP layer2_out_1_V_reg_951_reg, operation Mode is: (C:0x1fd88d)+A*(B:0x6e).
+DSP Report: register layer2_out_1_V_reg_951_reg is absorbed into DSP layer2_out_1_V_reg_951_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_1_fu_3868_p2 is absorbed into DSP layer2_out_1_V_reg_951_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_1_fu_379_p2 is absorbed into DSP layer2_out_1_V_reg_951_reg.
+DSP Report: Generating DSP layer2_out_0_V_reg_946_reg, operation Mode is: (C:0x1f5a0f)+A*(B:0x6d).
+DSP Report: register layer2_out_0_V_reg_946_reg is absorbed into DSP layer2_out_0_V_reg_946_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_fu_3853_p2 is absorbed into DSP layer2_out_0_V_reg_946_reg.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_fu_392_p2 is absorbed into DSP layer2_out_0_V_reg_946_reg.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_15_fu_4049_p2, operation Mode is: (C:0xfec935)+A*(B:0x4e1).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_15_fu_4049_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_15_fu_4049_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_14_fu_391_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_15_fu_4049_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_16_fu_4060_p2, operation Mode is: (C:0xff5f10)+A*(B:0x3e6).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_16_fu_4060_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_16_fu_4060_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_15_fu_382_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_16_fu_4060_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_17_fu_4071_p2, operation Mode is: (C:0xff6d34)+A*(B:0x478).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_17_fu_4071_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_17_fu_4071_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_16_fu_381_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_17_fu_4071_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_18_fu_4082_p2, operation Mode is: (C:0x3fb5)+(A:0x2149)*B.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_18_fu_4082_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_18_fu_4082_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_17_fu_400_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_18_fu_4082_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_19_fu_4093_p2, operation Mode is: (C:0xff06b0)+(A:0x500f)*B.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_19_fu_4093_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_19_fu_4093_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_18_fu_385_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_19_fu_4093_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_20_fu_4104_p2, operation Mode is: (C:0xffbb9b)+A*(B:0x1b03).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_20_fu_4104_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_20_fu_4104_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_19_fu_402_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_20_fu_4104_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_21_fu_4115_p2, operation Mode is: (C:0xff6793)+A*(B:0x1d78).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_21_fu_4115_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_21_fu_4115_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_20_fu_386_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_21_fu_4115_p2.
+DSP Report: Generating DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_22_fu_4126_p2, operation Mode is: (C:0x312e)+A*(B:0x13e9).
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_22_fu_4126_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_22_fu_4126_p2.
+DSP Report: operator call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/mul_ln703_21_fu_377_p2 is absorbed into DSP call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447/add_ln703_22_fu_4126_p2.
 DSP Report: Generating DSP mul_ln1118_28_fu_255_p2, operation Mode is: A*(B:0x3aa96).
 DSP Report: operator mul_ln1118_28_fu_255_p2 is absorbed into DSP mul_ln1118_28_fu_255_p2.
 DSP Report: Generating DSP mul_ln1118_20_fu_249_p2, operation Mode is: A*(B:0x18c0).
@@ -3846,7 +3848,7 @@ DSP Report: Generating DSP mul_ln1118_3_fu_234_p2, operation Mode is: A*(B:0x138
 DSP Report: operator mul_ln1118_3_fu_234_p2 is absorbed into DSP mul_ln1118_3_fu_234_p2.
 DSP Report: operator mul_ln1118_3_fu_234_p2 is absorbed into DSP mul_ln1118_3_fu_234_p2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 2834.957 ; gain = 572.516 ; free physical = 66132 ; free virtual = 132837
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:05 . Memory (MB): peak = 2835.949 ; gain = 579.508 ; free physical = 83118 ; free virtual = 122921
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4876,54 +4878,54 @@ WARNING: [Synth 8-565] redefining clock 'pcie_clk'
 WARNING: [Synth 8-565] redefining clock 'ext_clk_in'
 WARNING: [Synth 8-565] redefining clock 'clk40_in_p'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:35 . Memory (MB): peak = 2834.961 ; gain = 572.520 ; free physical = 65982 ; free virtual = 132694
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:19 . Memory (MB): peak = 2835.953 ; gain = 579.512 ; free physical = 82933 ; free virtual = 122780
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 3057.969 ; gain = 795.527 ; free physical = 65793 ; free virtual = 132507
+Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:36 . Memory (MB): peak = 3058.961 ; gain = 802.520 ; free physical = 82705 ; free virtual = 122588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q16_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381/tanh_table1_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom_U/q18_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q4_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q6_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q8_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q10_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q12_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance my_test_algo/my_hls_label/grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407/tanh_table3_U/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom_U/q14_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:25 . Memory (MB): peak = 3094.012 ; gain = 831.570 ; free physical = 65920 ; free virtual = 132632
+Finished Technology Mapping : Time (s): cpu = 00:03:20 ; elapsed = 00:03:38 . Memory (MB): peak = 3097.012 ; gain = 840.570 ; free physical = 82677 ; free virtual = 122694
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -4941,37 +4943,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:29 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65920 ; free virtual = 132632
+Finished IO Insertion : Time (s): cpu = 00:03:26 ; elapsed = 00:03:44 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82672 ; free virtual = 122694
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:29 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65921 ; free virtual = 132633
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:27 ; elapsed = 00:03:44 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82672 ; free virtual = 122695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:28 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65813 ; free virtual = 132525
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:51 ; elapsed = 00:04:08 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82135 ; free virtual = 122226
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65813 ; free virtual = 132525
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:51 ; elapsed = 00:04:08 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82134 ; free virtual = 122226
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:29 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65812 ; free virtual = 132524
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:51 ; elapsed = 00:04:09 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82135 ; free virtual = 122225
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:29 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65812 ; free virtual = 132524
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:52 ; elapsed = 00:04:09 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82135 ; free virtual = 122225
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5043,31 +5045,31 @@ Report Cell Usage:
 |38    |OBUF                 |    15|
 +------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:29 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.938 ; gain = 843.496 ; free physical = 65812 ; free virtual = 132524
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:52 ; elapsed = 00:04:09 . Memory (MB): peak = 3108.938 ; gain = 852.496 ; free physical = 82135 ; free virtual = 122225
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:20 ; elapsed = 00:02:34 . Memory (MB): peak = 3105.938 ; gain = 637.027 ; free physical = 65874 ; free virtual = 132586
-Synthesis Optimization Complete : Time (s): cpu = 00:02:29 ; elapsed = 00:02:42 . Memory (MB): peak = 3105.941 ; gain = 843.496 ; free physical = 65874 ; free virtual = 132586
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:41 ; elapsed = 00:03:58 . Memory (MB): peak = 3108.938 ; gain = 644.027 ; free physical = 82205 ; free virtual = 122288
+Synthesis Optimization Complete : Time (s): cpu = 00:03:52 ; elapsed = 00:04:09 . Memory (MB): peak = 3108.941 ; gain = 852.496 ; free physical = 82205 ; free virtual = 122288
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3105.941 ; gain = 0.000 ; free physical = 65926 ; free virtual = 132638
+Netlist sorting complete. Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.73 . Memory (MB): peak = 3108.941 ; gain = 0.000 ; free physical = 82237 ; free virtual = 122339
 INFO: [Netlist 29-17] Analyzing 4904 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'ctoc/ext_clk_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 WARNING: [Netlist 29-432] The IBUFG primitive 'pcie_clk_buff' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3150.828 ; gain = 0.000 ; free physical = 65858 ; free virtual = 132570
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3151.859 ; gain = 0.000 ; free physical = 82117 ; free virtual = 122235
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUFG => IBUF: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-152 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+152 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:50 ; elapsed = 00:03:12 . Memory (MB): peak = 3150.828 ; gain = 917.352 ; free physical = 66210 ; free virtual = 132922
+synth_design: Time (s): cpu = 00:04:18 ; elapsed = 00:04:44 . Memory (MB): peak = 3151.859 ; gain = 924.383 ; free physical = 82458 ; free virtual = 122577
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/mtf7_core_top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3182.848 ; gain = 32.020 ; free physical = 66209 ; free virtual = 132929
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3183.879 ; gain = 32.020 ; free physical = 82395 ; free virtual = 122596
 INFO: [runtcl-4] Executing : report_utilization -file mtf7_core_top_utilization_synth.rpt -pb mtf7_core_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 31 13:07:08 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 14 19:48:58 2022...

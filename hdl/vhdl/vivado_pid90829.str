@@ -1,0 +1,296 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 90829
+License: Customer
+
+Current time: 	Mon Nov 14 19:41:59 CST 2022
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-957.21.3.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: localhost:12.0
+Screen size: 1440x876
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/data/Xilinx/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/data/Xilinx/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sergo
+User home directory: /home/sergo
+User working directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /data/Xilinx/Vivado
+HDI_APPROOT: /data/Xilinx/Vivado/2020.1
+RDI_DATADIR: /data/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: /data/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/sergo/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/sergo/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/sergo/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/data/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/vivado.log
+Vivado journal file location: 	/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-90829-correlator2.fnal.gov
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /data/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx-lic
+XILINX_DSP: /data/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: /data/Xilinx/Vivado/2020.1
+XILINX_SDK: /data/Xilinx/Vitis/2020.1
+XILINX_VITIS: /data/Xilinx/Vitis/2020.1
+XILINX_VIVADO: /data/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: /data/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	131 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,648 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1006 ms.
+// Tcl Message: start_gui 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1190ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,655 MB. GUI used memory: 48 MB. Current time: 11/14/22, 7:42:00 PM CST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr", 0); // r (J, cs)
+// [GUI Memory]: 92 MB (+93798kb) [00:00:26]
+// [Engine Memory]: 5,657 MB (+5780388kb) [00:00:26]
+// Opening Vivado Project: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr. Version: Vivado v2020.1 
+// bz (cs):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6509 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1181 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+17391kb) [00:00:42]
+// [GUI Memory]: 128 MB (+9400kb) [00:00:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  7672 ms.
+// Tcl Message: open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,706 MB. GUI used memory: 77 MB. Current time: 11/14/22, 7:42:20 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 7255.191 ; gain = 34.039 ; free physical = 85361 ; free virtual = 124913 
+// Project name: top; location: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top; part: xc7vx690tffg1927-2
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2482ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2482 ms.
+// Elapsed time: 25 seconds
+dismissDialog("Open Project"); // bz (cs)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 2); // i (N, cs)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1339ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1339 ms.
+// PAPropertyPanels.initPanels (emtfptnn.vhd) elapsed time: 0.2s
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, emtfptnn.vhd]", 22, false); // B (F, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+// [GUI Memory]: 136 MB (+2506kb) [00:01:28]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, emtfptnn.vhd]", 22, false); // B (F, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1408 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, emtfptnn.vhd]", 22, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 17 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aA (g, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  3437 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4089 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ai (cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cs): Run Synthesis: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3408 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1525 ms.
+dismissDialog("Run Synthesis"); // A (cs)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cs): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3577 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2023 ms.
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Nov 14 19:43:50 2022] Launched synth_1... Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 19 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,757 MB. GUI used memory: 77 MB. Current time: 11/14/22, 7:43:55 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1771ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1771 ms.
+// ag (cs): Synthesis Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2721 ms.
+// Elapsed time: 321 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3046 ms.
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bz (cs):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2327 ms.
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4848 ms.
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Mon Nov 14 19:49:26 2022] Launched impl_1... Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4461 ms. Increasing delay to 3000 ms.
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:05 . Memory (MB): peak = 7406.258 ; gain = 0.000 ; free physical = 83299 ; free virtual = 123612 
+// 'c' command handler elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bz (cs)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  2344 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1467ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1467 ms.
+// ag (cs): Implementation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2763 ms.
+// Elapsed time: 349 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1551 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4406 ms.
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,840 MB. GUI used memory: 84 MB. Current time: 11/14/22, 7:55:50 PM CST
+// [Engine Memory]: 6,020 MB (+83903kb) [00:14:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,120 MB. GUI used memory: 84 MB. Current time: 11/14/22, 7:56:10 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 6,918 MB. GUI used memory: 84 MB. Current time: 11/14/22, 7:56:25 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 6,918 MB (+625623kb) [00:14:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,923 MB. GUI used memory: 84 MB. Current time: 11/14/22, 7:56:25 PM CST
+// Xgd.load filename: /data/Xilinx/Vivado/2020.1/data/parts/xilinx/virtex7/devint/virtex7/xc7vx690t/xc7vx690t.xgd; ZipEntry: xc7vx690t_detail.xgd elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 157 MB (+14795kb) [00:14:55]
+// [Engine Memory]: 7,411 MB (+154583kb) [00:14:55]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 3.6s
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 173 MB (+8355kb) [00:14:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  4447 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7vx690tffg1927-2 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.30 . Memory (MB): peak = 7467.629 ; gain = 0.000 ; free physical = 85963 ; free virtual = 127351 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4978 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8491.469 ; gain = 45.285 ; free physical = 84901 ; free virtual = 126344 
+// Tcl Message: Restored from archive | CPU: 5.490000 secs | Memory: 62.669823 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8491.469 ; gain = 45.285 ; free physical = 84901 ; free virtual = 126344 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8491.469 ; gain = 0.000 ; free physical = 84858 ; free virtual = 126328 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// WARNING: HEventQueue.dispatchEvent() is taking  3545 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 9200.898 ; gain = 1794.641 ; free physical = 84427 ; free virtual = 125865 
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// ExpRunCommands.openImplResults elapsed time: 72.7s
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 183 MB (+817kb) [00:15:02]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 193 MB (+1002kb) [00:15:04]
+// [GUI Memory]: 206 MB (+4004kb) [00:15:09]
+// [GUI Memory]: 217 MB (+129kb) [00:15:09]
+// [GUI Memory]: 229 MB (+1550kb) [00:15:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  6588 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+// 'dZ' command handler elapsed time: 85 seconds
+// Elapsed time: 85 seconds
+dismissDialog("Open Implemented Design"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 7,448 MB. GUI used memory: 168 MB. Current time: 11/14/22, 7:56:50 PM CST

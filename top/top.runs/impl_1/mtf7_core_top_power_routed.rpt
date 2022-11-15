@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date             : Mon Oct 31 13:12:25 2022
+| Date             : Mon Nov 14 19:55:07 2022
 | Host             : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command          : report_power -file mtf7_core_top_power_routed.rpt -pb mtf7_core_top_power_summary_routed.pb -rpx mtf7_core_top_power_routed.rpx
 | Design           : mtf7_core_top
@@ -177,12 +177,12 @@ Table of Contents
 |     my_11_9_lut                                                                      |     0.001 |
 |       U0                                                                             |     0.001 |
 |     my_hls_label                                                                     |     2.103 |
-|       call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_445 |     0.059 |
-|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_322             |     1.164 |
-|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_355                       |     0.575 |
-|       grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_426                      |     0.067 |
-|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_405                   |     0.014 |
-|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_379                    |     0.022 |
+|       call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447 |     0.059 |
+|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_324             |     1.164 |
+|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_357                       |     0.575 |
+|       grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_428                      |     0.067 |
+|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407                   |     0.014 |
+|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381                    |     0.022 |
 |   usrclk_mmcm_                                                                       |     0.098 |
 |     inst                                                                             |     0.098 |
 +--------------------------------------------------------------------------------------+-----------+
