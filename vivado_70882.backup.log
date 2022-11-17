@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 29 18:44:49 2022
+# Process ID: 70882
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed
+# Command line: vivado
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.log
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/user_ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 7247.691 ; gain = 27.035 ; free physical = 78038 ; free virtual = 148181
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 18:45:59 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 18:49:18 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+update_files -from_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd -to_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/emtfptnn.vhd' with file '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd'.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 18:59:13 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 19:04:36 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+update_files -from_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd -to_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd -filesets [get_filesets *]
+ERROR: [Vivado 12-3481] Cannot replace a file with itself: '/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd'
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 19:16:40 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd] -no_script -reset -force -quiet
+remove_files  /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd
+add_files -norecurse /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 19:39:18 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 19:41:47 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 19:43:58 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Thu Sep 29 19:50:48 2022] Launched impl_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7vx690tffg1927-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.30 . Memory (MB): peak = 7655.051 ; gain = 0.000 ; free physical = 77214 ; free virtual = 147542
+INFO: [Netlist 29-17] Analyzing 6942 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8688.559 ; gain = 58.957 ; free physical = 76250 ; free virtual = 146579
+Restored from archive | CPU: 2.640000 secs | Memory: 66.806519 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8688.559 ; gain = 58.957 ; free physical = 76250 ; free virtual = 146579
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8688.559 ; gain = 0.000 ; free physical = 76254 ; free virtual = 146583
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 9369.754 ; gain = 1762.906 ; free physical = 75813 ; free virtual = 146145
+open_report: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 9369.754 ; gain = 0.000 ; free physical = 75880 ; free virtual = 146212
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd] -no_script -reset -force -quiet
+remove_files  {/home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/howto-4jf/example-models/my-hls-emtf-13/emtfptnn_prj/solution1/syn/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd}
+add_files -norecurse {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s_tanh_tabkb.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_14_5_3_0_ap_uint_8_relu_config12_s.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config10_s_tanh_tcud.vhd /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_14_5_3_0_tanh_config6_s.vhd}
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Sep 29 20:07:55 2022] Launched synth_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Thu Sep 29 20:15:16 2022] Launched impl_1...
+Run output will be captured here: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.31 . Memory (MB): peak = 9369.754 ; gain = 0.000 ; free physical = 76556 ; free virtual = 146891
+INFO: [Netlist 29-17] Analyzing 6942 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 9369.754 ; gain = 0.000 ; free physical = 76277 ; free virtual = 146612
+Restored from archive | CPU: 2.700000 secs | Memory: 67.347122 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 9369.754 ; gain = 0.000 ; free physical = 76277 ; free virtual = 146612
+refresh_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 9583.840 ; gain = 214.086 ; free physical = 75996 ; free virtual = 146331
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 9583.840 ; gain = 0.000 ; free physical = 75699 ; free virtual = 146034

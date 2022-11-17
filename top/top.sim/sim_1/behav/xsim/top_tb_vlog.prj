@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../hdl/emtf/emtf_core.src/services/core_params_axi.sv" \
+"../../../../../hdl/emtf/emtf_core.src/services/register_bank.sv" \
+"../../../../../hdl/emtf/emtf_core.src/core/vppc_macros.sv" \
+"../../../../../hdl/emtf/emtf_core.src/services/inject_mem_axi.sv" \
+"../../../../../hdl/emtf/emtf_core.src/services/control_to_core_axi.sv" \
+"../../../../../hdl/emtf/emtf_core.src/services/interfaces.sv" \
+"../../../../../hdl/emtf/emtf_core.src/core/spbits.sv" \
+"../../../../../hdl/emtf/emtf_core.src/services/axi_or_mux.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

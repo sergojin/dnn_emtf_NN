@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 15 12:19:17 2022
+# Process ID: 34198
+# Current directory: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed
+# Command line: vivado
+# Log file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.log
+# Journal file: /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top_tb_behav.wcfg
+source top_tb.tcl
+current_wave_config {top_tb_behav.wcfg}
+add_wave {{/top_tb/input1_0_V}} 
+current_wave_config {top_tb_behav.wcfg}
+add_wave {{/top_tb/layer12_out_0_V}} 
+save_wave_config {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top_tb_behav.wcfg}
+save_wave_config {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+current_wave_config {top_tb_behav.wcfg}
+add_wave {{/top_tb/layer12_out_1_V_ap_vld}} {{/top_tb/layer12_out_1_V}} {{/top_tb/layer12_out_0_V_ap_vld}} {{/top_tb/layer12_out_0_V}} {{/top_tb/input1_9_V}} {{/top_tb/input1_8_V}} {{/top_tb/input1_7_V}} {{/top_tb/input1_6_V}} {{/top_tb/input1_5_V}} {{/top_tb/input1_4_V}} {{/top_tb/input1_3_V}} {{/top_tb/input1_2_V}} {{/top_tb/input1_28_V}} {{/top_tb/input1_27_V}} {{/top_tb/input1_26_V}} {{/top_tb/input1_25_V}} {{/top_tb/input1_24_V}} {{/top_tb/input1_23_V}} {{/top_tb/input1_22_V}} {{/top_tb/input1_21_V}} {{/top_tb/input1_20_V}} {{/top_tb/input1_1_V}} {{/top_tb/input1_19_V}} {{/top_tb/input1_18_V}} {{/top_tb/input1_17_V}} {{/top_tb/input1_16_V}} {{/top_tb/input1_15_V}} {{/top_tb/input1_14_V}} {{/top_tb/input1_13_V}} {{/top_tb/input1_12_V}} {{/top_tb/input1_11_V}} {{/top_tb/input1_10_V}} {{/top_tb/input1_0_V}} {{/top_tb/clk1}} {{/top_tb/T}} 
+relaunch_sim
+relaunch_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+save_wave_config {/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top_tb_behav.wcfg}
+current_sim simulation_1
+close_sim
+close_sim

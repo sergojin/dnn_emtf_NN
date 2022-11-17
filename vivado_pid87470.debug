@@ -1,0 +1,28 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.1 (64-bit)
+# SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+# Current time: Wed Nov 16 12:10:14 CST 2022
+# Process ID (PID): 87470
+# User: sergo
+# OS: Scientific Linux release 7.9 (Nitrogen)
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Wed Nov 16 12:10:14 CST 2022
+java.lang.NullPointerException
+	at ui.b.G.d.b.b.<init>(SourceFile:125)
+	at ui.b.K.a.cj.gdm(SourceFile:43)
+	at ui.b.K.a.bCG(SourceFile:86)
+	at ui.b.K.d.tG(SourceFile:543)
+	at ui.b.K.d.gdF(SourceFile:941)
+	at ui.b.K.d.gdN(SourceFile:1146)
+	at ui.b.K.d.aY(SourceFile:189)
+	at ui.b.K.d.<init>(SourceFile:133)
+	at ui.views.c.dF.O(SourceFile:112)
+	at ui.cU.construct(SourceFile:859)
+	at ui.frmwork.A.run(SourceFile:203)
+	at java.base/java.lang.Thread.run(Unknown Source)
+

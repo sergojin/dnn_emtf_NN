@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"top_tb_func_synth.vhd" \
+"../../../../../../hdl/testbench/txt_util.vhd" \
+"../../../../../../hdl/testbench/sim_file_read.vhd" \
+"../../../../../top.srcs/sim_1/new/emtfnn_tb.vhd" \
+
+# Do not sort compile order
+nosort

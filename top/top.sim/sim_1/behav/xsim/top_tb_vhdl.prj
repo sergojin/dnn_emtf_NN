@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../top.srcs/sources_1/ip/eleven2two_lut/eleven2two_lut_sim_netlist.vhdl" \
+"../../../../top.srcs/sources_1/ip/eleven2nine_lut/eleven2nine_lut_sim_netlist.vhdl" \
+"../../../../../hdl/emtf/ctoc_ififo/ctoc_ififo_sim_netlist.vhdl" \
+"../../../../../hdl/emtf/inject_mem_64/inject_mem_64_sim_netlist.vhdl" \
+"../../../../../hdl/emtf/ctoc_mmcm_in/ctoc_mmcm_in_sim_netlist.vhdl" \
+"../../../../../hdl/emtf/usrclk_mmcm/usrclk_mmcm_sim_netlist.vhdl" \
+"../../../../../cgn/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" \
+"../../../../../hdl/emtf/ctoc_mmcm/ctoc_mmcm_sim_netlist.vhdl" \
+"../../../../../hdl/test_algo.vhd" \
+"../../../../../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd" \
+"../../../../../hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd" \
+"../../../../../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.vhd" \
+"../../../../../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd" \
+"../../../../../hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd" \
+"../../../../../hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd" \
+"../../../../../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd" \
+"../../../../../hdl/vhdl/emtfptnn.vhd" \
+"../../../../../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd" \
+"../../../../../hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.vhd" \
+"../../../../../hdl/testbench/txt_util.vhd" \
+"../../../../../hdl/testbench/sim_file_read.vhd" \
+"../../../../top.srcs/sim_1/new/emtfnn_tb.vhd" \
+
+# Do not sort compile order
+nosort

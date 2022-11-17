@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5279336044174257174  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 6a5e91db9ae84fe7ab347d870930052e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot top_tb_func_synth xil_defaultlib.top_tb xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/top_tb_func_synth/xsimk\"   \"xsim.dir/top_tb_func_synth/obj/xsim_0.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_1.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_2.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_3.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_4.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_5.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_6.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_7.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_8.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_9.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_10.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_11.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_12.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_13.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_14.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_15.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_16.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_17.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_18.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_19.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_20.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_21.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_22.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_23.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_24.lnx64.o\" \"xsim.dir/top_tb_func_synth/obj/xsim_25.lnx64.o\" -L\"/data/Xilinx/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

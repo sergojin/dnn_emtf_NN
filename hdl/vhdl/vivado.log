@@ -51,3 +51,5 @@ No Unisim elements were transformed.
 
 open_run: Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 9200.898 ; gain = 1794.641 ; free physical = 84427 ; free virtual = 125865
 open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 9200.898 ; gain = 0.000 ; free physical = 84056 ; free virtual = 125515
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 14 20:28:59 2022...

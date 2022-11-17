@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_params_axi
+WARNING: [VRFC 10-3380] identifier 'bw_addr' is used before its declaration [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/core_params_axi.sv:18]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/register_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/core/vppc_macros.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/inject_mem_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inject_mem_axi_64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/control_to_core_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_to_core_slave_axi
+INFO: [VRFC 10-2458] undeclared symbol locked_out, assumed default net type wire [/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/control_to_core_axi.sv:259]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/interfaces.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/core/spbits.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/emtf/emtf_core.src/services/axi_or_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_or_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /data/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 6a5e91db9ae84fe7ab347d870930052e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behav of entity xil_defaultlib.dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0 [dense_latency_0_0_0_0_0_0_0_0_0_...]
+Compiling architecture behav of entity xil_defaultlib.dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0 [dense_latency_0_0_0_0_0_0_0_0_0_...]
+Compiling architecture rtl of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture arch of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture behav of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture rtl of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture arch of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture behav of entity xil_defaultlib.tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s [tanh_ap_fixed_ap_fixed_24_8_5_3_...]
+Compiling architecture behav of entity xil_defaultlib.dense_latency_ap_fixed_ap_fixed_config11_0_0_0 [dense_latency_ap_fixed_ap_fixed_...]
+Compiling architecture behav of entity xil_defaultlib.normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s [normalize_0_0_0_0_0_0_0_0_0_0_0_...]
+Compiling architecture behav of entity xil_defaultlib.relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s [relu_ap_fixed_24_8_5_3_0_ap_uint...]
+Compiling architecture behav of entity xil_defaultlib.emtfptnn [emtfptnn_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
