@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1668476630">
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1927-2" LaunchTime="1676955317">
+  <File Type="VDS-TIMING-PB" Name="mtf7_core_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mtf7_core_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="mtf7_core_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="mtf7_core_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="mtf7_core_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="mtf7_core_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="mtf7_core_top.vds"/>
   <File Type="REPORTS-TCL" Name="mtf7_core_top_reports.tcl"/>
   <File Type="PA-TCL" Name="mtf7_core_top.tcl"/>
-  <File Type="RDS-DCP" Name="mtf7_core_top.dcp"/>
-  <File Type="RDS-RDS" Name="mtf7_core_top.vds"/>
-  <File Type="RDS-UTIL" Name="mtf7_core_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="mtf7_core_top_utilization_synth.pb"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../cgn/my_coe.coe">
       <FileInfo>
@@ -28,13 +31,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../hdl/emtf/emtf_core.src/services/register_bank.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../hdl/emtf/emtf_core.src/services/mtf7_core_top.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -119,12 +115,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/test_algo.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -143,7 +133,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd">
+    <File Path="$PPRDIR/../hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -185,6 +175,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../hdl/test_algo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/emtf/emtf_core.src/services/mtf7_core_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="mtf7_core_top"/>
@@ -219,12 +222,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="eleven2two_lut"/>
-  <BlockFileSet Type="BlockSrcs" Name="eleven2nine_lut"/>
   <BlockFileSet Type="BlockSrcs" Name="ctoc_mmcm"/>
-  <BlockFileSet Type="BlockSrcs" Name="inject_mem_64"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ctoc_ififo"/>
   <BlockFileSet Type="BlockSrcs" Name="usrclk_mmcm"/>
   <BlockFileSet Type="BlockSrcs" Name="ctoc_mmcm_in"/>
+  <BlockFileSet Type="BlockSrcs" Name="inject_mem_64"/>
+  <BlockFileSet Type="BlockSrcs" Name="ctoc_ififo"/>
+  <BlockFileSet Type="BlockSrcs" Name="eleven2nine_lut"/>
+  <BlockFileSet Type="BlockSrcs" Name="eleven2two_lut"/>
 </GenRun>

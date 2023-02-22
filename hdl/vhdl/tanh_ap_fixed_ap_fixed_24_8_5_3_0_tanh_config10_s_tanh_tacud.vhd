@@ -58,6 +58,9 @@ entity tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom is
           addr14      : in std_logic_vector(AWIDTH-1 downto 0); 
           ce14       : in std_logic; 
           q14         : out std_logic_vector(DWIDTH-1 downto 0);
+          addr15      : in std_logic_vector(AWIDTH-1 downto 0); 
+          ce15       : in std_logic; 
+          q15         : out std_logic_vector(DWIDTH-1 downto 0);
           clk       : in std_logic
     ); 
 end entity; 
@@ -80,6 +83,7 @@ signal addr11_tmp : std_logic_vector(AWIDTH-1 downto 0);
 signal addr12_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 signal addr13_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 signal addr14_tmp : std_logic_vector(AWIDTH-1 downto 0); 
+signal addr15_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 type mem_array is array (0 to MEM_SIZE-1) of std_logic_vector (DWIDTH-1 downto 0); 
 signal mem0 : mem_array := (
     0 to 24=> "10000000000", 25 to 68=> "10000000001", 69 to 94=> "10000000010", 
@@ -1804,6 +1808,18 @@ begin
 --synthesis translate_on
 end process;
 
+memory_access_guard_15: process (addr15) 
+begin
+      addr15_tmp <= addr15;
+--synthesis translate_off
+      if (CONV_INTEGER(addr15) > mem_size-1) then
+           addr15_tmp <= (others => '0');
+      else 
+           addr15_tmp <= addr15;
+      end if;
+--synthesis translate_on
+end process;
+
 p_rom_access: process (clk)  
 begin 
     if (clk'event and clk = '1') then
@@ -1851,6 +1867,9 @@ begin
         end if;
         if (ce14 = '1') then 
             q14 <= mem7(CONV_INTEGER(addr14_tmp)); 
+        end if;
+        if (ce15 = '1') then 
+            q15 <= mem7(CONV_INTEGER(addr15_tmp)); 
         end if;
     end if;
 end process;
@@ -1912,7 +1931,10 @@ entity tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud is
         q13 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
         address14 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
         ce14 : IN STD_LOGIC;
-        q14 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
+        q14 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
+        address15 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
+        ce15 : IN STD_LOGIC;
+        q15 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
 architecture arch of tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud is
@@ -1963,7 +1985,10 @@ architecture arch of tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacu
             q13 : OUT STD_LOGIC_VECTOR;
             addr14 : IN STD_LOGIC_VECTOR;
             ce14 : IN STD_LOGIC;
-            q14 : OUT STD_LOGIC_VECTOR);
+            q14 : OUT STD_LOGIC_VECTOR;
+            addr15 : IN STD_LOGIC_VECTOR;
+            ce15 : IN STD_LOGIC;
+            q15 : OUT STD_LOGIC_VECTOR);
     end component;
 
 
@@ -2016,7 +2041,10 @@ begin
         q13 => q13,
         addr14 => address14,
         ce14 => ce14,
-        q14 => q14);
+        q14 => q14,
+        addr15 => address15,
+        ce15 => ce15,
+        q15 => q15);
 
 end architecture;
 

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date             : Mon Nov 14 19:55:07 2022
+| Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date             : Mon Feb 20 23:03:23 2023
 | Host             : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
 | Command          : report_power -file mtf7_core_top_power_routed.rpt -pb mtf7_core_top_power_summary_routed.pb -rpx mtf7_core_top_power_routed.rpx
 | Design           : mtf7_core_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.242        |
+| Total On-Chip Power (W)  | 2.908        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.890        |
-| Device Static (W)        | 0.352        |
+| Dynamic (W)              | 2.559        |
+| Device Static (W)        | 0.350        |
 | Effective TJA (C/W)      | 0.8          |
-| Max Ambient (C)          | 82.3         |
-| Junction Temperature (C) | 27.7         |
+| Max Ambient (C)          | 82.5         |
+| Junction Temperature (C) | 27.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.120 |       13 |       --- |             --- |
-| Slice Logic             |     0.327 |    34174 |       --- |             --- |
-|   LUT as Logic          |     0.285 |    14186 |    433200 |            3.27 |
-|   CARRY4                |     0.031 |     3937 |    108300 |            3.64 |
-|   Register              |     0.011 |     9312 |    866400 |            1.07 |
+| Clocks                  |     0.113 |       13 |       --- |             --- |
+| Slice Logic             |     0.266 |    29585 |       --- |             --- |
+|   LUT as Logic          |     0.230 |    12211 |    433200 |            2.82 |
+|   CARRY4                |     0.026 |     3416 |    108300 |            3.15 |
+|   Register              |     0.010 |     8609 |    866400 |            0.99 |
 |   LUT as Shift Register |    <0.001 |       20 |    174200 |            0.01 |
-|   Others                |     0.000 |      263 |       --- |             --- |
-| Signals                 |     0.518 |    42169 |       --- |             --- |
+|   Others                |     0.000 |      265 |       --- |             --- |
+| Signals                 |     0.476 |    34180 |       --- |             --- |
 | Block RAM               |     0.377 |       81 |      1470 |            5.51 |
 | MMCM                    |     0.340 |        3 |        20 |           15.00 |
-| DSPs                    |     1.202 |      933 |      3600 |           25.92 |
+| DSPs                    |     0.981 |      755 |      3600 |           20.97 |
 | I/O                     |     0.006 |       33 |       600 |            5.50 |
-| Static Power            |     0.352 |          |           |                 |
-| Total                   |     3.242 |          |           |                 |
+| Static Power            |     0.350 |          |           |                 |
+| Total                   |     2.908 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     2.737 |       2.526 |      0.211 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.240 |       0.187 |      0.054 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     2.403 |       2.195 |      0.209 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.240 |       0.187 |      0.053 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -158,10 +158,10 @@ Table of Contents
 +--------------------------------------------------------------------------------------+-----------+
 | Name                                                                                 | Power (W) |
 +--------------------------------------------------------------------------------------+-----------+
-| mtf7_core_top                                                                        |     2.890 |
+| mtf7_core_top                                                                        |     2.559 |
 |   cp                                                                                 |     0.002 |
-|   crb                                                                                |     0.005 |
-|   ctoc                                                                               |     0.282 |
+|   crb                                                                                |     0.004 |
+|   ctoc                                                                               |     0.281 |
 |     ctoc_ififo_                                                                      |     0.007 |
 |       U0                                                                             |     0.007 |
 |     ctoc_mmcm_in_                                                                    |     0.123 |
@@ -171,18 +171,18 @@ Table of Contents
 |   imem                                                                               |     0.383 |
 |     im64_0                                                                           |     0.374 |
 |       U0                                                                             |     0.374 |
-|   my_test_algo                                                                       |     2.113 |
+|   my_test_algo                                                                       |     1.783 |
 |     my_11_2_lut                                                                      |     0.001 |
 |       U0                                                                             |     0.001 |
 |     my_11_9_lut                                                                      |     0.001 |
 |       U0                                                                             |     0.001 |
-|     my_hls_label                                                                     |     2.103 |
-|       call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_447 |     0.059 |
-|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_324             |     1.164 |
-|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_357                       |     0.575 |
-|       grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_428                      |     0.067 |
-|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407                   |     0.014 |
-|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381                    |     0.022 |
+|     my_hls_label                                                                     |     1.773 |
+|       call_ret1_normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s_fu_449 |     0.052 |
+|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_324             |     1.115 |
+|       grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_fu_357                     |     0.311 |
+|       grp_dense_latency_ap_fixed_ap_fixed_config11_0_0_0_fu_429                      |     0.035 |
+|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_fu_407                   |     0.017 |
+|       grp_tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_fu_381                    |     0.023 |
 |   usrclk_mmcm_                                                                       |     0.098 |
 |     inst                                                                             |     0.098 |
 +--------------------------------------------------------------------------------------+-----------+

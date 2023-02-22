@@ -1,2 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'relu_ap_fixed_24_8_5_3_0_ap_uint_8_relu_config12_s'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud_rom'
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s_tanh_tacud'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/dense_latency_ap_fixed_ap_fixed_config11_0_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dense_latency_ap_fixed_ap_fixed_config11_0_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config10_s'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/emtfptnn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'emtfptnn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/hdl/vhdl/tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb_rom'
+INFO: [VRFC 10-3107] analyzing entity 'tanh_ap_fixed_ap_fixed_24_8_5_3_0_tanh_config6_s_tanh_tabbkb'
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/sergo/cms-phase2-muon-trigger/projects/dnn_emtf_displayed/top/top.srcs/sim_1/new/emtfnn_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'top_tb'
